@@ -1,0 +1,10 @@
+<div id="left_column">
+	<div class="inner_tube">
+		<div class="left_navi">
+
+				<div class="level_1_menu_item" id="left_menu">
+					<TMPL_VAR NAME=left_menu>
+				</div><!-- eof id="left_menu"-->
+		</div><!-- eof left_navi -->
+	</div><!-- eof inner_tube -->
+</div> <!-- eof left_column -->

@@ -1,0 +1,45 @@
+% use utf8;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+%= include 'actions/present/page/doc/header/header'
+
+
+<body>
+
+		<div class="reveal">
+
+			<header 
+				style="position: absolute;left:3%;right:3%;margin-left:auto; margin-right:auto; 
+				top: 6%; text-align: center; 
+				font-size:32px;background-color: #FFFBBB">
+			</header>
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<%== $doc_control %>
+			</diV> 
+		</div>
+
+<script>
+
+%= include 'actions/present/page/doc/js/reveal_initialize' 
+
+</script>
+
+</body>
+</html>
+
+<!-- start validator 
+<div id="div_menu_footer">
+
+	<div id="validator_text">
+	<a href="http://validator.w3.org/check?uri=referer">
+	<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional"
+	height="31" width="88" /></a>
+         </div>
+</div>
+<!-- eof div_menu_footer -->
+<!-- call by : http://<%= $web_host %>:<%= $web_port %>/view?item=<%= $item %>&filter-by=Prio&filter-value=1 -->
+<!-- call by : http://<%= $web_host %>:<%= $web_port %>/view?item=<%= $item %> -->
+<!-- call by : http://<%= $web_host %>:<%= $web_port %>/view?db=<%= $database %>&item=<%= $item %>&filter-by=Prio&filter-value=1&order-by=SeqId&hdrs=1 -->

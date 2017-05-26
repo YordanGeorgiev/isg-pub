@@ -1,0 +1,50 @@
+# file: /var/<<org>>/<<product>>/.gitignore
+# a simple exclude files from git by file extensions conf file
+# Compiled source #
+#----------------------------------------------------------
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+#----------------------------------------------------------
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.rpm
+*.deb
+
+# Logs and databases #
+#----------------------------------------------------------
+*.log
+*.sqlite
+
+# OS generated files #
+#----------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+#
+# 
+# VersionHistory
+#----------------------------------------------------------
+# 1.0.0 -- 2015-04-13 08:08:53 -- https://github.com/component/mutate/blob/master/.gitignore
+#
+# file: /var/<<org>>/<<product>>/.gitignore
+# eof file

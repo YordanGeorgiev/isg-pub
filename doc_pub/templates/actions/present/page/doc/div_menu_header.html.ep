@@ -1,0 +1,53 @@
+<div id="div_menu_header">
+
+	<div class="inner_tube">
+		<div id="welcome_header">
+		
+			<div id="show_hide_top_menu">
+				<!-- 
+				<a href="#">
+					<img src="img/screen/themes/default/site/menu-lines.png">
+					</img>
+				</a>
+				-->
+			</div>
+	
+		<div id="search_tbl" class="srch_table">
+			<form name="frm_top_srch" method="get" enctype="utf-8"
+			action="search">
+
+				<input type="text" name="txt_srch"  
+				style="width:70%;align:left" id="txt_srch" />&nbsp;&nbsp;
+
+				<input type="submit" name="But" value="Search" />
+
+				<!-- hidden fields those are used after the search button hit -->
+				<input type="hidden" name="db" value="<%= $database %>" id="db" />
+				<!-- 
+				<input type="hidden" name="rdbms" value="$rdbms" id="hin_rdbms" />
+				<input type="hidden" name="lang" value="$lang" id="hin_lang" />
+				-->
+			</form>
+		</div><!-- eof srch_table div -->
+
+
+		<!-- 
+      <div id="div_top_menu" class="top_menu">
+			<%= $top_menu %>
+		</div>
+		-->
+
+		<div id="doc_action_menu">
+			<!-- <TMPL_VAR NAME=doc_action_menu> -->
+		</div>
+
+		<div id="lang_menu" class="lang_menu"> 
+			<!-- <TMPL_VAR NAME=lang_menu> -->
+		</div><!-- eof lang_menu -->
+		
+		</div> <!-- eof welcome_header -->
+		<div id="welcome_txt">
+		</div>
+	</div>
+	<!--eof <div class="inner_tube"> -->
+</div><!-- eof <div id="div_menu_header"> -->

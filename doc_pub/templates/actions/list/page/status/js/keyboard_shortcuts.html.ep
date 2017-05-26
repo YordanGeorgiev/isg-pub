@@ -1,0 +1,14 @@
+ 	// start / keyboard shortcut focuses the srch txt box  
+	Mousetrap.bind('/', function(e){ 
+		if (e.preventDefault) {
+			e.preventDefault();
+ 		} else {
+		// internet explorer
+			e.returnValue = false;
+		}
+		$('div.dataTables_filter input').focus();
+		$('div.dataTables_filter input').val();
+	}); 
+	
+
+

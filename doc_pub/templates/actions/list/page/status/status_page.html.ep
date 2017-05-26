@@ -1,0 +1,66 @@
+% use utf8;
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title> view <%= $database %>.<%= $item =%> list </title>
+
+	%= include 'actions/view/header/css_links' ;
+	<!-- %= include 'actions/view/header/js_links' ;-->
+	%= include 'actions/list/page/status/header/js_links' ;
+
+
+	<script type="text/javascript">
+
+	var myLayout; // create global var for the layout-instance object
+	var editor; // use a global for the submit and return data rendering in the examples
+	$(document).ready(function () {
+
+		%= include 'actions/list/js/jquery_layout'
+		%= include 'actions/view/js/show_hide_left_menu'
+		%= include 'actions/view/js/on_window_resize'
+
+		%= include 'actions/list/page/status/js/nice_table'
+		%= include 'actions/list/page/status/js/keyboard_shortcuts'
+
+		//usually users start scrolling on the content, thus:
+		document.getElementById('center_pane').focus();
+	}); //eof document.ready
+
+
+		%= include 'actions/view/js/search_auto_complete'
+		%= include 'actions/view/js/left_column'
+
+	</script>
+
+</head>
+<body>
+
+	<div id="north_pane" class="ui-layout-north">
+		%= include 'actions/view/div_menu_header'
+	</div>
+
+	<div id="west_pane" class="ui-layout-west">
+		<%== $left_menu_control %> 
+	</div>
+
+	<div id="south_pane" class="ui-layout-south">
+		<p>
+		%= dumper $debug_msg
+		<p>
+	</div>
+
+	<div id="east_pane" class="ui-layout-east">
+	</div>
+
+	<div id="center_pane" tabindex="1" class="ui-layout-center">
+			<div class="inner_tube">
+			<%== $str_table %>
+			</div><!-- eof inner_tube -->
+	</div>
+
+</body>
+</html>
+<!-- call by : http://<%= $web_host %>:<%= $web_port %>/list?item=Issue&filter-by=Prio&filter-value=1 -->
+<!-- call by : http://<%= $web_host %>:<%= $web_port %>/list?item=Issue -->
+<!-- call by : http://<%= $web_host %>:<%= $web_port %>/list?db=geo_fin_en&item=Issue&filter-by=Prio&filter-value=1 -->

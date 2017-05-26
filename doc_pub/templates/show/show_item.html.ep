@@ -1,0 +1,101 @@
+<html> 
+	<head>
+	<!-- call by http://192.168.18.132:3000/show#?item=Issue&id=2 -->
+	<meta charset="utf-8">
+	<title> mojolicios + angular + meta widget proto item </title>
+
+   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="http://metawidget.org/js/4.1/metawidget-core.min.js"></script>
+	<script src="http://metawidget.org/js/4.1/metawidget-angular.min.js"></script>
+	
+	<style>
+			#metawidget {
+				border: 2px solid #cccccc;
+				width: auto ; 
+				border-radius: 10px;
+				padding: 20px;
+				margin: 20px auto;
+				display: block;
+			}
+		</style>
+
+</head>
+<body ng-app="myApp" ng-controller="ItemController" id="stub" >
+
+	<script type="text/javascript">
+			
+		// start hardcoded
+		//	var objProtoItem= {
+		// ProtoItemId: 1
+		//	, Name: "local name of the proto item"
+		//	, Description: "local desc" 
+		//	}; 
+		//console.log(objProtoItem);
+	
+
+		var myApp = angular.module('myApp', ['metawidget']);
+		
+		myApp.controller ("ItemController", ['$scope','$http'
+			, function($scope, $http ) {    
+				
+			// get the url params 
+			var p_item = "<%== $item %>";
+			var p_id = "<%== $id %>";
+
+			console.log("item is " + p_item );
+
+				$http.get('/show_json'
+				, { 
+					  params: {
+							 item: p_item
+						  , id: p_id 
+					  }
+					})
+					.success (function(data){
+					//debug console.log("loading controller") ; 
+					$scope.ObjItem = data[0]  ; 
+					//debug console.log ( objProtoItem );
+					// show the form only after having loaded the data
+					showForm();
+					//$scope.ObjItem = JSON.parse(data[0]);
+				})
+				.error(function(data, status) {
+					alert("Error while retrieving data");
+				});
+
+			}]
+		);
+			
+	</script>
+	<!-- stop  get the js object -->
+	<h2> mojolicious + Angular.js + meta widget proto  </h2>
+
+		<!-- get the $msg var from the mojolicious controller -->
+		<div id="div_msg"> <%= $msg %> </div>
+		<div id="data_holder"> 
+			<!-- debug the obj item's data in JSON  -->
+			<p> {{ObjItem}}</p> 
+		</div>
+		<div id="metawidget">
+		</div>
+		<script type="text/javascript">
+			 
+			function showForm() {
+			 	console.log("loading script") ; 
+				// any code goes here
+				var mw = new metawidget.Metawidget( document.getElementById( 'metawidget' ));
+				var $scope = angular.element(document.getElementById('stub')).scope();
+				//debug console.log( "2" + angular.element(document.getElementById('stub')).scope().ObjItem );
+				var objProtoItem = angular.element(document.getElementById('stub')).scope().ObjItem  ; 
+				
+				// databind !!!
+				//mw.toInspect = angular.element(document.getElementById('stub')).scope().ObjItem  ; 
+				console.log ( objProtoItem ) ; 
+				mw.toInspect = objProtoItem ; 
+				mw.buildWidgets();
+			}
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> <%= $database %> table browser </title>
+
+%= include 'actions/view/header/css_links' ;
+%= include 'actions/view/header/js_links' ;
+
+</head>
+

@@ -1,0 +1,8 @@
+// START -- datatables 
+$(document).ready(function() {
+	$('.inline_table').dataTable( {
+		"pagingType": "full_numbers"
+		, 	stateSave: true
+	} );
+} );
+// STOP -- data tables 

@@ -1,0 +1,37 @@
+# just a quick jump gf navigation file for this host
+/etc/apache2/sites-available/000-default.conf
+/etc/hosts
+/etc/apache2/apache2.conf
+/etc/apache2/ports.conf
+/etc/mysql/my.cnf
+/etc/apache2/sites-available/projects/isg-pub.conf
+/etc/apache2/sites-available/projects/core-dw.conf
+/etc/apache2/sites-available/projects/geo-fin.conf
+/etc/apache2/sites-available/projects/core-dw-startup.pl
+/etc/apache2/sites-available/projects/isg-pub-startup.pl
+/etc/apache2/sites-available/projects/mod_perl_startup.pl
+/etc/apache2/sites-available/projects/ysg.conf
+/etc/apache2/mods-enabled/dir.conf
+/etc/apache2/sites-available/projects/project1.conf
+/etc/apache2/sites-available/projects/you-doc.conf
+/etc/apache2/sites-available/projects/isg-pub-startup.pl
+/etc/apache2/sites-available/projects/mod_perl_startup.pl
+/etc/apache2/envvars
+/etc/apache2/conf-available/serve-cgi-bin.conf
+/etc/apache2/mods-available/apreq2.load
+/etc/apache2/mods-available/mpm_event.load
+/etc/apache2/mods-available/mpm_event.conf
+/etc/apache2/mods-available/mime.load
+/etc/apache2/mods-available/mime_magic.conf
+/etc/apache2/mods-available/perl.load
+/etc/mysql/conf.d/mariadb.cnf
+/etc/ssh/sshd_config
+/etc/ssh/ssh_config
+/var/log/apache2/
+/var/log/apache2/isg-pub.access.log
+/var/log/apache2/isg-pub.error.log
+/var/csitea/chs/sfw/sh/file-saver.sh
+conf/file-saver/hosts/.doc-pub-host.files-to-backup.lst
+/var/log/isg-pub/2014-11.isg-pub.log
+
+#export version=1.0.1

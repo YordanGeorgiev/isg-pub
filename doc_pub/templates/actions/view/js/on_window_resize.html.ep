@@ -1,0 +1,14 @@
+	// start --- reload page on window resize
+	// cudos to http://stackoverflow.com/a/15455463/65706
+	jQuery(function($){
+	var window_width = $(window).width();
+
+	$(window).resize(function() {
+		 if(window_width != $(window).width()){
+			 location.reload();
+			 return;
+		 }
+		});
+	});
+	//stop --- reload page on window resize
+

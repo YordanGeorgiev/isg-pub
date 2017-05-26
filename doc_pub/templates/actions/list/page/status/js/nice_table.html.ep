@@ -1,0 +1,94 @@
+
+		 
+			editor = new $.fn.dataTable.Editor( {
+				ajax: {
+					create: {
+						type: 'POST', // default method is POST
+						url:	'/add_new'
+					}
+					, edit: {
+						type: 'POST',
+						url:  '/edit'
+					}
+					, remove: {
+						type: 'DELETE',
+						url:  '/remove'
+					}
+				}
+			  , table: "#nice_table"
+			  , idSrc: "<%== $table %>Id"
+			  , fields: [ 
+					<%== $table_labels %>
+			  ]
+		 } );
+		
+		//build the data table 
+		var objNiceTable = $('#nice_table').DataTable( {
+			  dom: 'Bfrtipl'
+			, fixedHeader: true
+			, "pagingType": "full_numbers"
+			, "stateSave": true
+			, "iDisplayLength": 200
+			, "pageLength": 200 
+			, "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
+			, <%== $table_conf %>
+			, keys: {
+		  		columns: ':not(:first-child)',
+				editor:  editor
+			}
+			, select: {
+				style:    'os',
+				selector: 'td:first-child',
+				blurable: true
+			}
+			, "buttons": [
+				  { extend: "create", editor: editor }
+				, { extend: "edit",   editor: editor }
+				, { extend: "remove", editor: editor }
+
+			]
+		 } );
+		
+
+
+
+
+		<%== $tbl_cols_vis %> 
+
+
+			
+			editor.on('initEdit', function() {
+    			editor.show(); //Shows all fields
+    			//editor.hide('IssueId');
+    			//editor.hide('ActionButtons');
+    			//editor.hide('LeftRank');
+    			//editor.hide('RightRank');
+			});		 
+
+
+			// Inline editing on click
+			objNiceTable.on( 'click', 'tbody td:not(:first-child)', function (e) {
+				editor.inline( this );
+			} );
+
+
+    		objNiceTable.on( 'key-focus', function ( e, datatable, cell ) {
+	         	editor.inline( cell.index(), {
+					onBlur: 'submit'
+				} );
+			} );
+
+
+			// Disable KeyTable while the main editing form is open
+			editor
+				.on( 'open', function ( e, mode, action ) {
+				if ( mode === 'main' ) {
+				objNiceTable.keys.disable();
+			}
+			})
+				.on( 'close', function () {
+				objNiceTable.keys.enable();
+			});
+
+			//disable the Action Buttons field
+			editor.field('ActionButtons').className='.readonly' ; 

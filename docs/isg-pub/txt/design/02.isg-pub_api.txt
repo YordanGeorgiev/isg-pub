@@ -1,0 +1,23 @@
+  
+GET - Provides a read only access to a resource.
+PUT - Used to create a new resource. ( use the <input type="hidden" name="_method" value="PUT"> in forms)
+DELETE - Used to remove a resource.
+POST - Used to update a existing resource or create a new resource.
+
+		[optional][optional]						
+get /v1.0.0/app/app_name/table/table_name/id/<<id_num>>
+get /v1.0.0/app/app_name/table/table_name/
+get /v1.0.0/app/app_name/view/view_name/
+get /v1.0.0/app/app_name/view/view_name/
+get /v1.0.0/app/app_name/view/view_name/
+get /v1.0.0/app/app_name/view/view_name/
+
+get /v1.0.0/app/app_name/collection/collection_name/
+get /v1.0.0/app/app_name/collection/collection_name/
+
+
+
+
+the version is optional 
+the app app_name is optional 
+the 

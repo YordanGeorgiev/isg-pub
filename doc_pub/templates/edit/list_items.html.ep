@@ -1,0 +1,134 @@
+% use utf8;
+<!-- call  by http://<%= $web_host %>:3000/list?item=TopMenuItem&db=core_dw_en -->
+<!-- call  by http://<%= $web_host %>:3000/list?item=TopMenuItem&db=core_dw_en -->
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> <%= $database %> table browser </title>
+
+<link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker/css/bootstrap-datetimepicker.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/jQueryUI-1.11.4/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/DataTables-1.10.9/css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/Buttons-1.0.3/css/buttons.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/Editor-1.5.1/css/editor.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/FieldType-Quill/editor.quill.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/FieldType-Select2/editor.select2.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/FixedColumns-3.1.0/css/fixedColumns.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/FixedHeader-3.0.0/css/fixedHeader.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/KeyTable-2.0.0/css/keyTable.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/Scroller-1.3.0/css/scroller.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/Select-1.0.1/css/select.dataTables.min.css"/>
+
+
+<link rel="stylesheet" type="text/css" href="css/nice-table.css"/>
+
+<script type="text/javascript" src="lib/jQuery-2.1.4/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="lib/MomentJS/moment.min.js"></script>
+<script type="text/javascript" src="lib/JSZip-2.5.0/jszip.min.js"></script>
+<script type="text/javascript" src="lib/pdfmake-0.1.18/build/pdfmake.min.js"></script>
+<script type="text/javascript" src="lib/pdfmake-0.1.18/build/vfs_fonts.js"></script>
+<script type="text/javascript" src="lib/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="lib/jQueryUI-1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="lib/DataTables-1.10.9/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="lib/Buttons-1.0.3/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="lib/Buttons-1.0.3/js/buttons.colVis.min.js"></script>
+<script type="text/javascript" src="lib/Editor-1.5.1/js/dataTables.editor.min.js"></script>
+<script type="text/javascript" src="lib/FieldType-BootstrapDate/editor.datetimepicker-2.min.js"></script>
+<script type="text/javascript" src="lib/FieldType-Quill/editor.quill.min.js"></script>
+<script type="text/javascript" src="lib/FieldType-Select2/editor.select2.min.js"></script>
+<script type="text/javascript" src="lib/FixedColumns-3.1.0/js/dataTables.fixedColumns.min.js"></script>
+<script type="text/javascript" src="lib/FixedHeader-3.0.0/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" src="lib/KeyTable-2.0.0/js/dataTables.keyTable.min.js"></script>
+<script type="text/javascript" src="lib/Scroller-1.3.0/js/dataTables.scroller.min.js"></script>
+<script type="text/javascript" src="lib/Select-1.0.1/js/dataTables.select.min.js"></script>
+<script type="text/javascript" src="lib/MouseTrap/mousetrap.min.js"></script>
+
+</head>
+
+<body>
+
+<%== $str_table %>
+<script>
+
+
+var editor; // use a global for the submit and return data rendering in the examples
+
+	$(document).ready(function() {
+		 
+			editor = new $.fn.dataTable.Editor( {
+
+				ajax: {
+					create: {
+						type: 'POST', // default method is POST
+						url:	'/add_new'
+					}
+					, edit: {
+						type: 'POST',
+						url:  '/edit'
+					}
+					, remove: {
+						type: 'DELETE',
+						url:  '/remove?id=_id_&<%== $url_params %>'
+					}
+				}
+			  , table: "#nice_table"
+			  , fields: [ 
+					<%== $table_labels %>
+			  ]
+		 } );
+		
+		//build the data table 
+		var objNiceTable = $('#nice_table').DataTable( {
+			  dom: "Bfrtip"
+			, "pagingType": "full_numbers"
+			, "stateSave": true
+			, "iDisplayLength": 200
+			, "pageLength": 200 
+			, "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
+			, <%== $table_conf %>
+			, "select": true
+			, "buttons": [
+				  { extend: "create", editor: editor }
+				, { extend: "edit",   editor: editor }
+				, { extend: "remove", editor: editor }
+			]
+			/*			          
+			, "rowCallback": function( row, data, index ) {
+					$('td:eq(8)', row).val().replace(/\r\n|\r|\n/g,"<br/>") ; 
+					cell_data = $('td:eq(8)', row).val() ; 
+
+				}
+			*/
+		 } );
+		
+
+		var table = $('#nice_table').DataTable();
+		 
+		 new $.fn.dataTable.FixedHeader( table, {
+					"offsetTop": 0 
+					, "header": true
+					, "bottom": true
+			  } );
+
+
+		<%== $tbl_cols_vis %> 
+			
+			editor.on('initEdit', function() {
+    			editor.show(); //Shows all fields
+    			//editor.hide('IssueId');
+    			//editor.hide('ActionButtons');
+    			//editor.hide('LeftRank');
+    			//editor.hide('RightRank');
+			});		 
+
+} );
+//eof document ready
+
+
+%= include 'actions/list/page/status/js/keyboard_shortcuts'
+</script>
+</body>
+</html>
+<!-- call by : http://<%= $web_host %>:3000/list?item=Issue&filter-by=Prio&filter-value=1 -->
+<!-- call by : http://<%= $web_host %>:3000/list?item=Issue -->
+<!-- call by : http://<%= $web_host %>:3000/list?db=geo_fin_en&item=Issue&filter-by=Prio&filter-value=1 -->

@@ -1,0 +1,16 @@
+I have tested this feature only with mutt and gmail , but it should work with any other 
+standard smtp server as well ... 
+
+If you have installed and configured the mutt binary 
+( cheat from the docs/txt/installation/04.configure-gmail-with-mutt.sh on how-to ... ) 
+
+as well as the Emails in your conf file(s) ( see the Emails=some.recipient@domain.com in your conf file ) 
+
+you can create a full package and send it via e-mail as follows:
+bash sfw/bash/isg-pub/isg-pub.sh -a create-full-package -a gmail-package
+
+you can create a deployment package and sending as follows:
+bash sfw/bash/isg-pub/isg-pub.sh -a create-deployment-package -a gmail-package
+
+you can send the latest created package by issuing the following shell call 
+sfw/bash/isg-pub/isg-pub.sh -a gmail-package

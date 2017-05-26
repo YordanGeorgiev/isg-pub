@@ -1,0 +1,39 @@
+/* start the simpliest possible way to save cookies with js */
+  function setCookie(key, value) {
+		var expires = new Date();
+		expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
+		document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+  }
+
+  function getCookie(key) {
+		var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+		return keyValue ? keyValue[2] : null;
+  }
+/* stop the simpliest possible way to save cookies with js */
+
+
+// Wait until the page is completely loaded.
+	// Iterating over all checkboxes on page.
+	$('input:checkbox').each(function() {
+  	// Getting checkbox name.
+	var name = $(this).attr('name');
+
+    // Checking saved cookie.
+    if (getCookie(name)) {
+      // Updating checkbox state.
+      $(this).prop('checked', true);
+    }
+
+    // Attaching onchange handler.
+    $(this).change(function() {
+      // Checking checkbox state.
+      if ($(this).is(":checked")) {
+        // Saving checkbox name to cookie.
+        setCookie(name, true);
+      } else {
+        // Remove checkbox state from cookie.
+        setCookie(name, '');
+      }
+    });
+  });
+

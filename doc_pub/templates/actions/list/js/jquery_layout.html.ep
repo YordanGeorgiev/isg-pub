@@ -1,0 +1,122 @@
+
+		var window_height 			= $(window).height();   // returns height of browser viewport
+		var document_height 			= $(document).height(); // returns height of HTML document
+		var window_width  			= $(window).width();   // returns width of browser viewport
+		var document_width 			= $(document).width(); // returns width of HTML document
+		
+		//adjust the default sizes of the panes 
+		var pane_size_west			= Math.round(0.20*window_width) ; 
+		var pane_size_north			= Math.round(0.10*window_height) ; 
+		var pane_size_east			= Math.round(0.35*window_width) ; 
+		var pane_size_south			= Math.round(0.08*window_height) ; 
+			
+		var max_size_pane_west		= Math.round(1.23*pane_size_west);
+		var max_size_pane_east		= Math.round(1.20*pane_size_east);
+		var max_size_pane_north		= Math.round(1.20*pane_size_north);
+		var max_size_pane_south		= Math.round(1.80*pane_size_south);
+
+		// adjust the default sizes and behaviour of the layout from here
+		var LayOutSettings = { 
+				useStateCookie: true
+				, defaults: {
+					applyDemoStyles:  				true
+				// enable stateManagement - automatic cookie load & save enabled by default ; 
+				,	stateManagement__enabled:		true 
+				,	stateManagement__autoLoad:	true // disable automatic cookie-load
+				,	stateManagement__autoSave:	true // disable automatic cookie-save
+				//,	onload:						customLoadState // run custom state-code when Layout loads
+				//,	onunload:					customSaveState // ditto when page unloads OR Layout is 'destroyed'
+				,  initClosed:           			true
+				,  fxName:              			"slide"
+				,	fxSpeed_open:						300
+				,	fxSpeed_close:						250
+				, 	enableCursorHotkey:				false
+				//must press Ctrl + Shift + § + some_key to toggle the panes
+				,  customHotkeyModifier:			220
+//				,  spacing_closed:       			14
+//				,	north__showOverflowOnHover: 	true
+//				,	east__showOverflowOnHover: 	true
+//				,	west__showOverflowOnHover: 	true
+				}
+
+			,	center: {
+				  resizable:							false
+				}
+			,  west: {
+					applyDemoStyles:  				false
+				,  size:						  			pane_size_west
+				,  maxSize: 				  			max_size_pane_west
+				,  minSize: 				  			5
+				,  resizable:							true
+				,	fxSpeed_open:						300
+				,	fxSpeed_close:						250
+				,  slidable: 				  			true
+				,  closable:				  			true
+				,	slideTrigger_open:				"mouseover"
+				,  spacing_closed:        			Math.round(0.006*window_width)
+				,  spacing_open:        			Math.round(0.002*window_width)
+				// the short key combination Ctrl+Shift+r will open the right menu
+				, 	customHotkey: 						76
+//				,  togglerLength_closed:  			"100%"
+				,  onopen:	function() { $('#div_center').css('margin' , '0% 5% 0 5%');}
+				,  onclose:	function() { $('#div_center').css('margin' , '0% 20% 0 15%');}
+				}
+			,  north: {
+					applyDemoStyles:  				false
+				,  resizable:							true
+				,  initClosed:           			true
+				,  size:						  			pane_size_north
+				,  maxSize: 				  			max_size_pane_north
+				,  minSize: 				  			5
+				,  fxName:              			"slide"
+				,	fxSpeed_open:						300
+				,	fxSpeed_close:						250
+				,  slidable: 				  			true
+				,  spacing_open:        			Math.round(0.002*window_width)
+//				,	slideTrigger_open:				"mouseover"
+				,  closable:				  			true
+				// the short key combination Ctrl+Shift+u will open the top menu
+				, 	customHotkey: 						85
+//				,  spacing_closed:        			Math.round(0.001*window_height)
+//				,  togglerLength_closed:  			"100%"
+				}
+			,  east: {
+					applyDemoStyles:  				false
+				,  resizable:							true
+				,  size:						  			pane_size_east
+				,  maxSize: 				  			max_size_pane_east
+				,  minSize: 				  			5
+				,	fxSpeed_open:						300
+				,	fxSpeed_close:						250
+				,  slidable: 				  			true
+				,  closable:				  			true
+//				,	slideTrigger_open:				"mouseover"
+				,  spacing_closed:        			Math.round(0.006*window_width)
+				,  spacing_open:        			Math.round(0.001*window_width)
+				// the short key combination Ctrl+Shift+r will open the right menu
+				, 	customHotkey: 						82
+				,  onopen:	function() { $('#div_center').css('margin' , '0% 5% 0 5%');}
+				,  onclose:	function() { $('#div_center').css('margin' , '0% 20% 0 15%');}
+				}
+			,  south: {
+					applyDemoStyles:  				false
+				,  resizable:							true
+				,  size:						  			pane_size_south
+				,  maxSize: 				  			max_size_pane_south
+				,  minSize: 				  			5
+				,  fxName:              			"slide"
+				,	fxSpeed_open:						300
+				,	fxSpeed_close:						250
+				,  slidable: 				  			true
+				,  closable:				  			true
+				,	slideTrigger_open:				"mouseover"
+				// the short key combination Ctrl+Shift+d will open the down menu
+				, 	customHotkey: 						68
+//				,  spacing_closed:        			Math.round(0.001*window_height)
+//				,  togglerLength_closed:  			"100%"
+				}
+
+			} ; //eof LayOutSettings
+
+			myLayout = $('body').layout( LayOutSettings );
+

@@ -1,0 +1,135 @@
+<html ng-app="issueApp">
+	<head>
+	<meta charset="utf-8">
+<title> Angular.js JSON Fetching Example </title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script>
+	var issueApp = angular.module('issueApp', []);
+	issueApp.controller('IssueCtrl', 
+		function ($scope, $http , $timeout){
+			$scope.Issues = [] ; 
+			$scope.DataIsLoaded = false ; 
+			
+			$http.get('http://192.168.18.132:3000/list_json' , 
+				{params:{"item": "Issue"}}).success(function(data) {
+					$scope.Issues = data;
+					$timeout(function() { $scope.DataIsLoaded = true; }, 0);
+					$timeout(function() { $scope.DataIsLoaded = false; }, 0);	
+			});
+		});
+
+
+
+</script>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+	<style>
+	table.inline_table {
+		margin-left: 20px;
+		margin-bottom: 30px;
+		margin-top: 15px;
+	}
+	table.inline_table thead tr th {
+	 border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 padding: 5px;
+	 text-align: center ;
+	}
+
+	table.inline_table tbody tr.odd td {
+	 background-color:#F0F0F6;
+	 border-bottom: 2px solid #D8D8D8;
+	 border-top 1px solid #D8D8D8;
+	}
+
+	table.inline_table thead tr th, table.inline_table tfoot tr th {
+		background-color: #e6EEEE;
+		border: 1px solid #FFF;
+		font-size: 11pt;
+		padding: 4px;
+
+	}
+	table.inline_table thead tr .header {
+		background-repeat: no-repeat;
+		background-position: center right;
+		cursor: pointer;
+	}
+	table.inline_table tbody td {
+		color: #3D3D3D;
+		padding: 4px;
+
+		vertical-align: top;
+		max-width:350px ;
+	}
+	</style>
+
+</head>
+<body ng-controller="IssueCtrl">
+<h2> Angular.js JSON Fetching Example </h2>
+
+<div id="div_table" ng-if="DataIsLoaded = true">
+	<table class="inline_table" >
+	<thead>
+		<tr>
+			<th>IssueId</th>
+			<th>Level</th>
+			<th>SeqId</th>
+			<th>DocId</th>
+			<th>LeftRank</th>
+			<th>RightRank</th>
+			<th>LogicalOrder</th>
+			<th>Status</th>
+			<th>Type</th>
+			<th>Prio</th>
+			<th>Name</th>
+			<th>DeadLine</th>
+			<th>Hours</th>
+			<th>Description</th>
+			<th>SrcCode</th>
+			<th>UpdateTime</th>
+			<th>FileType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="Issue in Issues" ng-class-odd="'odd'" ng-class-even="'even'">
+
+			<td>{{Issue.IssueId}}</td>
+			<td>{{Issue.Level}}</td>
+			<td>{{Issue.SeqId}}</td>
+			<td>{{Issue.DocId}}</td>
+			<td>{{Issue.LeftRank}}</td>
+			<td>{{Issue.RightRank}}</td>
+			<td>{{Issue.LogicalOrder}}</td>
+			<td>{{Issue.Status}}</td>
+			<td>{{Issue.Type}}</td>
+			<td>{{Issue.Prio}}</td>
+			<td>{{Issue.Name}}</td>
+			<td>{{Issue.DeadLine}}</td>
+			<td>{{Issue.Hours}}</td>
+			<td>{{Issue.Description}}</td>
+			<td>{{Issue.SrcCode}}</td>
+			<td>{{Issue.UpdateTime}}</td>
+			<td>{{Issue.FileType}}</td>
+		</tr>
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
+<!-- 
+
+<script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+<script>
+      // START -- datatables
+		$(document).ready(function() {
+			 $('.inline_table').dataTable( {
+						"pagingType": "full_numbers"
+						, stateSave: false 
+			 } );
+		} );
+      // STOP -- data tables
+</script>
+
+
+-->

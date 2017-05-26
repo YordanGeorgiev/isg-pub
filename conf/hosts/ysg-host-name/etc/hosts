@@ -1,0 +1,35 @@
+127.0.0.1	localhost
+127.0.1.1	ysg-host-name
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+
+# START === BDC hosts
+87.108.60.166           mngnode1                mngnode1.analyticscloud.fi
+87.108.60.167           mngnode1-imm            mngnode1-imm.analyticscloud.fi
+
+87.108.60.168           datnode1                datnode1.analyticscloud.fi
+87.108.60.169           datnode1-imm            datnode1-imm.analyticscloud.fi
+87.108.60.170           datnode2                datnode2.analyticscloud.fi
+87.108.60.171           datnode2-imm            datnode2-imm.analyticscloud.fi
+87.108.60.172           datnode3                datnode3.analyticscloud.fi
+87.108.60.173           datnode3-imm            datnode3-imm.analyticscloud.fi
+# STOP  === BDC hosts
+#
+# START === netezza hosts
+87.108.60.163           netezza                 netezza.analyticscloud.fi
+87.108.60.161           netezza1                netezza1.analyticscloud.fi
+87.108.60.162           netezza2                netezza2.analyticscloud.fi
+# STOP  === netezza hosts

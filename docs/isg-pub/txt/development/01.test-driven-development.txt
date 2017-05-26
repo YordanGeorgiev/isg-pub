@@ -1,0 +1,5 @@
+ - no code without specs
+ - no code without tests
+ - write tests first and than code
+ - write small iterate , revert back if smells ... 
+

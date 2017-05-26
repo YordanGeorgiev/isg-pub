@@ -1,0 +1,26 @@
+// START --- F2 keyboard shortcut edits the currently focused edit area
+	Mousetrap.bind('f2', function(e){ 
+		if (e.preventDefault) {
+			e.preventDefault();
+ 		} else {
+		// internet explorer
+			e.returnValue = false;
+		}
+
+		$(':focus').trigger('click'); 
+		
+		// possibly set the height of the element to edit 
+		// to the half of the size of the screen
+		// needs additional onblur handling 
+		//var vph = $(window).height()/2;
+		//$(':focus').css({'height': vph + 'px'});
+
+	}); 
+// STOP --- F2 keyboard shortcut edits the currently focused edit area
+
+// START --- / Focus the search box with the keyboard
+Mousetrap.bind(['S', '/'], function(e){
+  $("#txt_srch").focus() ; 
+    return false ; 
+	}); 
+// STOP  --- / Focus the search box with the keyboard

@@ -1,0 +1,76 @@
+<html>
+<head> <title>draggable-3 demo</title>
+
+	<link rel="stylesheet" type="text/css" href="../../lib/jQueryUI-1.11.4/jquery-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/jquery-layout/layout-default.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/screen/themes/default/site/site.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/nice-table.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/screen/themes/default/tech_doc.css" />
+
+	<script type="text/javascript" src="../../lib/jQuery-2.1.4/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../../lib/jQueryUI-1.11.4/jquery-ui.min.js"></script>
+
+<style>
+
+  .draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+  .droppable { width: 150px; height: 300px; padding: 0.5em; float: left; margin: 10px; }
+</style>
+
+  <script>
+  $(function() {
+    $( ".draggable" ).draggable();
+    $( ".droppable" ).droppable({
+      drop: function( event, ui ) {
+		  var draggable_id = ui.draggable.attr("id");
+		  var droppable_id = $( this ).attr("id");
+		  var msg =  '<p>' + "Dropped the draggable elemement with following id: " + draggable_id + '</p>' ; 
+		  msg 	 = msg + "into the droppable element with the following id " + droppable_id ; 
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+          .html( msg )  ; 
+      }
+    });
+  });
+  </script>
+
+
+</head>
+<body>
+<p></p>
+<h3 style="margin-top: 20px"> draggable-2 demo </h3>
+
+<div id="con_draggable" style="clear:both">
+<ol>
+	<li>
+	This demo uses <a href="https://jqueryui.com/droppable"> the droppabl jquery ui page </a> as a source. 
+	</li><li>
+	The purpose is to drag a draggable element with class "draggable" into a dropable element and trigger the drop event
+	</li><li>
+	Note now both the draggable and the dropable "know" when ids are passed during the event 
+	</li><li>
+	The next step will be to integrate a ajax calling function on the drop event doing post to the server	
+	</li><li>
+	Go to the <a href="http://localhost:3000/protos/draggable/draggable-4.html"> next proto page </a>
+	</li>
+
+<div id="draggable-1" class="draggable ui-widget-content">
+  <p>draggable-1: Drag me to my target</p>
+</div>
+<div id="draggable-2" class="draggable ui-widget-content">
+  <p>draggable-2: Drag me to my target</p>
+</div>
+ 
+<div id="droppable-1" class="droppable ui-widget-header">
+  <p>droppable-1: Drop here a draggable </p>
+</div>
+
+<div id="droppable-2" class="droppable ui-widget-header">
+  <p>droppable-2: Drop here a draggable </p>
+</div>
+
+</div><!-- eof con_draggable -->
+
+
+</body>
+</html>

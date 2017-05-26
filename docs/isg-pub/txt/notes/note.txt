@@ -1,0 +1,47 @@
+profitability
+	- how-to stay profitable all the time, but invest in the future ?!
+	- how-to measure profitability ?!
+
+
+scaling - can one person run 10x , 100x , 1000x the amount of apps
+visibility
+
+	- how-to scale to multiple projects ?!
+	- how-to scale to multiple machines ?!
+		-- use virtualization
+		-- design , implement from start for host independant confs
+
+	- how-to scale to many people ?!
+
+	- how-to scale for different technologies
+		-- prefer open source code, but respect the close one
+
+
+how-to organise the unstructured data 
+ - use mongodb ?! other 
+ - use file system , close file formats ?!
+ - how-to utilize easy to use interface for inserting data 
+
+how-to move part of the unstructured data into the structured data part
+ - have different loaders 
+ - have different exporters
+
+
+configuration management 
+ - file saver
+   -- 
+
+data management 
+	- how-to handle customer sensitive data 
+		-- separate customer sensitive data from service generated data 
+	- use mongodb as the staging area for the postgres
+	- data tranfer - use json as the transport format
+
+
+	items
+	
+binaries management
+
+source code management
+
+

@@ -1,0 +1,178 @@
+% use utf8;
+<!-- call  by http://<%= $web_host %>:3000/list?item=TopMenuItem&db=core_dw_en -->
+<!-- call  by http://<%= $web_host %>:3000/list?item=TopMenuItem&db=core_dw_en -->
+<html ng-app="itemApp">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> <%= $database %> table browser </title>
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script> -->
+<script src="//code.jquery.com/jquery-1.11.3.js"></script>
+<script src="//cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/dataTables.fixedHeader.js"></script>
+
+
+	<style>
+			table.inline_table {
+				margin-left: 20px;
+				margin-bottom: 30px;
+				margin-top: 15px;
+			}
+			table.inline_table thead tr th {
+				border-radius: 5px;
+				-moz-border-radius: 5px;
+				padding: 5px;
+				text-align: center ;
+
+				border-left: 1px solid #D8D8D8;
+				border-right: 1px solid #D8D8D8;
+			}
+
+			table.inline_table tbody tr.odd td {
+				background-color:#F0F0F6;
+				border-bottom: 2px solid #D8D8D8;
+				border-top 1px solid #D8D8D8;
+				border-left: 1px solid #D8D8D8;
+				border-right: 1px solid #D8D8D8;
+			}
+
+			table.inline_table thead tr th, table.inline_table tfoot tr th {
+				background-color: #e6EEEE;
+				border: 1px solid #FFF;
+				font-size: 11pt;
+				padding: 4px;
+
+			}
+			table.inline_table thead tr .header {
+				background-repeat: no-repeat;
+				background-position: center right;
+				cursor: pointer;
+			}
+			table.inline_table tbody td {
+				color: #3D3D3D;
+				padding: 4px;
+
+				vertical-align: top;
+				max-width:350px ;
+
+
+				white-space: pre-wrap; /* css-3 */    
+				white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+				white-space: -pre-wrap; /* Opera 4-6 */    
+				white-space: -o-pre-wrap; /* Opera 7 */    
+				word-wrap: break-word; /* Internet Explorer 5.5+ */
+
+				border-left: 1px solid #D8D8D8;
+				border-right: 1px solid #D8D8D8;
+			}
+
+			/* start -- link button */
+			/* usage: <span class="link_button"><a href="www.google.com">Google<a/></span> */
+			.link_button {
+				 -webkit-border-radius: 4px;
+				 -moz-border-radius: 4px;
+				 border-radius: 4px;
+				 border: solid 1px #20538D;
+				 -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+				 -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+				 box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+				 background: #4479BA;
+				 padding: 2px 10px;
+				 text-decoration: none;
+				 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+				 color: #FFFFFF;
+			}
+			.link_button a:link, .link_button a:visited {
+			  /* remove the offening underline */
+				 text-decoration: none;
+				 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+				 color: #FFFFFF;
+			}
+			/* -- stop -- link button */
+
+	</style>
+
+	<link href=" //cdn.datatables.net/1.10.8/css/jquery.dataTables.min.css"
+			type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+	<div id="div_frm_query_outer">
+
+
+		<div id="div_frm_query_inner">
+			<form id="frm_query" Action="/query?rdbms=<%== $rdbms_type %>" method="POST" >
+
+					<textarea form="frm_query" id="txt_query" name="txt_query" 
+					style="width: 80%; height: 80%"> 	
+					</textarea>	
+					<script> 
+						$('#txt_query').focus();
+					</script>
+				<%== $str_go_button %>
+		
+					<a href="#">
+						<img src="img/menu/menu-lines.png"> </img>
+					</a>
+				<%== $str_table %>
+			</form>
+		</div>
+
+	</div>
+
+<script>
+
+		//build the data table 
+		 var objNiceTable = $('.inline_table').dataTable( {
+			"pagingType": "full_numbers"
+			, stateSave: true
+			, "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
+		 } );
+
+		 new FixedHeader( objNiceTable , { 
+				"offsetTop": 0 
+				, "header": true
+				, "footer": true
+			}
+		 );
+		
+		//hide the 4th and the 5th column
+		//grid.fnSetColumnVis(4,false) ; 
+		//grid.fnSetColumnVis(5,false) ; 
+	
+		// focus the search txt box 
+		$('#DataTables_Table_0_filter label input[type="search"]').focus();		
+
+
+/* START --- show-hide left menu */
+// To slide something leftwards into view,
+// with a delay of 1000 msec
+$(document).ready(function() {
+	$('#div_frm_query_outer').click(function() {
+
+		/* show hide the left menu */
+		$('#div_frm_query_inner').slideToggle("fast"); 
+
+		/* open-close category*/
+		img_to_open="img/menu/menu-lines.png" ; 
+		img_to_close="img/menu/menu-lines-v.png" ; 
+
+		if ( $(this).children().first().attr("src") == img_to_open ) {
+			$(this).children().first()
+			.attr('src', img_to_close );
+		}
+		else {
+			$(this).children().first()
+			.attr('src', img_to_open );
+		}
+
+	});
+});
+/* STOP  --- show-hide left menu */
+
+</script>
+</body>
+</html>
+<!-- call by : http://192.168.18.132:3000/query?rdbms=ora&conn=dev_sor_core_kon&schema=INFAREPO_DEV --> 

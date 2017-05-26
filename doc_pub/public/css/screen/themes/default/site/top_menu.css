@@ -1,0 +1,250 @@
+/* ROUNDED TABS START */
+
+#show_hide_top_menu {
+   padding: 1% 0% 0% 1% ; 
+   margin: 0% 0% 1% 0% ; 
+	width: 20px;
+	display: inline;
+	float: left ; 
+}
+
+
+
+#search_tbl {
+	float: left ; 
+   padding: 0% 4% 0% 1% ; 
+	margin: 1% 5% 1% 23%;
+	width: 50%;
+	clear: none ; 
+	display: block ;
+}
+
+#div_top_menu
+{
+   /*debug background-color: #666666; debug */
+   padding: 1% 0% 0% 0% ; 
+   margin: 0% 0% 0% 0% ; 
+   clear: none ; 
+   float:left ;
+   width: 45% ; 
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #333333;
+   text-align: left;
+   height: auto;
+}
+
+
+#top_menu_link_list { 
+   margin: 0px;
+   padding: 0px;
+   list-style-image: none;
+   list-style-type: none; 
+}
+
+
+
+#top_menu_link_list li { 
+   display:inline-block;
+   float: left;
+   margin-top: 0px;
+   margin-right: 0px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   padding-top: 0px;
+   padding-right: 1px;
+   padding-bottom: 0px;
+   padding-left: 0px; 
+   border-bottom-style: solid;
+   border-bottom-color: #555555;
+   border-bottom-width: 1px;
+}
+
+#top_menu_link_list li div{
+   /* background-color: #666666; */
+   width:100%;
+   padding: 0% 0% 0% 50% ;
+   clear:left;
+   float:left;
+   background: #FFFFFF;
+   border: none;
+   color: #FFFFFF;
+   display: block;
+   font: normal;
+   height: auto;
+   letter-spacing: normal;
+   line-height: normal;
+   margin: 0;
+   padding: 0;
+   text-transform: normal;
+   visibility: visible;
+   width: auto;
+   word-spacing: normal;
+   z-index: auto;
+}
+
+#top_menu_link_list li div a {
+   /* background-color: #666666; */
+   width:100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0% 0% 0% 30% ;
+   max-width=1px;
+   clear:left;
+   float:left;
+   list-style-type:none;
+   border-top-style: none;
+   border-type:none;
+
+
+   margin: 0px;
+   background-attachment: scroll;
+   background-image:none; 
+   background-repeat: no-repeat;
+   background-position: right 0px;
+   font-weight: normal;
+   color: #FFFFFF;
+   text-decoration: none;
+   height: auto;
+   width: auto;
+   float: left;
+   padding-top: 0px;
+   min-width:25px;
+
+}
+#top_menu_link_list li div a:hover { 
+   text-decoration: none;
+   color: #FF6666; 
+   background-image:none;
+
+}
+
+
+#top_menu_link_list li div a img {
+   /* background-color: #666666; */
+   width:100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0% 0% 0% 40% ;
+   clear:left;
+   float:left;
+   border-type:none;
+}
+
+#top_menu_link_list li a { 
+   margin: 0px;
+   background-attachment: scroll;
+   background-image:url(img/screen/themes/default/site/round_tab.png); 
+   background-repeat: no-repeat;
+   background-position: right 0px;
+   font-weight: normal;
+   color: #666666;
+   text-decoration: none;
+   height: 24px;
+   width: auto;
+   float: left;
+   padding-top: 0px;
+   padding-right: 10px;
+   padding-bottom: 0px;
+   padding-left: 0px; 
+   }
+
+#top_menu_link_list li a:hover { 
+   text-decoration: none;
+   color: #FF6666; 
+   
+}
+
+#top_menu_link_list li a span { 
+   text-align:center;
+   background-attachment: scroll;
+   background-image:url(img/screen/themes/default/site/round_tab.png); 
+   background-repeat: no-repeat;
+   background-position: 0px 0px;
+   display: block;
+   
+   padding-top: 2px;
+   padding-right: 4px;
+   padding-bottom: 0px;
+   padding-left: 4px;
+   height: 22px;
+   min-width:50px;
+   width: auto;
+   float: left;
+   cursor: pointer;
+   cursor: hand;
+   margin: 0px; 
+
+}
+
+
+#top_menu_link_list li span { 
+   background-attachment: scroll;
+   background-image:url(img/screen/themes/default/site/round_tab.png); 
+   background-repeat: no-repeat;
+   background-position: 0px 0px;
+   display: block;
+      
+   height: 2px;
+   width: auto;
+   float: left;
+   cursor: pointer;
+   cursor: hand;
+   margin: 0px; 
+
+}
+
+
+
+#lang_menu {
+	padding: 12px;
+   height: 6px;
+   width: 140px;
+   float: right;
+}
+
+#lang_menu span{
+   /* debug 
+   background: #DDDDDD;
+   /* debug */
+
+   clear: none;
+   color: #696E7A;
+   cursor: pointer;
+   display: block;
+   height: 20px;
+   width: 40px;
+   margin: 0 auto;
+   line-height: 10px;
+   font-weight: 300;
+   font-size: 14px;
+   text-shadow: 0 1px 1px #fff;
+   text-align: center;
+   text-indent: 0px;
+   float: right; 
+}
+   
+
+/* ROUNDED TABS END */
+
+
+/* start doc_action_menu */
+#doc_action_menu ul {
+	padding: 1% 0% 0% 0%;
+	margin: 0% 0% 0% 0%;
+	clear: none;
+	float: left ;
+	width: 7%;
+	text-align: left;
+	height: auto;
+	list-style-type: none;
+}
+
+#doc_action_menu ul li {
+	display: inline; 
+	white-space: wrap; 
+}
+
+/* stop doc_action_menu */
+
+

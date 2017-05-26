@@ -1,0 +1,150 @@
+	
+	// start title hover 
+	// set dynamic tooltip with links
+	//select the class item-heading from the whole doc
+	$("div.item-heading").tooltip({
+		items: "div.item-heading"
+		, delay: 1000
+		, position: { my: "right-1 center", at: "left center" }
+		// set a dynamic content based on the selected element id
+		, content: function() { 
+				var top_link = $(this).find("div").filter(".top_links").text();
+				//window.alert("top_link:" + top_link);
+				var edit_link = $(this).find("div").filter(".edit_links").html() ; 
+				//window.alert("edit_link:" + edit_link);
+				//var edit_link = "#" ; 
+				var drilldown_link = $(this).find("div").filter(".open_links").first().text();
+				var export_to_xls_link = $(this).find("div").filter(".export_to_xls_links").first().text();
+				var export_to_pdf_link = $(this).find("div").filter(".export_to_pdf_links").first().text();
+				var export_to_githubmd_link = $(this).find("div").filter(".export_to_githubmd_links").first().text();
+				var export_to_bitbucketmd_link = $(this).find("div").filter(".export_to_bitbucketmd_links").first().text();
+				var present_link = $(this).find("div").filter(".present_links").first().text();
+				var promote_link = $(this).find("div").filter(".promote_links").first().text();
+				var demote_link = $(this).find("div").filter(".demote_links").first().text();
+				var headers_only_link = $(this).find("div").filter(".headers_only_links").first().text();
+				var printable_doc_link = $(this).find("div").filter(".printable_doc_links").first().text();
+
+				var tooltip_content = "<div>" ; 
+
+				// add the stick to this point 
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + top_link + "\x22>" + 
+				"<img alt=\x22stick\x22  src=\x22img/screen/themes/default/site/stick-to-top.png\x22>" + "</a>&nbsp; " ; 
+				// add the export to xls 
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + export_to_xls_link + "\x22>" + 
+				"<img  alt=\x22export to xls\x22 src=\x22img/screen/themes/default/site/xls_icon.png\x22>" + "</a>" ; 
+				// add the export to pdf 
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + export_to_pdf_link + "\x22>" + 
+				"<img  alt=\x22export to pdf\x22 src=\x22img/screen/themes/default/site/export-to-pdf.png\x22>" + "</a>" ; 
+				// add the export to githubmd action
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + export_to_githubmd_link + "\x22>" + 
+				"<img  alt=\x22export to pdf\x22 src=\x22img/screen/themes/default/site/export-to-githubmd.png\x22>" + "</a>" ; 
+				// add the export to bitbucketmd action
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + export_to_bitbucketmd_link + "\x22>" + 
+				"<img  alt=\x22export to pdf\x22 src=\x22img/screen/themes/default/site/export-to-bitbucketmd.png\x22>" + "</a>" ; 
+				// add the promote action
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + promote_link + "\x22>" + 
+				"<img  alt=\x22 promote \x22 src=\x22img/screen/themes/default/site/promote.png\x22>" + "</a>" ; 
+				// add the demote action
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + demote_link + "\x22>" + 
+				"<img  alt=\x22demote\x22 src=\x22img/screen/themes/default/site/demote.png\x22>" + "</a>" ; 
+				//add the edit action
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + edit_link + "\x22>" + 
+				"<img  alt=\x22edit\x22 src=\x22img/screen/themes/default/site/go-to-list.png\x22>" + "</a>&nbsp; " ; 
+
+				//add the present action
+				if ( present_link ) {
+					tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + present_link + "\x22>" + 
+					"<img alt=\x22present\x22 src=\x22img/screen/themes/default/site/present_icon.png\x22>" + "</a>&nbsp;" ; 
+				}
+				//add the show headers only
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + headers_only_link + "\x22>" + 
+				"<img alt=\x22 open this item \x22 src=\x22img/screen/themes/default/site/headers-only.png\x22>" + "</a>&nbsp;" ; 
+				// add the printable doc link
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + printable_doc_link + "\x22>" + 
+				"<img alt=\x22 open as printable doc \x22 src=\x22img/screen/themes/default/site/document.png\x22>" + "</a>&nbsp;" ; 
+				//add the drill down action
+				tooltip_content = tooltip_content + "&nbsp;<a href=\x22" + drilldown_link + "\x22>" + 
+				"<img alt=\x22 open this item \x22 src=\x22img/screen/themes/default/site/open-book.png\x22>" + "</a>&nbsp;" ; 
+				return tooltip_content ; 
+		}			
+		//, position: { my: "left+15 center", at: "right center" } )
+ 		, open: function( event, ui ) {
+				// close any lingering tooltips
+				var $id = $(ui.tooltip).attr('id');
+				$('div.ui-tooltip').not('#' + $id).remove();
+
+    			ui.tooltip.animate({ top: ui.tooltip.position().top - 15 }, "slow" );
+				// start hook up the click event for the edit icon
+				//alert("opening" + $(this).find("div").filter(".edit_links").html() ) ; 
+				//alert ( "near ui.tooltip.animate ui:" + ui.tooltip.find('[id^=edt_lnk]').html() );
+				ui.tooltip.find('[id^=edt_lnk]').on('click', function(e){
+					//jump
+					//alert("the id of the firing element::" + $(this).attr('id') );
+					var el_id=$(this).attr('id') ; 
+					e.preventDefault();
+					//hook up the el_id to pass to the dialog
+					$('#item_edit_dialog').data('el_id' , el_id).dialog('open') ;
+				});
+				// start hook up the click event for the edit icon
+				
+			$(this).effect("highlight", {}, 2000);
+	 		}
+		, close: function( event, ui ) {
+    			ui.tooltip.hover(
+					function () {
+					 $(this).stop(true).fadeTo(200, 1); 
+						//.fadeIn("slow"); // doesnt work because of stop()
+					},
+					function () {
+						$(this).fadeOut("400", function(){ $(this).remove(); })
+					}
+    			);
+  	 	}
+ 
+});
+
+	// stop title hover 
+
+
+	//----------------------------
+	// start txt_body hover 
+	// set dynamic tooltip with links
+	//select the class item-heading from the whole doc
+	$("div.body_txt").tooltip({
+		items: "div.body_txt"
+		, delay: 1000
+		, position: { my: "right-1 center", at: "left center" }
+		// set a dynamic content based on the selected element id
+		, content: function() { 
+				var tag_link = $(this).find("div").filter(".tag_cloud").html(); 
+				//window.alert("tag_link:" + tag_link);
+				var tooltip_content = tag_link ; 
+
+				return tooltip_content ; 
+		}			
+		//, position: { my: "left+15 center", at: "right center" } )
+ 		, open: function( event, ui ) {
+				// close any lingering tooltips
+				var $id = $(ui.tooltip).attr('id');
+				$('div.ui-tooltip').not('#' + $id).remove();
+
+    			ui.tooltip.animate({ top: ui.tooltip.position().top - 15 }, "slow" );
+				
+			$(this).effect("highlight", {}, 2000);
+	 		}
+		, close: function( event, ui ) {
+    			ui.tooltip.hover(
+					function () {
+					 $(this).stop(true).fadeTo(200, 1); 
+						//.fadeIn("slow"); // doesnt work because of stop()
+					},
+					function () {
+						$(this).fadeOut("400", function(){ $(this).remove(); })
+					}
+    			);
+  	 	}
+ 
+});
+
+	// stop body_txt hover 
+

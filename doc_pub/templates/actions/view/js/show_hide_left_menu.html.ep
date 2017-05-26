@@ -1,0 +1,19 @@
+/* START --- show-hide left menu */
+	$('#show_hide_top_menu').click(function() {
+
+		/* open-close category*/
+		img_to_open="img/screen/themes/default/site/menu-lines.png" ; 
+		img_to_close="img/screen/themes/default/site/menu-lines-v.png" ; 
+
+		if ( $(this).children().first().attr("src") == img_to_open ) {
+			$(this).children().first().attr('src', img_to_close );
+			myLayout.close("west"); 
+		}
+		else {
+			$(this).children().first().attr('src', img_to_open );
+			myLayout.toggle("west"); 
+		}
+
+	});
+/* STOP  --- show-hide left menu */
+

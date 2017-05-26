@@ -1,0 +1,118 @@
+% use utf8;
+<!-- call  by http://<%= $web_host %>:3000/list?item=TopMenuItem&db=core_dw_en -->
+<!-- call  by http://<%= $web_host %>:3000/list?item=TopMenuItem&db=core_dw_en -->
+<html ng-app="itemApp">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> <%= $database %> table browser </title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.js"></script>
+<script src="//cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script>
+
+
+	var itemApp = angular.module('itemApp', []);
+	itemApp.controller('ItemsController', 
+		function ($scope, $http , $timeout ){
+			$scope.<%== $table %>s = [] ; 
+			$scope.DataIsLoaded = false ; 
+			
+			$http.get('http://<%= $web_host %>:3000/list_json' , 
+				{ params:{
+						  "item": "<%== $table %>" 
+						<%== $optional_url_params %>
+							}}).success(function(data) {
+					$scope.<%== $table %>s = data;
+					$timeout(function() { $scope.DataIsLoaded = true;
+
+						//build the data table 
+						 var grid = $('.inline_table').dataTable( {
+							"pagingType": "full_numbers"
+							, stateSave: true
+							, "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
+						 } );
+						//hide the 4th and the 5th column
+						grid.fnSetColumnVis(4,false) ; 
+						grid.fnSetColumnVis(5,false) ; 
+
+ 					}, 0);
+					$timeout(function() { $scope.DataIsLoaded = false; }, 0);	
+
+					//console.log ( "DATA HAS BEEN LOADED ");	
+					//console.log ( $scope.<%== $table %>s );
+			});
+		
+		});
+
+
+</script>
+
+
+	<style>
+		table.inline_table {
+			margin-left: 20px;
+			margin-bottom: 30px;
+			margin-top: 15px;
+		}
+		table.inline_table thead tr th {
+		 border-radius: 5px;
+		 -moz-border-radius: 5px;
+		 padding: 5px;
+		 text-align: center ;
+		}
+
+		table.inline_table tbody tr.odd td {
+		 background-color:#F0F0F6;
+		 border-bottom: 2px solid #D8D8D8;
+		 border-top 1px solid #D8D8D8;
+		}
+
+		table.inline_table thead tr th, table.inline_table tfoot tr th {
+			background-color: #e6EEEE;
+			border: 1px solid #FFF;
+			font-size: 11pt;
+			padding: 4px;
+
+		}
+		table.inline_table thead tr .header {
+			background-repeat: no-repeat;
+			background-position: center right;
+			cursor: pointer;
+		}
+		table.inline_table tbody td {
+			color: #3D3D3D;
+			padding: 4px;
+
+			vertical-align: top;
+			max-width:350px ;
+		}
+	</style>
+
+	<link href=" //cdn.datatables.net/1.10.8/css/jquery.dataTables.min.css"
+			type="text/css" rel="stylesheet" />
+
+</head>
+<body ng-controller="ItemsController">
+
+<div id="div_table" ng-if="DataIsLoaded = true" ng-init="doBuildDataTable()">
+	<table class="inline_table">
+	<thead>
+		<tr >
+			<%== $th_list %>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="<%== $table %> in <%== $table %>s" ng-class-odd="'odd'" ng-class-even="'even'">
+			<%== $td_list %>
+		</tr>
+	</tbody>
+</div>
+
+</table>
+</body>
+</html>
+<!-- call by : http://<%= $web_host %>:3000/list?item=Issue&filter-by=Prio&filter-value=1 -->
+<!-- call by : http://<%= $web_host %>:3000/list?item=Issue -->
+<!-- call by : http://<%= $web_host %>:3000/list?db=geo_fin_en&item=Issue&filter-by=Prio&filter-value=1 -->

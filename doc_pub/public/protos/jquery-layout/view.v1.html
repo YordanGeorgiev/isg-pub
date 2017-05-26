@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title> v1 view </title>
+	
+	<link rel="stylesheet" type="text/css" href="../../css/screen/themes/default/site/site.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/screen/themes/default/tech_doc.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/nice-table.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/screen/themes/default/css_tree/css_tree.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/screen/themes/default/site/top_menu.css" />
+
+	<link rel="stylesheet" type="text/css" href="../../lib/jQueryUI-1.11.4/jquery-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/DataTables-1.10.9/css/jquery.dataTables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/jquery-layout/layout-default.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/prettify/prettify.css" />
+	<link rel="stylesheet" type="text/css" href="../../lib/Buttons-1.0.3/css/buttons.dataTables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/Editor-1.5.1/css/editor.dataTables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/FieldType-Quill/editor.quill.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/FieldType-Select2/editor.select2.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/FixedColumns-3.1.0/css/fixedColumns.dataTables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/FixedHeader-3.0.0/css/fixedHeader.dataTables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/KeyTable-2.0.0/css/keyTable.dataTables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/Scroller-1.3.0/css/scroller.dataTables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/Select-1.0.1/css/select.dataTables.min.css"/>
+
+	
+	<script type="text/javascript" src="../../lib/jQuery-2.1.4/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../../lib/jQueryUI-1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../lib/jquery-layout/jquery.layout.js"></script>
+	<script type="text/javascript" src="../../lib/MouseTrap/mousetrap.min.js"></script>
+	<script type="text/javascript" src="../../lib/jeditable/jquery.jeditable.mini.js"></script>
+	<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+	<script type="text/javascript" src="../../lib/MomentJS/moment.min.js"></script>
+	<script type="text/javascript" src="../../lib/DataTables-1.10.9/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="../../lib/Buttons-1.0.3/js/dataTables.buttons.min.js"></script>
+	<script type="text/javascript" src="../../lib/Buttons-1.0.3/js/buttons.colVis.min.js"></script>
+	<script type="text/javascript" src="../../lib/Editor-1.5.1/js/dataTables.editor.min.js"></script>
+	<script type="text/javascript" src="../../lib/FixedColumns-3.1.0/js/dataTables.fixedColumns.min.js"></script>
+	<script type="text/javascript" src="../../lib/FixedHeader-3.0.0/js/dataTables.fixedHeader.min.js"></script>
+	<script type="text/javascript" src="../../lib/KeyTable-2.0.0/js/dataTables.keyTable.min.js"></script>
+	<script type="text/javascript" src="../../lib/Scroller-1.3.0/js/dataTables.scroller.min.js"></script>
+	<script type="text/javascript" src="../../lib/Select-1.0.1/js/dataTables.select.min.js"></script>
+
+
+	<script type="text/javascript">
+
+	$(document).ready(function () {
+		var window_height 			= $(window).height();   // returns height of browser viewport
+		var document_height 			= $(document).height(); // returns height of HTML document
+		var window_width  			= $(window).width();   // returns width of browser viewport
+		var document_width 			= $(document).width(); // returns width of HTML document
+		
+		//adjust the default sizes of the panes 
+		var pane_size_west			= Math.round(0.15*window_width) ; 
+		var pane_size_north			= Math.round(0.08*window_height) ; 
+		var pane_size_east			= Math.round(0.15*window_width) ; 
+		var pane_size_south			= Math.round(0.08*window_height) ; 
+			
+		var max_size_pane_west		= Math.round(1.5*pane_size_west);
+		var max_size_pane_east		= Math.round(1.2*pane_size_east);
+		var max_size_pane_north		= Math.round(1.2*pane_size_north);
+		var max_size_pane_south		= Math.round(1.2*pane_size_south);
+
+		// adjust the default sizes and behaviour of the layout from here
+			var LayOutSettings = { 
+					defaults: {
+						applyDemoStyles:  				true
+					,  initClosed:           			true
+					,  fxName:              			"slide"
+					,	fxSpeed_open:						300
+					,	fxSpeed_close:						250
+//					,  spacing_closed:       			14
+//					,	north__showOverflowOnHover: 	true
+//					,	east__showOverflowOnHover: 	true
+//					,	west__showOverflowOnHover: 	true
+					}
+
+				,	center: {
+						minWidth:							200
+					,	minHeight:							200
+					,	maxWidth:							700
+					}
+				,  west: {
+						applyDemoStyles:  				false
+					,  size:						  			pane_size_west
+					,  maxSize: 				  			max_size_pane_west
+					,  resizable:							true
+					,	fxSpeed_open:						300
+					,	fxSpeed_close:						250
+//					,  spacing_closed:        			Math.round(0.003*window_width)
+//					,  size:						  			Math.round(0.15*window_width) 
+//					,  minSize: 				  			Math.round(0.03*window_width)
+//					,  maxSize: 				  			Math.round(0.58*window_width)
+//					,  slidable: 				  			true
+//					,  closable:				  			true
+//					,  togglerLength_closed:  			"100%"
+					}
+				,  north: {
+						applyDemoStyles:  				false
+					,  resizable:							true
+					,  size:						  			pane_size_north
+					,  maxSize: 				  			max_size_pane_north
+					,  mixSize: 				  			5
+					,  fxName:              			"slide"
+					,	fxSpeed_open:						300
+					,	fxSpeed_close:						250
+//					,  spacing_closed:        			Math.round(0.001*window_height)
+//					,  closable:				  			true
+//					,  togglerLength_closed:  			"100%"
+					}
+				,  east: {
+						applyDemoStyles:  				false
+					,  resizable:							true
+					,  size:						  			pane_size_east
+					,  maxSize: 				  			max_size_pane_east
+					,  minSize: 				  			5
+					,	fxSpeed_open:						300
+					,	fxSpeed_close:						250
+//					,  spacing_closed:        			Math.round(0.003*window_width)
+//					,  resizable: 				  			true
+//					,  slidable: 				  			true
+//					,  closable:				  			true
+//					,  togglerLength_closed:  			"100%"
+					}
+				,  south: {
+						applyDemoStyles:  				false
+					,  resizable:							true
+					,  size:						  			pane_size_south
+					,  maxSize: 				  			max_size_pane_south
+					,  fxName:              			"slide"
+					,	fxSpeed_open:						300
+					,	fxSpeed_close:						250
+//					,  spacing_closed:        			Math.round(0.001*window_height)
+//					,  minSize: 				  			Math.round(0.03*window_height)
+//					,  maxSize: 				  			Math.round(0.08*window_height)
+//					,  slidable: 				  			true
+//					,  closable:				  			true
+//					,  togglerLength_closed:  			"100%"
+					}
+
+			} ; 
+			var myLayout = {} ; 
+			myLayout = $('body').layout( LayOutSettings );
+
+
+		//start -- mouse position tracking for west pane
+		var mouse_position;
+		var animating = false;
+		//GET MOUSE POSITION
+		$(document).mousemove(function (e) {
+			 //$("body").on("mousemove", function(mouse_pointer) {
+			 //console.log(mouse_pointer.pageX - $(window).scrollLeft());
+			 //mouse_x_position = mouse_pointer.pageX - $(window).scrollLeft();
+
+			var x_pos_to_open_west			= Math.round(1.1*max_size_pane_west)
+			var x_pos_to_open_east			= Math.round(window_width - 1.1*max_size_pane_east);
+			var y_pos_to_open_north			= Math.round(1.1*max_size_pane_north);
+			var y_pos_to_open_south			= Math.round(window_height - 1.1*max_size_pane_south);
+
+			 if (animating) {
+				  return;
+			 }
+
+			 //mouse_x_position = e.clientX;
+			 //mouse_y_position = e.clientY;
+			 mouse_x_position = window.event.clientX ; 
+			 mouse_y_position = window.event.clientY ; 
+
+			 // start open west pane on mouse over
+			 if (mouse_x_position <= x_pos_to_open_west) {
+				myLayout.open('west')  ;
+
+			 } else if (mouse_x_position > x_pos_to_open_west) {
+				myLayout.close('west')  ;
+			 }
+
+			 // start open east pane on mouse over
+			 if (mouse_x_position <= x_pos_to_open_east) {
+				myLayout.close('east')  ;
+
+			 } else if (mouse_x_position > x_pos_to_open_east) {
+				myLayout.open('east')  ;
+			 }
+
+
+			 // start open north pane on mouse over
+			 if (mouse_y_position <= y_pos_to_open_north ) {
+				myLayout.open('north')  ;
+			 } else if (mouse_y_position > y_pos_to_open_north ) {
+				myLayout.close('north')  ;
+			 }
+			 
+			 // start open south pane on mouse over
+			 if (mouse_y_position <= y_pos_to_open_south ) {
+				myLayout.close('south')  ;
+			 } else if (mouse_y_position > y_pos_to_open_south ) {
+				myLayout.open('south')  ;
+			 }
+
+			/* start --- debug 
+			
+			$( "body" ).mousemove(function( event ) {
+  				var debug_msg = "Handler for .mousemove() called at ";
+  				debug_msg += "event.pageX:" + event.pageX + ", " + "event.pageY:" + event.pageY;
+  				$( "#center_pane" ).append( "<div>" + debug_msg + "</div>" );
+			});
+			*/ 
+
+		});
+		//stop  -- mouse position tracking for west pane
+
+
+	}); //eof document.ready
+
+
+	// start --- reload page on window resize
+	// cudos to http://stackoverflow.com/a/15455463/65706
+	jQuery(function($){
+	var windowWidth = $(window).width();
+
+	$(window).resize(function() {
+		 if(windowWidth != $(window).width()){
+			 location.reload();
+			 return;
+		 }
+		});
+	});
+	//stop --- reload page on window resize
+
+
+	</script>
+
+
+</head>
+<body>
+
+	<!-- manually attach allowOverflow method to pane -->
+	<div id="north_pane" class="ui-layout-north">
+		<p>This is the NORTH pane, closable, slidable and resizable </p>
+	</div>
+
+	<!-- allowOverflow auto-attached by option: west__showOverflowOnHover = true -->
+	<div id="west_pane" class="ui-layout-west">
+		<p>This is the WEST pane, closable, slidable and resizable </p>
+	</div>
+
+	<div id="south_pane" class="ui-layout-south">
+		<p>  This is the SOUTH pane, closable, slidable and resizable</p>
+	</div>
+
+	<div id="east_pane" class="ui-layout-east">
+		<p> This is the EAST pane, closable, slidable and resizable </p>
+	</div>
+
+	<div id="center_pane" class="ui-layout-center">
+		<p> This CENTER pane auto-sizes to fit the space between  'border-panes' </p> 
+		<ul> This demo example demonstrates the following functionalities:</ul>
+			<li>  simple layout with relative to the browser window size pre-set pane sizes </li>
+			<li>  all the side panes open on mouse hover </li>
+			<li>  all the side panes have maximum size  </li>
+		</ul> 
+	</div>
+
+
+</body>
+</html>
+<!-- call by : http://localhost:3000/view?item=Issue&filter-by=Prio&filter-value=1 -->
+<!-- call by : http://localhost:3000/view?item=Issue -->
+<!-- call by : http://localhost:3000/view?db=isg_pub_en&item=Issue&filter-by=Prio&filter-value=1&order-by=SeqId&hdrs=1 -->
+

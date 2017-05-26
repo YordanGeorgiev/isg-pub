@@ -1,0 +1,1 @@
+- the application's data should be stored under the product_version_dir

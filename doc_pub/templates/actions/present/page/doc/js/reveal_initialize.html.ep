@@ -1,0 +1,35 @@
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+    // The "normal" size of the presentation, aspect ratio will be preserved
+    // when the presentation is scaled to fit different resolutions. Can be
+    // specified using percentage units.
+    //width: 960,
+    //height: 700,
+
+    // Factor of the display size that should remain empty around the content
+    margin: 0.1,
+
+    // Bounds for smallest/largest possible scale to apply to content
+    minScale: 0.2,
+    maxScale: 1.5,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/reveal/reveal.js-master/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/reveal/reveal.js-master/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal/reveal.js-master/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal/reveal.js-master/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/reveal/reveal.js-master/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'lib/reveal/reveal.js-master/plugin/notes/notes.js', async: true }
+				]
+			});
+
+			
+

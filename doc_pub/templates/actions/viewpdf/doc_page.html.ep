@@ -1,0 +1,31 @@
+% use utf8;
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		% if (current_route 'view' or 'pdfview' ) {
+			<title> view <%= $database %>.<%= $item . " " =%> </title>
+		% } else {
+			<title> search </title>
+		% }
+
+	%= include 'actions/viewpdf/header/css_links' ;
+
+</head>
+<body>
+
+	<div id="center_pane" tabindex="1" class="ui-layout-center">
+		<div id="div_center">
+			<div class="inner_tube">
+			<%== $doc_control %>
+			</div><!-- eof inner_tube -->
+			<div id="sroller" style="height:100vh;"></div>
+		</div><!-- eof div_center -->
+	</div>
+
+
+</body>
+</html>
+<!-- call by : http://<%= $web_host %>:<%= $web_port %>/view?item=<%= $item %>&filter-by=Prio&filter-value=1 -->
+<!-- call by : http://<%= $web_host %>:<%= $web_port %>/view?item=<%= $item %> -->
+<!-- call by : http://<%= $web_host %>:<%= $web_port %>/view?db=<%= $database %>&item=<%= $item %>&filter-by=Prio&filter-value=1&order-by=SeqId&hdrs=1 -->

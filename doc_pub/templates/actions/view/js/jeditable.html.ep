@@ -1,0 +1,44 @@
+		// this is the event for div to textbox conversion
+		$('.edit').editable('/post_item_to_edit?<%== $url_params %>', {
+			 loadurl   : '/get_item_to_edit?<%== $url_params %>'
+			, cssclass  : 'title_txt_edit'
+			, onblur    : 'submit'
+			//how-to prevent the post bug, event		: function(){ $('div.ui-tooltip').remove();}
+			, indicator : '<img src="img/indicator.gif">'
+			, tooltip   : 'to EDIT click in the text , to CANCEL press the ESC button , to SAVE click elsewhere ...'
+			, placeholder: '' 
+		});
+
+		/* note no buttons needed ... */
+		$('.edit_area').editable('/post_item_to_edit?<%== $url_params %>', {
+			  type      : 'textarea'
+			, loadurl   : '/get_item_to_edit?<%== $url_params %>'
+			, cssclass  : 'body_txt_edit'
+			, height		: '50vh'
+			, width: ($(".edit_area").width()-12) + "px"
+			, onblur    : 'submit'
+			, indicator : '<img src="img/indicator.gif">'
+			, tooltip   : 'to EDIT click in the text , to CANCEL press the ESC button , to SAVE click elsewhere ...'
+			, placeholder: '' 
+		});
+
+		//, height		:($(".edit_area").height()) + "px"
+		// start disable edit on http link click
+		$(".edit_area a").bind("click", function(event) {
+			var win = window.open(this, '_blank');
+			win.focus();
+			return false;
+		});
+		// stop disable edit on http link click
+
+
+
+	// start disable edit on http link click AFTER POST BACK
+ 	//$(".edit_area").find("form").bind('ajax:complete', function() {
+ 	$(".edit_area").find("form").ajaxComplete(function() {
+	//$( document ).ajaxComplete(function() {
+		var win = window.open(this, '_blank');
+		win.focus();
+		return false;
+	});
+	// stop  disable edit on http link click AFTER POST BACK

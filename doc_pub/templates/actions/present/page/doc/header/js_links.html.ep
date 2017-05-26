@@ -1,0 +1,9 @@
+			<script type="text/javascript" src="lib/jQuery-2.1.4/jquery-2.1.4.min.js" async></script>
+			<script type="text/javascript" src="lib/jQueryUI-1.11.4/jquery-ui.min.js" async></script>
+			<script type="text/javascript" src="lib/prettify/prettify.js" async></script>
+			<script type="text/javascript" src="lib/MouseTrap/mousetrap.min.js" async></script>
+			<script type="text/javascript" src="lib/reveal/head.load.min.js" async></script>
+			<script type="text/javascript" src="lib/reveal/reveal.js-master/js/reveal.js" async></script>
+
+
+

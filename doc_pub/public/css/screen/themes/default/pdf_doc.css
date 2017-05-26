@@ -1,0 +1,475 @@
+#welcome_header {
+	/*start_debug */
+	background: #99FFFF; 
+	/* stop_debug */
+	clear: none ; 
+}
+
+
+#left_column {
+	padding: 5% 0% 0% 0% ;
+	/* start_debug  
+	background-color: #99FFFF;
+	/* stop_debug */
+}
+
+#right_column {
+	/*start_debug 
+	background-color: #B4B4B4;
+	/* stop_debug */
+}
+
+
+.hdrs {
+	display: block ;
+	clear: both;
+}
+
+.inner_tube h1,h2,h3,h4,h5,h6 {
+	float: left ; 
+   font-size:16px;
+   color:blue;
+   margin-top:-10px;
+   margin-left:+8px;
+}
+
+.inner_tube h1 {
+	display: block ; 
+	float: left ; 
+   font-size:24px;
+   color:blue;
+   margin-top:15px;
+   margin-left: 0px;
+}
+
+/* no underscore in the level 1 headings */
+.inner_tube h1 a {
+   text-decoration: none;
+	display: block ; 
+}
+
+.inner_tube h2 {
+	display: block ; 
+	float: left ; 
+   font-size:20px;
+   color:blue;
+   margin-top:16px;
+   margin-bottom:4px;
+   margin-left:+6px;
+}
+
+/* no underscore in the level 2 headings */
+.inner_tube h2 a {
+   text-decoration: none;
+	margin-left: 3px;
+}
+
+
+.inner_tube h3 a {
+   text-decoration: none;
+}
+
+.inner_tube h3 {
+	display: block ; 
+	float: left ; 
+   font-size:18px;
+   color:blue;
+   margin-top:16px;
+   margin-bottom:3px;
+   margin-left:+6px;
+	float: left ; 
+}
+
+.inner_tube h4 a {
+   text-decoration: none;
+}
+
+.inner_tube h4 {
+	display: block ; 
+	float: left ; 
+   font-size:16px;
+   color:blue;
+   margin-top:14px;
+   margin-bottom:3px;
+   margin-left:+8px;
+}
+
+.inner_tube h5 a {
+   text-decoration: none;
+}
+
+.inner_tube h5 {
+	display: block ; 
+	float: left ; 
+   font-size:14px;
+   color:blue;
+   margin-top:12px;
+   margin-bottom:2px;
+   margin-left:+10px;
+}
+/* no underscore in the level 3 headings */
+.inner_tube h3 a, h2 a, h3 a , h4 a , h5 a , h6 a {
+   text-decoration: none;
+	display: block ; 
+	float: left ; 
+	margin-left: 3px ; 
+	/* prevent word-wrapping */
+}
+
+.inner_tube body_txt p {
+   margin-top: 0px ; 
+}
+
+.item_heading {
+
+	white-space: nowrap;
+	overflow: auto;
+}
+
+/* item heading title childs */
+.ihtc {
+	float: left ; 
+	width: auto ; 
+	display: inline-block;
+	vertical-align: top;
+	text-overflow:ellipsis;
+}
+
+
+/* no underscore in the level 3 headings */
+.item_heading:focus  .edit:hover {
+	font-weight: bold ; 
+	background: #FFFF3D ; 
+	max-height:10% ; 
+}
+
+p {
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+.selectable {
+   margin-top: 0px;
+	-moz-user-select: text;
+	-webkit-user-select: text ;
+	-ms-user-select: text ;
+}
+
+.inner_tube .body_txt {
+	display: block ;
+	clear: both;
+	float: left ; 
+	width: 100% ; 
+   font-size:16px ;
+   margin-top:0px;
+   margin-left:+12px;
+   border:3px solid #FFFFFF ; 
+   border-radius: 7px;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+div.body_txt:focus {
+	display: both; 
+	clear: both;
+	float: left ; 
+	height: 96% ; 
+	max-height: 97% ; 
+	width: 106%;
+	min-width: 106%;
+   font-size:16px ;
+	display: inline ; 
+	overflow: hidden ; 
+   border: 3px solid #F8F8F8 ;
+	box-shadow: 5px -5px 5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px -5px 5px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 5px -5px 5px rgba(0,0,0,0.6);
+	-o-box-shadow: 5px -5px 5px rgba(0,0,0,0.6); 
+	border-radius:7px;
+	background: #F2F2F2 ;
+}
+
+div.body_txt:hover{
+	display: both; 
+	clear: both;
+	float: left ; 
+	height: 96% ; 
+	max-height: 97% ; 
+	width: 100%;
+	min-width: 100%;
+   font-size:16px ;
+	display: inline ; 
+	overflow: hidden ; 
+   border: 3px solid #F8F8F8 ;
+	box-shadow: 5px -5px 5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px -5px 5px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 5px -5px 5px rgba(0,0,0,0.6);
+	-o-box-shadow: 5px -5px 5px rgba(0,0,0,0.6); 
+	border-radius:7px;
+	background: #FAFAFA ; 
+}
+
+div.body_txt.p {
+   margin-top: 0px ; 
+}
+
+
+pre:hover{
+	display: both; 
+	clear: both;
+	float: left ; 
+	height: 100% ;
+	width: 100%
+   font-size:16px ;
+	display: inline ; 
+	overflow: hidden ; 
+	padding: 1px 1px 1px 1px ; 
+
+   border: 3px solid #F8F8F8 ;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px -5px 5px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 5px -5px 5px rgba(0,0,0,0.6);
+	-o-box-shadow: 5px -5px 5px rgba(0,0,0,0.6); 
+	border-radius:7px;
+	background: #FAFAFA ; 
+}
+
+pre:focus{
+	display: both; 
+	clear: both;
+	float: left ; 
+	height: 96% ; 
+	max-height: 97% ; 
+	width: 106%;
+	min-width: 106%;
+   font-size:16px ;
+	display: inline ; 
+	overflow: hidden ; 
+   border: 3px solid #F8F8F8 ;
+	box-shadow: 10px -10px 5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 10px -10px 5px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 10px -10px 5px rgba(0,0,0,0.6);
+	-o-box-shadow: 10px -10px 5px rgba(0,0,0,0.6); 
+	border-radius:7px;
+	background: #F2F2F2 ;
+}
+
+.body_txt_edit {
+	margin: 20px 20px 20px 20px ;
+	display: both; 
+	clear: both;
+	float: left ; 
+	height: 96% ; 
+	max-height: 97% ; 
+	min-height: 50vh ; 
+	max-width: 96% ;
+   margin-top: 0px ;
+	width: 96% ;
+   font-size:12px ;
+   border:3px solid #F8F8F8 ;
+   border-radius: 7px;
+	display: inline ; 
+	overflow: hidden ; 
+	background:#FFFFED ; 
+}
+
+.body_txt_edit:hover {
+	margin: 20px 20px 20px 20px ;
+	display: both; 
+	clear: both;
+	float: left ; 
+	height: 96% ; 
+	max-height: 97% ; 
+	min-height: 50vh ; 
+	max-width: 96% ;
+	width: 96% ;
+   font-size:12px ;
+   border:3px solid #F8F8F8 ;
+   border-radius: 7px;
+	display: inline ; 
+	overflow: hidden ; 
+	padding: 1px 1px 1px 1px ; 
+}
+
+.body_txt_edit:focus {
+	margin: 20px 20px 20px 20px ;
+	display: both; 
+	clear: both;
+	float: left ; 
+	height: 96% ; 
+	max-height: 97% ; 
+	min-height: 50vh ; 
+	max-width: 96% ;
+	width: 96% ;
+   font-size:12px ;
+   border:3px solid #F8F8F8 ;
+   border-radius: 7px;
+	display: inline ; 
+	overflow: hidden ; 
+	padding: 1px 1px 1px 1px ; 
+}
+
+.img_control {
+	position: relative;
+	clear: both;
+	float: left ; 
+	width: 120% ; 
+	height: 100% ; 
+	left: -80px ;
+	text-align: left ; 
+}
+
+.inner_tube .img_control {
+	display: block ;
+	clear: both;
+	float: left ; 
+	width: 100% ; 
+   font-size:16px ;
+   margin-top:5px;
+   margin-left:+12px;
+   border-radius: 7px;
+	word-wrap: break-word;
+	overflow: visible;
+}
+
+figcaption {
+   margin-left: 30px;
+}
+
+
+.inner_tube .result_body_txt{
+	clear: both ;
+	display: block ; 
+	width: 100% ; 
+   font-size:16px ;
+   margin-top:5px;
+   margin-left:+3px;
+	width: 100%;
+   /* debug background-color: #C0C0C0;  */
+   border: 3px solid #CDCDCD;
+   border-radius: 7px;
+   -moz-border-radius: 7px;
+  	padding: 1px;
+}
+.result_body_txt:hover, .result_body_txt:focus {
+	clear: both ;
+	display: block ; 
+	width: 100% ; 
+   font-size:16px ;
+   margin-top:5px;
+   margin-left:+3px;
+	width: 100%;
+   /* debug background-color: #C0C0C0;  */
+   border: 3px solid #CDCDEE;
+   border-radius: 7px;
+   -moz-border-radius: 7px;
+  	padding: 1px;
+
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+	-o-box-shadow: 5px 5px 5px rgba(0,0,0,0.6); 
+	border-radius:7px;
+	background: #F2F2F2 ;
+
+}
+
+.inner_tube .result_body_txt p {
+	clear: both ;
+}
+
+/* start source code */
+.src_a {
+	underline:none ; 
+}
+
+.inner_tube .src_a .body_src_code {
+	display: both; 
+	clear: both;
+	float: left ; 
+	width: 100% ; 
+   font-size:14px ;
+   margin-top:10px;
+   margin-left:+16px;
+	clear: both ;
+	/* lavender color for the src code background */
+	background-color:#E3E4FA;
+}
+
+pre {
+	display: block; 
+	clear: both;
+	float: left ; 
+	width: 100% ; 
+	white-space: pre-wrap;       /* CSS 3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+  	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  }
+/* stop source code */
+
+/* start hover tooltip */
+.ui-tooltip {
+	/* background-color:#AAACCC ; */
+}
+
+.item-heading {
+	float: left ; 
+	clear: left;
+	max-height:10%;
+}
+
+.top_links {
+	float: left ; 
+	display: none ; 
+}
+.edit_links {
+	float: left ; 
+	display: none ; 
+}
+
+.open_links {
+	float: left ; 
+	display: none ; 
+}
+.export_to_xls_links{
+	float: left ; 
+	display: none ; 
+}
+.export_to_pdf_links{
+	float: left ; 
+	display: none ; 
+}
+.headers_only_links  {
+	float: left ; 
+	display: none ; 
+}
+.promote_links{
+	float: left ; 
+	display: none ; 
+}
+.demote_links{
+	float: left ; 
+	display: none ; 
+}
+.present_links {
+	float: left ; 
+	display: none ; 
+}
+
+/* stop hover tooltip */
+/* image 
+img {
+	width:540px; 
+	height: auto;
+}
+*/
+
+/* start right menu */
+.toc {
+	
+   font-size:15px;
+   color:blue;
+}
+/* stop  right menu */

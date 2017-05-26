@@ -1,0 +1,49 @@
+/*	*/
+	// START --- scroll till anchor
+	(function($) {
+		 $.fn.goTo = function() {
+			  var top_menu_height= 1 ; 
+			  //alert ( 'top_menu_height is:' + top_menu_height );
+			  $('html,body').animate({
+					scrollTop: -5 + $(this).offset().top + 'px'
+			  }, 700);
+	 		 //alert("ds" + anchor_to_scroll_to.offset().top );
+			  return this; 
+		  // for chaining...
+	 }
+	})(jQuery);
+  
+  var url = document.URL, idx = url.indexOf("#") ; 
+  var hash = idx != -1 ? url.substring(idx+1) : "";
+  $(window).load(function(event){
+	 // Remove the # from the hash, as different browsers may or may not include it
+	 var anchor_to_scroll_to = location.hash.replace('#','');
+	 if ( anchor_to_scroll_to != '' ) {
+		 anchor_to_scroll_to = '#' + anchor_to_scroll_to ; 
+		 $(anchor_to_scroll_to).goTo();
+	 }
+	});
+	//STOP --- scroll till anchror 
+
+	/*	
+	// scroll the clicked Descrption till the top of the window
+	$(".edit_area,.edit").click(function(e) {
+		alert("edit_area or .edit class div clicked " + $(this).offset().top );
+    	$('#center_pane').animate({
+	  		scrollTop: -5 + $(this).offset().top + 'px' 
+		}, 700);
+	});
+	*/
+
+	//this even handler is triggered when
+	    $(".top_links a").click(function() {
+
+			 // Remove the # from the hash, as different browsers may or may not include it
+			 var anchor_to_scroll_to = location.hash.replace('#','');
+			 if ( anchor_to_scroll_to != '' ) {
+				 anchor_to_scroll_to = '#' + anchor_to_scroll_to ; 
+				 scrollTop: -5 + $(anchor_to_scroll_to).offset().top + 'px'
+			 	}
+	 	});
+
+/* */

@@ -1,0 +1,1 @@
+As a developer I want to be able to re-use quickly the basic functions of the isg-pub app into any cloned app derived from it .. .

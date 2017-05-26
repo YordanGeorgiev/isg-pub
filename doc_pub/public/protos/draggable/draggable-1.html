@@ -1,0 +1,54 @@
+<html>
+<head> <title>draggable</title>
+
+	<link rel="stylesheet" type="text/css" href="../../lib/jQueryUI-1.11.4/jquery-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../lib/jquery-layout/layout-default.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/screen/themes/default/site/site.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/nice-table.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/screen/themes/default/tech_doc.css" />
+
+	<script type="text/javascript" src="../../lib/jQuery-2.1.4/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../../lib/jQueryUI-1.11.4/jquery-ui.min.js"></script>
+  <style>
+  #draggable { 
+	width: 150px; height: 150px; padding: 0.5em; 
+	border: solid ; 
+	}
+  </style>
+  <script>
+  $(function() {
+    $( "#draggable" ).draggable();
+  });
+  </script>
+
+</head>
+<body>
+<p></p>
+<h3 style="margin-top: 20px"> draggable-1 demo </h3>
+
+<div id="con_draggable" style="clear:both">
+<ol>
+	<li>
+	This demo uses <a href="https://jqueryui.com/draggable/"> the jquery ui draggable control documentation page  </a> as a source. 
+	</li><li>
+	Note the relative paths of the library css and js files start with ../../
+	</li><li>
+	Note the the class ui-widget-content is only for visual formatting
+	</li><li>
+	You should be able to drag with the mouse the box with the "drag me around" text
+	</li><li>
+	Go to the <a href="http://localhost:3000/protos/draggable/draggable-2.html"> next proto page </a>
+	</li>
+
+<div id="draggable" class="ui-widget-content">
+  <p>Drag me around</p>
+</div>
+
+
+</div><!-- eof con_draggable -->
+
+
+
+
+</body>
+</html>

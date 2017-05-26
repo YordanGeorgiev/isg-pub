@@ -1,0 +1,25 @@
+	// start --- draggable
+
+
+  $(function() {
+    $( ".draggable" ).draggable();
+    $( ".droppable" ).droppable({
+      drop: function( event, ui ) {
+			var draggable_id = ui.draggable.attr("id");
+			var droppable_id = $( this ).attr("id");
+			// with full refresh ... works but clumzy ... 
+			//window.location = 'view?<%== $url_params %>' ; 
+
+		 	var dr_url_params = 'draggableid=' + draggable_id + '&droppableid=' + droppable_id ; 
+
+			var url_div_center = '/render?control=doc&' + dr_url_params + "&<%== $url_params %>" ; 
+			var url_right_menu = '/render?control=right_menu&' + dr_url_params + "&<%== $url_params %>" ; 
+
+			$('#div_center').load(url_div_center , null , onPartialPageLoad ); 
+			$('#right_menu').load(url_right_menu , null , onPartialPageLoad ); 
+
+      }
+    });
+  });
+
+	// stop  --- draggable

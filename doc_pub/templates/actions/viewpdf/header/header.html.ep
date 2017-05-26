@@ -1,0 +1,7 @@
+% use utf8;
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title> view <%= $database %>.<%= $item . " " =%> </title>
+%= include 'actions/view/page/doc/header/css_links' ;
+%= include 'actions/view/page/doc/header/js_links' ;
+	</head>

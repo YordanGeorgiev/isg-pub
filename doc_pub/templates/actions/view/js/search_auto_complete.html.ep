@@ -1,0 +1,46 @@
+	// start --- search autocomplete
+
+	// start --- search autocomplete
+	$(function() {
+		$( "#lab_srch" ).value="" ;
+						 
+		$( "#txt_srch" ).autocomplete({
+			 source: function(request, response) {
+				  $.ajax({
+						url: '/search_autocomplete' ,
+						dataType: "json",
+						data: {
+							 term : request.term,
+							 db : $("#db").val()
+						},
+						success: function(data) {
+							 response(data);
+						}
+				  });
+			 }
+			, minLength: 2
+			, select: function(event, ui) {
+        		$('#txt_srch').val(ui.item.name);
+			}
+
+		});
+						 
+	});
+
+	/*
+	$(function() {
+		$( "#lab_srch" ).value="" ;
+						 
+		$( "#txt_srch" ).autocomplete({
+			source: "search_autocomplete"
+			, minLength: 2
+			, select: function(event, ui) {
+        		$('#txt_srch').val(ui.item.name);
+			}
+
+		});
+						 
+	});
+	// stop  --- search autocomplete
+
+*/

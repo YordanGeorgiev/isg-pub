@@ -1,0 +1,26 @@
+# docs/txt/isg-pub/create-full-package/create-full-package.test.txt
+
+	# Purpose
+	# ------------------------------------------------------
+	This is the doc file for the testing function of the create-full-package
+	functionality
+	
+	the create-full-package functionality is tested first agains the default
+	<<product_version_dir>>/.<<current_environment>>.<<product_name>> relative
+	 file path list file
+
+	the create-full-package functionality is tested than against the 
+	test environment	meta/.tst.isg-pub relative file path list file
+
+	the create-full-package functionality is tested than against the 
+	production environment meta/.prd.isg-pub relative file path list file
+
+	the create-full-package functionality is tested than against the 
+	git environment meta/.git.isg-pub relative file path list file
+
+
+	the create-full-package functionality is tested than against the 
+	production environment meta/.prd.isg-pub relative file path list file
+	and the resulted package is sent by using the gmail-package functionality
+
+# eof file: docs/txt/isg-pub/create-full-package/create-full-package.test.txt

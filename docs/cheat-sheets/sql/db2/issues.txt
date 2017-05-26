@@ -1,0 +1,572 @@
+2016-10-06 to --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- documented known arch change - status meeting with Kalle&Mikko
+-- troubleshooting prod connections with customer IT
+-- configured lp_calculator to use local dev db2 instances
+-- found new bug in lp_calculator - table not in db ... 
+-- updated git and features&functionalities doc - prepare for KT
+
+what will I do till the next daily:
+---------------------------
+-- prepare for KT meeting with Kimmo by:
+-- move dealers integration csv files locally ... 
+-- collect and list all known and scoped features and functionaliess
+-- create v0.0.1 of CheckList for LP service based on Features doc
+
+
+2016-10-06 to --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- troubleshooting TTDBD, LPFIPFIL dbs access in prod
+-- 45 tables ~650 k rows LPFII2PFIL data loaded to db2 in dev
+-- aka good enough?! ability to transfer prd as400 data to db2 dev
+
+
+what will I do till the next daily:
+---------------------------
+-- 1 table produces java heap errors even when "sliced .."
+-- some 1% but not all scandics containing insert rows failing ...
+-- TTDBD as400 data source is not part of prod setup
+	but it was in config files ?! invistigate 
+-- akka theory + POC 
+
+
+what is blocking me
+---------------------------
+--  no access to LPFIPFIL db ( communication wip ) 
+
+
+2016-10-05 ke --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- tested 7z pw protected package deployment - ok
+-- generated sql inserts from db2
+-- load to dev ok - max 3000 0000 except xml data type, which is not used
+-- obtained the prod data as sql inserts ( except optionexclusions tbl)
+-- troubleshootig absence of access to TTDBD, LPFIPFIL as400 dbs in prod
+-- load to dev failed - -> got max 20000 lines of insert ... null , null ,null
+
+what will I do till the next daily:
+---------------------------
+-- db2 != as400 ... as400 resultset map uses probably only ColumnName keys 
+-- and not Table.ColumnName keys 
+-- load to dev the correct insert files ... 
+-- akka POC to replicate csv loads in dev ...  
+
+what is blocking me
+---------------------------
+--  no access to TTDBD, LPFIPFIL dbs ( communicated ) 
+
+
+2016-10-04 ti --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+generate sql inserts from db2
+load sql inserts in dev
+
+
+what will I do till the next daily:
+---------------------------
+-- get the prod data as sql inserts 
+-- load to dev
+
+what is blocking me
+---------------------------
+-- nothing 
+
+
+2016-10-03 ma --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- workshop with Juho Kolehmainen on play2 pitfalls
+-- loading csv files to db2 - too much errors ... 
+-- created db2 to sql insert files
+-- added generic black box testing in lp_nettilaskuri
+
+
+what will I do till the next daily:
+---------------------------
+-- try to finnish load csv data into dev db2
+
+
+2016-09-30  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- status check with Mikko - so far so good
+-- added tests for db to csv - refactored control flow
+-- lp_nettilaskuri repo clean-up for code duplication 
+-- csv-to-db2 load - generated insert templ files
+
+what will I do till the next daily:
+---------------------------
+-- try to finnish load csv data into dev db2
+-- workshop with Juho Kolehmainen on play2 pitfalls
+
+
+what is blocking me
+---------------------------
+-- TTDBD schema credentials nok
+
+
+2016-09-29  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- updated dev guide for prod schemas to dev refresh actions 
+-- automated pw protected packages creation 
+-- wip: csv-to-db2 load
+
+what will I do till the next daily:
+---------------------------
+-- finnish load csv data into dev db2
+
+what is blocking me
+---------------------------
+-- TTDBD schema credentials nok
+
+
+2016-09-28  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- generated exact select col1,col2,col3 from LPFII2PFIL schema
+-- added "run-sql-from-sql-script" produce csv file in db2-to-csv proj
+-- fetched 85% ?! of the data from the LPFII2PFIL schema
+-- because prod server hw is 60% of my laptop -> java heap end ... 
+
+what will I do till the next daily:
+---------------------------
+-- try to load the data into db2
+
+
+
+what is blocking me
+---------------------------
+-- TTDBD schema credentials nok
+
+2016-09-27  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- connected with db-to-csv to as400 but could not fetch data 
+-- since it is mainframe -> must have exact select col1,col1 from schema.table 
+-- got the table's ddls from the as400 LPFII2PFIL  
+-- replicated the nols LPFII2PFIL schema in the dev env
+
+what will I do till the next daily:
+---------------------------
+-- fetch nols data based on exact select col names list from table
+
+
+
+2016-09-26  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- mysql-runner - run mysql scripts instead of evolution 
+-- wip - generate nols tables ddls for dev db2 from meta csv
+-- added prod conf files for the db2-to-csv + dbnames to work cmd args pass
+-- deployed db2-to-csv on the prod host - start ok , data fetch failed .. 
+
+
+what will I do till the next daily:
+---------------------------
+-- resolve db2 data fetch ... 
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+
+2016-09-23  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- lp scope 2.0 initial rough mail specs with Mikko ... 
+-- tech specs for nols system db2 tables access - got meta cols xls
+-- added tables meta data fetch into meta.table_name.csv as well... 
+-- added generic function level testing in bash lp_nettilaskuri.sh wrapper 
+
+
+what will I do till the next daily:
+---------------------------
+-- generate nols tables ddls for dev db2
+-- make a 0.9.1 lp_nettilaskuri release with the db-to-csv tool to prd
+-- try to FINALLY get that db2 data from prod with prod jdbc classes
+
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+2016-09-21  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- db-to-csv - refactoring , factory design pattern for db sources
+-- deployed locally to windows - check win paths ...
+( write once run anywhere works ALMOST as fast as on Linux ;o)
+-- reconfigured win fw + local db2 for tcp / ip connections
+
+what will I do till the next daily:
+---------------------------
+-- make db-to-csv host conf aware ... ( aka unzip and run )
+-- make a 0.9.1 lp_nettilaskuri release with the db-to-csv tool to prd
+-- try to FINALLY get that db2 data from prod with prod jdbc classes
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+2016-09-20  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- db2-to-csv -- all tables to csv files from db2
+-- combined mysql-to-csv and db2-to-csv into db-to-csv scala proj
+
+what will I do till the next daily:
+---------------------------
+-- refactoring , factory design pattern for db sources
+-- deploy locally to windows - fix win paths ...
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+2016-09-19  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- optimized mysql-to-csv- 350 000 per table ok 
+-- refactoring for logging and portability -> to new db2-to-csv proj
+-- db2 sample db data access to appuser -> to install docs
+
+what will I do till the next daily:
+---------------------------
+-- db2-to-csv - csv read, write
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+
+2016-09-16  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- mysql-to-csv - a real , deployable console app
+-- mysql-to-csv - java heap at max 
+-- csv write 
+
+what will I do till the next daily:
+---------------------------
+-- db2 read POC with new dao for new scala-db2-anorm-console proj
+-- optimize code for better performance ... shaky at 300 000 rows ... with 8GB of RAM
+
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+
+2016-09-14  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- scala-mysql-anorm-console  
+-- anorm table models into scala-mysql-anorm-console
+
+
+what will I do till the next daily:
+---------------------------
+-- mysql-to-csv
+
+what is blocking me
+---------------------------
+-- nothing
+
+2016-09-13  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- network diagram + logical diagrma for lp 0.9.8
+-- meeting with Customer
+-- sbt and activator wrappers - fast and verbose calls
+-- anorm poc - scala-mysql-anorm-console 70% ... 
+
+what will I do till the next daily:
+---------------------------
+-- scala-mysql-anorm-console  
+-- anorm table models into scala-mysql-anorm-console
+
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+
+2016-09-12  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- basic scala console proj for unit dev,tst - based on Juho's feedback
+-- which is a generic wrapper to build all future lp scala projects ;o)
+-- sync / prep with Lehtosen Mikko about LP customer meeting
+
+-- todo: read trough e-mails
+-- todo: review diagrams
+
+what will I do till the next daily:
+---------------------------
+-- draw 1 diagram proposal for Customer meeting
+-- meeting with Customer
+-- anorm table models into basic scala console
+
+
+
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+
+2016-09-09  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- fixed stackoverflow bug for generate mysql ORM models sbt task 
+-- small prod deployment of maint app ... 
+-- debugged tax calc db2 ddl change related bug in prod
+-- studied scala, slick , sbt , activator + lp_calculator logic ... 
+
+what will I do till the next daily:
+---------------------------
+-- 1 h hands-on with Juho Kolehmainen 
+-- prepare for monday Customer meeting - describe 2 path approach to proceed
+
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+
+2016-09-07  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- 6,7 x git clone <<scala-slick-demo-repo>> for reverse engineering
+-- compile time generation for leaseplan mysql models with slick lib
+-- adjusted slick ORM access as close as possible to lp_calculator approach 
+
+
+what will I do till the next daily:
+---------------------------
+-- quick prod deploymet of nettilaskuri app to train 1 week release cycle
+-- mysql resultset to csv files poc
+
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+UBarce12Lona!
+
+2016-09-06  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- slk jetty prod deployent troubleshooting in  tst env
+-- installed db2 on dev with docs in repo and conflu
+-- updated network and logical dias .. 
+
+
+what will I do till the next daily:
+---------------------------
+-- mysql resultset to csv files poc
+
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+
+
+2016-09-05  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- added db-backups related info to service guide
+-- created scala poc proj for the db2 to mysql data load
+-- poc for logical multienv scala proj 
+-- better loggin configurtion in poc ( applicable to lp_calculator)
+
+
+what will I do till the next daily:
+---------------------------
+-- mysql resultset to csv files poc
+-- install db2 on dev
+
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+
+2016-09-01  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- db backups specsed and requested for Tivoli 
+-- added db-bacckups related info to maint and service guide
+-- finnish , test db backups script on manual call
+-- troubleshooting wront auto tax calculation bug by 
+-- data loads from external systems  
+-- reorganised lp_nettilaskuri repo 
+ 
+
+what will I do till the next daily:
+---------------------------
+-- add db-bacckups related info to service guide
+-- collect , document car tax calculalation reqs into Requirements , UserStories docs
+-- schedule backups , check daily result
+-- fix get images non-working in dev env - aint that simple - dependas on dyn data ... 
+
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+
+2016-09-01  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- deployed 0.8.8 leaseplan dbs
+-- data loads from external systems
+-- registered v0.8.9 bugs & issues
+-- tests for 0.8.9 reported bugs
+-- communicated different options for db backups in prod
+-- backup-lp-nl-mysql-dbs.cmd v0.1.0
+-- create new lp_nettilaskuri ( lease plan calculator life cycle ) repo in GitHub
+
+what will I do till the next daily:
+---------------------------
+-- finnish , test db backups script
+-- data loads from external systems
+-- fix get images non-working in dev env
+-- communicate v0.9.0 issues, compare to v0.8.9 issues, trace to back-end 
+-- specs different options for db backups in prod
+
+what is blocking me
+---------------------------
+-- nothing
+
+
+
+
+
+
+2016-08-31  --  DAILY 
+---------------------------
+
+what did I do since last daily:
+---------------------------
+-- specsed and communiated daily mysql backups in prod for LP IT
+-- figured out how-to run the app ext2 file system 
+-- iterated data loading in dev - it is unique ;o) 
+-- deployed latest and greatest laskuri db to prod
+-- iterated external system integrations data loading in prod 
+-- rearranged lp_calculator repo => small changes to data load scripts 
+-- communicated v0.8.9 bugs with Customer -> new action to v0.9.0
+
+
+what will I do till the next daily:
+---------------------------
+-- implement versioning in lp_calculator with tags 
+-- define the v0.8.9 issues / bugs raised by Customer into Trello
+-- roll back leaseplan db backup v0.8.8 ( or even earlier with Tivoli ?! )
+-- create new lp_calculator_lf ( lease plan calculator life cycle ) repo in GitHub
+-- implement daily mysql backups for windows ( waiting response from LP IT)
+
+what is blocking me
+---------------------------
+-- nothing
+
+what did I plan to do till the next daily:
+---------------------------
+-- communicate / configure / code daily mysql backups in prod
+-- document production deployment
+-- document data loading
+-- setup FAT32 file system for mysql storage in Ubuntu
+-- arrange db dumps in repo
+-- create new lp_calculator_lf ( lease plan calculator life cycle ) repo in GitHub
+-- collect 
+
+
+
+2016-08-30 DAILY ...
+---------------------------
+2016-08-29 -- 2016-08-30
+
+what did I do since last daily:
+---------------------------
+-- iterated dev env install 
+-- applied laskuri db dump from Max + tests to dev and prod and it worked better 
+-- fixed mail sending bug with Kimmo 
+-- production deployment of the latest fixes build by Kimmo
+-- rearranged lp_calculator repo
+-- reiterated the db data itialization 
+
+what will I do till the next daily:
+---------------------------
+-- communicate / configure / code daily mysql backups in prod
+-- document production deployment
+-- document data loading
+-- setup FAT32 file system for mysql storage in Ubuntu
+-- arrange db dumps in repo
+-- create new lp_calculator_lf ( lease plan calculator life cycle ) repo in GitHub

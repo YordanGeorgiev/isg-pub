@@ -1,0 +1,172 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<meta charset="utf-8">
+
+		<title> present isg_pub_en.Issue </title>
+
+	<meta name="author" content="Yordan Georgiev">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+			<link rel="stylesheet" type="text/css" href="../lib/reveal/reveal.js-master/css/reveal.css" />
+			<link rel="stylesheet" type="text/css" href="../lib/reveal/reveal.js-master/css/theme/white.css" />
+			<link rel="stylesheet" type="text/css" href="../lib/reveal/reveal.js-master/css/theme/white.css" />
+			<link rel="stylesheet" type="text/css" href="../lib/reveal/reveal.js-master/css/reveal.css" />
+
+			<script type="text/javascript" src="../lib/jQuery-2.1.4/jquery-2.1.4.min.js"></script>
+			<script type="text/javascript" src="../lib/jQueryUI-1.11.4/jquery-ui.min.js"></script>
+			<script type="text/javascript" src="../lib/prettify/prettify.js"></script>
+			<script type="text/javascript" src="../lib/MouseTrap/mousetrap.min.js"></script>
+			<script type="text/javascript" src="../lib/reveal/head.load.min.js"></script>
+			<script type="text/javascript" src="../lib/reveal/reveal.js-master/js/reveal.js"></script>
+
+	</head>
+
+
+
+<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<header 
+				style="position: absolute;left:3%;right:3%;margin-left:auto; margin-right:auto; 
+				top: 6%; text-align: center; 
+				font-size:32px;background-color: #FFFBBB">
+			</header>
+			
+			<!-- the start of the slides -->
+			<div class="slides">
+			
+			<!-- START presenting level-0 - documenent title slide -->
+			<section> 	
+				<h1 class="fragment highlight-blue slide_title">
+					REBUILD ISG-PUB ON TOP OF MOJOLICIOUS 
+				</h1>
+			<!-- <h1 class="fragment highlight-blue"> REBUILD ISG-PUB ON TOP OF MOJOLICIOUS </h1> -->
+			</section>
+
+
+			<!-- START presenting level-1 - documenent title with level-2 subtitles  -->
+			<section data-state="header1"> 	
+			<style>.header1 header:after { content: "REBUILD ISG-PUB ON TOP OF MOJOLICIOUS"; }</style>
+
+				<p class="fragment highlight-blue"> 1. INITIALIZE THE DOC-PUB PROTOTYPE MOJOLICIOUS APPLICATION </p>
+				<p class="fragment highlight-blue"> 2. ENSURE UI SEARCH, BROWSE, VIEW AND LIST CAPABILITIES </p>
+				<p class="fragment highlight-blue"> 3. ENSURE DATA LOAD/UNLOAD CAPABILITIES4. ENSURE UI CRUD CAPABILITIES </p>
+				<p class="fragment highlight-blue"> 2. ENSURE UI SEARCH, BROWSE, VIEW AND LIST CAPABILITIES </p>
+			</section> 	
+		
+
+			<!-- START presenting level-2 - heade title slide -->
+			<section> 	
+				<h1 class="fragment highlight-blue"> 
+					1. INITIALIZE THE DOC-PUB PROTOTYPE MOJOLICIOUS APPLICATION 
+				</h1>
+			</section> 	
+			
+
+
+			<!-- START presenting level-2 - title with level-2 subtitles  -->
+			<section data-state="header2"> 	
+ 			<style>.header2 header:after { content: 
+			"1. INITIALIZE THE DOC-PUB PROTOTYPE MOJOLICIOUS APPLICATION";
+			}</style>
+
+				
+				<p class="fragment highlight-blue">	1.1. add a lite application </p>
+				<p class="fragment highlight-blue">	1.2. add a new route in the doc-pub </p>
+				<p class="fragment highlight-blue"> 1.3. Parametrize the mysql connection variables into a separate configuration file mojo like </p>
+				<p class="fragment highlight-blue"> 1.4. add multiple filtering parameters in the list items page </p>
+				<p class="fragment highlight-blue"> 1.5. Configure mojo logger with better msg format for the log file </p>
+				<p class="fragment highlight-blue"> 1.6. Ensure nested-set loading of hiearachry works</p>
+			</section>
+
+
+
+
+			<!-- START presenting level-2 - heade title slide -->
+			<section> 	
+				<h1 class="fragment highlight-blue"> 2. ENSURE UI SEARCH, BROWSE, VIEW AND LIST CAPABILITIES </h1>
+			</section> 	
+
+
+
+
+			<!-- START presenting level-2 - title with level-2 subtitles  -->
+			<section data-state="header3"> 	
+ 			<style>.header3 header:after { content: "2. ENSURE UI SEARCH, BROWSE, VIEW AND LIST CAPABILITIES"; }</style>
+				<p class="fragment highlight-blue">	2.1. Add the view page mojolicious style </p>
+				<p class="fragment highlight-blue">	2.2. add a search page to quickly jump to the list page </p>
+				<p class="fragment highlight-blue"> 2.3.create a generic list db table </p>
+			</section>
+
+			</diV> 
+		</div>
+
+<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+    // The "normal" size of the presentation, aspect ratio will be preserved
+    // when the presentation is scaled to fit different resolutions. Can be
+    // specified using percentage units.
+    //width: 960,
+    //height: 700,
+
+    // Factor of the display size that should remain empty around the content
+    margin: 0.1,
+
+    // Bounds for smallest/largest possible scale to apply to content
+    minScale: 0.2,
+    maxScale: 1.3,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../lib/reveal/reveal.js-master/../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../lib/reveal/reveal.js-master/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal/reveal.js-master/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal/reveal.js-master/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../lib/reveal/reveal.js-master/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../lib/reveal/reveal.js-master/plugin/notes/notes.js', async: true }
+				]
+			});
+
+			
+
+
+</script>
+
+</body>
+</html>
+
+<!-- start validator 
+<div id="div_menu_footer">
+
+	<div id="validator_text">
+	<a href="http://validator.w3.org/check?uri=referer">
+	<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional"
+	height="31" width="88" /></a>
+         </div>
+</div>
+<!-- eof div_menu_footer -->
+<!-- call by : http://localhost:3000/view?item=Issue&filter-by=Prio&filter-value=1 -->
+<!-- call by : http://localhost:3000/view?item=Issue -->
+<!-- call by : http://localhost:3000/view?db=isg_pub_en&item=Issue&filter-by=Prio&filter-value=1&order-by=SeqId&hdrs=1 -->
+

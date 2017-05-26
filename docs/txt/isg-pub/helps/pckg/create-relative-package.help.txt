@@ -1,0 +1,43 @@
+# docs/txt/isg-pub/create-relative-package/create-relative-package.spec.txt
+
+	the specs for the create-relative-package functionality
+	
+	# Purpose:
+	# ------------------------------------------------------
+	creates a zip file with all the files specified in the 
+	meta/.<<env_type>>.isg-pub with their relative file paths so that 
+	the user could deploy the product by :
+	mkdir -p <<target_product_version_dir>>
+	unzip -o <<zip_file>> -d <<target_product_version_dir>>	
+
+	# Prequisites
+	# ------------------------------------------------------
+	zip , perl , bash , xargs
+
+	# Installation
+	# ------------------------------------------------------
+	install zip , perl , bash , xargs
+
+	# Interdependancies
+	# ------------------------------------------------------
+	you might specify different file paths containing file 
+	as follows: 
+	bash sfw/bash/isg-pub/isg-pub.sh -a create-relative-package -i meta/.deploy
+
+	# Usage:
+	# ------------------------------------------------------
+	bash sfw/bash/isg-pub/isg-pub.sh -a create-relative-package
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: clear up console output
+	-- better error handling when I file is not found 	
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- if you do not file physically a file specified in the 
+		relative file paths include file you might 
+
+
+
+# eof file: docs/txt/isg-pub/create-relative-package/create-relative-package.spec.txt

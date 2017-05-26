@@ -1,0 +1,186 @@
+/* body { background-color: #606061; color: #ffffff; margin: 0; } */
+/* img { border: none; } */
+p
+{
+	font-size: 1em;
+	margin: 0 0 1em 0;
+}
+
+html { font-size: 100%; /* IE hack */ }
+body { font-size: 1em; /* Sets base font size to 16px */ }
+table { font-size: 100%; /* IE hack */ }
+input, select, textarea, th, td { font-size: 1em; }
+
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 20px;
+	width: auto ; 
+}
+	li 
+	{ 
+		position: relative; 
+		margin-left: -15px;
+		list-style: none;
+	}
+	li a {
+		text-decoration: none;
+		color: #585858 ;
+	}
+	li a:visited {
+		text-decoration: none;
+		color: #585858 ; 
+	}
+
+	li.file , li.current_selected_file
+	{
+		margin-left: -1px !important;
+	}
+		li.file a
+		{
+			background: url(document.png) 0 0 no-repeat;
+			text-decoration: none;
+			padding-left: 25px;
+			background-position: left ;  
+			display: block ;
+		}
+		li.file a:focus, li.file a:hover
+		{
+			background: url(document.png) 0 0 no-repeat;
+			color: black ;
+			text-decoration: underline ; 
+			background-color:#A9D0F5 ;
+			padding-left: 25px;
+			background-position: left ;  
+			display: block ;
+			font-weight: bold;
+		}
+
+		li.current_selected_file a
+		{
+			background: url(document.png) 0 0 no-repeat;
+			text-decoration: none;
+			background-position: left ;  
+			display: block ;
+			color: black ;
+			text-decoration: none ; 
+			text-decoration-color: black ; 
+			background-color:#A9D0F5 ;
+			padding-left: 25px ; 
+			background-position: left ;  
+		}
+
+		li.file a[href *= '.pdf']	{ background: url(document.png) 0 0 no-repeat; }
+		li.file a[href *= '.html']	{ background: url(document.png) 0 0 no-repeat; }
+		li.file a[href $= '.css']	{ background: url(document.png) 0 0 no-repeat; }
+		li.file a[href $= '.js']	{ background: url(document.png) 0 0 no-repeat; }
+
+	li input
+	{
+		position: absolute;
+		left: 0;
+		margin-left: 0;
+		opacity: 0;
+		z-index: 2;
+		cursor: pointer;
+		height: 2em;
+		width: 2em;
+		top: 0;
+	}
+
+	input[type="checkbox"]:focus {
+		background-color:#A9D0F5 ;
+ 		border-style: solid;
+ 		border-color: #ff0000 #0000ff;
+	}
+
+
+
+		li input + ol
+		{
+			background: url(toggle_minus.png) 40px 0 no-repeat;
+			/* v1 */
+			margin: -0.938em 0 0.3em -44px; /* 15px */
+			height: 1em;
+		}
+		li input + ol > li { 
+			display: none; 
+			margin-left: -14px !important; 
+			padding-left: 1px; 
+		}
+	li label
+	{
+		background: url(folder-horizontal.png) 15px 1px no-repeat;
+		cursor: pointer;
+		display: block;
+		padding-left: 37px;
+	}
+
+	/* to achieve the selected effect here new images are needed ... */
+	li label:hover
+	{
+		background: url(folder-horizontal.png) 15px 1px no-repeat;
+		cursor: pointer;
+		display: block;
+		padding-left: 37px;
+	}
+	li label:focus
+	{
+		background: url(folder-horizontal.png) 15px 1px no-repeat;
+		cursor: pointer;
+		display: block;
+		padding-left: 37px;
+	}
+
+	/* how-to select when unchecked */
+	/* input[type="checkbox"]:not(:checked)  { */
+	/* li input[type="checkbox"]:focus  { */
+	/* 
+	.folder_chk {
+		background: url(toggle_plus.png) 40px 5px no-repeat;
+		margin: -1.25em 0 0 -44px; 
+		padding: 1.563em 0 0 80px;
+		height: auto;
+		border:10px solid #EEEEEE ; 
+		outline:5px solid #ffffcc;
+		border-radius: 7px;
+		background-color: #FFFFFF ; 
+		box-shadow: 2px -2px 2px rgba(0,0,0,0.6);
+		-moz-box-shadow: 2px -2px 2px rgba(0,0,0,0.6);
+		-webkit-box-shadow: 2px -2px 2px rgba(0,0,0,0.6);
+		-o-box-shadow: 2px -2px 2px rgba(0,0,0,0.6); 
+		border-radius:1px;
+	}
+	*/
+
+	li input:checked + ol
+	{
+		background: url(toggle_plus.png) 40px 5px no-repeat;
+		margin: -1.25em 0 0 -44px; /* 20px */
+		padding: 1.563em 0 0 50px;
+		height: auto;
+	}
+	li input:focus  {
+		background-color:#A9D0F5 ; 
+		border-color:#AFFFFF ; 
+	}
+	li input:hover  {
+		background-color:#A9D0F5 ; 
+	}
+
+
+	/*
+	li input:checked + ol > li:first-child 
+	{
+		border: 1px solid #F8F8F8 ;
+		background-color: #FFFFFF ; 
+		box-shadow: 2px -2px 2px rgba(0,0,0,0.6);
+		-moz-box-shadow: 2px -2px 2px rgba(0,0,0,0.6);
+		-webkit-box-shadow: 2px -2px 2px rgba(0,0,0,0.6);
+		-o-box-shadow: 2px -2px 2px rgba(0,0,0,0.6); 
+		border-radius:1px;
+	}
+*/
+
+		li input:checked + ol > li { display: block; margin: 0 0 0.125em;  /* 2px */}
+		li input:checked + ol > li:last-child { margin: 0 0 0.063em; /* 1px */ }

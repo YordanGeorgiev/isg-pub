@@ -1,0 +1,115 @@
+% use utf8;
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		% if (current_route 'view') {
+			<title> view <%= $database %>.<%= $item . " " =%> </title>
+		% } else {
+			<title> search </title>
+		% }
+
+	%= include 'actions/view/header/css_links' ;
+	%= include 'actions/view/header/js_links' ;
+
+
+	<script type="text/javascript">
+	
+	var myLayout ; 
+	$(document).ready(function () {
+		onPageLoad();
+	}); //eof document.ready
+
+
+	//$(document).ajaxComplete(function() {
+	function onPartialPageLoad(){
+		  $.get('css/screen/themes/default/site/site.css', function(css)
+		  {
+		     $('<style type="text/css"></style>')
+			        .html(css)
+					  .appendTo("head");
+		  });
+		  $.get('css/screen/themes/default/tech_doc.css', function(css)
+		  {
+		     $('<style type="text/css"></style>')
+			        .html(css)
+					  .appendTo("head");
+		  });
+	     onPageLoad() ; 
+		  $(".body_txt").css('clear' , 'both');
+	}
+	//});
+
+
+	function onPageLoad(){
+
+		%= include 'actions/view/js/jquery_layout'
+		%= include 'actions/view/js/show_hide_left_menu'
+		%= include 'actions/view/js/keyboard_shortcuts'
+		%= include 'actions/view/js/on_window_resize'
+
+		% if (current_route 'view') {
+			%= include 'actions/view/js/title_actions_hover'
+			%= include 'actions/view/js/scroll_till_anchor'
+			%= include 'actions/view/js/draggable'
+			%= include 'actions/view/inline_tables'
+		% }
+
+		% if (current_route 'view') {
+			%= include 'actions/view/js/jeditable'
+		% }
+		
+		%= include 'actions/view/js/search_auto_complete'
+		%= include 'actions/view/js/left_column'
+
+
+		//usually users start scrolling on the content, thus:
+		document.getElementById('center_pane').focus();
+	} //eof func onPageLoad
+
+
+	</script>
+
+</head>
+<body>
+
+	<!-- manually attach allowOverflow method to pane -->
+	<div id="north_pane" class="ui-layout-north">
+		%= include 'actions/view/div_menu_header'
+	</div>
+
+	<!-- allowOverflow auto-attached by option: west__showOverflowOnHover = true -->
+	<div id="west_pane" class="ui-layout-west">
+		<!-- This is the west pane, closable, slidable and resizable -->
+		<%== $left_menu_control %>
+
+	</div>
+
+	<div id="south_pane" class="ui-layout-south">
+			<!-- %<== $debug_msg %> -->
+			<p>
+			%= dumper $debug_msg
+			<p>
+	</div>
+
+	<div id="east_pane" class="ui-layout-east">
+		<div id="right_menu">
+		<%== $right_menu_control %>
+		</div>
+	</div>
+
+	<div id="center_pane" tabindex="1" class="ui-layout-center">
+		<div id="div_center">
+			<div class="inner_tube">
+			<%== $doc_control %>
+			</div><!-- eof inner_tube -->
+			<div id="sroller" style="height:100vh;"></div>
+		</div><!-- eof div_center -->
+	</div>
+
+
+</body>
+</html>
+<!-- request by : http://<%= $web_host %>:<%= $web_port %>/view?item=<%= $item %>&filter-by=Prio&filter-value=1 -->
+<!-- request by : http://<%= $web_host %>:<%= $web_port %>/view?item=<%= $item %> -->
+<!-- request by : http://<%= $web_host %>:<%= $web_port %>/view?db=<%= $database %>&item=<%= $item %>&filter-by=Prio&filter-value=1&order-by=SeqId&hdrs=1 -->
