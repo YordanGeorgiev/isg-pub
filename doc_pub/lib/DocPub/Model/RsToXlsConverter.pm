@@ -90,6 +90,8 @@ package DocPub::Model::RsToXlsConverter;
 
 		# Set a Unicode font.
 		my $uni_font  = $objWorkBook->add_format(font => 'Arial Unicode MS');
+		my $hs_seq_logical_order   = $self->doBuildLogicalOrderHash( $table , $rs )  ;
+		my $hs_seq_hours           = $self->doBuildHoursSubTotals( $table , $rs )  ;
 
 
 		foreach my $row ( @$rs )  {
@@ -143,6 +145,21 @@ package DocPub::Model::RsToXlsConverter;
 					$cell =~ s/\r//gm ; 
                $txt_format->set_bg_color('silver') if $row_num % 2 == 0 ; 
                $txt_format->set_bg_color('white') if $row_num % 2 != 0 ; 
+
+               # the logical order is actually generated during run-time
+               if ( $column_name eq 'LogicalOrder' ) {
+					   my $id				   = $row->{ $table . 'Id' } ; 
+					   my $logical_order		= $hs_seq_logical_order->{ $id }->{ 'LogicalOrder' } || '' ; 
+                  $logical_order =~ s/^\s+|\s+$//g ; 
+                  $logical_order =~ s/^(.*)([\.0]{1,7})$/$1./g;
+                  my $cell        = $logical_order ; 
+               }
+               # the logical order is actually generated during run-time
+               if ( $column_name eq 'Hours' ) {
+					   my $id				   = $row->{ $table . 'Id' } ; 
+					   my $level_hours		= $hs_seq_logical_order->{ $id }->{ 'Hours' } || 0 ; 
+                  my $cell        = $level_hours ; 
+               }
 					$objWorkSheet->write_string($row_num, $col_num , $cell , $txt_format );
 				}
 				else {
@@ -179,8 +196,312 @@ package DocPub::Model::RsToXlsConverter;
 
 	}
 	#eof sub doConvertTableToSheet
-
+	
    
+   sub doBuildHoursSubTotals { 
+		
+		my $self 						= shift  ;
+		my $item_name 					= shift ; 
+		my $rs 							= shift ; 
+		my $start_upper_level		= shift || 0 ; 
+
+		my $item_id_name				= $item_name . "Id" ;  
+		my $hs_seq_logical_order	= {} ; 
+		my $logical_order				= '1' ; 
+		my $level_count				= '0' ; 	
+		my $hs_level_counts			= {} ; 
+		my $hs_level_hours			= {} ; 
+		my $prev_level_num			= 0 ; 
+		my $prev_row_id			   = 0 ; 
+		my $prev_row 				   = {} ; 
+
+		@$rs = sort { $a->{ 'SeqId' } <=> $b->{ 'SeqId' } } @$rs;
+		my $rowc	= 0 ; 
+		# ---
+		# fill first the level counts
+		foreach my $row ( @$rs )  {
+
+			# set the id as the key to the logical hash
+			my $id  = $row->{ $item_id_name } || $start_upper_level ; 
+			$prev_level_num = $prev_row->{'Level'} || 0 ; 
+
+			$hs_seq_logical_order->{ $id } = {} ; 
+			$hs_seq_logical_order->{ $id }->{'Id'} = $id ; 
+			
+
+			my $level_num 	= $row->{ 'Level' } ; 
+
+			my $start_num = 0 ; 
+			# only the first visible level starts at 1
+			$start_num 	= 0 if $row->{ 'Level' } == 2 ; 
+			
+			$hs_level_counts->{ $level_num } = $start_num 
+				unless ( $hs_level_counts->{ $level_num } ) ; 
+			
+			#old if ( $row->{'Level'} == 1 ) {
+			if ( $rowc == 0 ) {
+				my $current_level = $row->{'Level'} ; 
+				my $current_nxt_level = $row->{'Level'} ; 
+				$hs_level_counts->{ $current_level } = 0 ; 
+				$hs_level_counts->{ $current_nxt_level } = 0 ; 
+				$rowc++ ;
+				next  ;
+			}
+
+
+			if ( $level_num == $prev_level_num ) {
+				my $prev_level_count = $hs_level_counts->{ $level_num } ; 
+				# print "\$prev_level_count ::: $prev_level_count \n" ; 
+				my $curr_level_count = $prev_level_count + 1 ;
+				$hs_level_counts->{ $level_num } = $curr_level_count ; 
+				$hs_level_hours->{ $level_num - 1 } += $row->{'Hours'}
+
+			}
+			if ( $level_num < $prev_level_num ) {
+				#$hs_level_counts->{ $level_num } = $start_num  ; 
+				$self->doResetAllSubordinateLevelsForHours ( $hs_level_counts , $level_num ) ;
+				my $prev_level_count = $hs_level_counts->{ $level_num } ; 
+				# print "\$prev_level_count ::: $prev_level_count \n" ; 
+				my $curr_level_count = $prev_level_count + 1 ;
+				$hs_level_counts->{ $level_num } = $curr_level_count ; 
+			}
+			if ( $level_num > $prev_level_num ) {
+				my $prev_level_count = $hs_level_counts->{ $level_num } ; 
+				# print "\$prev_level_count ::: $prev_level_count \n" ; 
+				my $curr_level_count = $prev_level_count + 1 ;
+				$hs_level_counts->{ $level_num } = $curr_level_count ; 
+				$hs_level_counts->{ $level_num + 1 } = $start_num ; 
+			}
+
+			my %copy_of_hs_level_counts = %$hs_level_counts ; 
+			$hs_seq_logical_order->{ $id }->{ 'HsLevelCounts' } = \%copy_of_hs_level_counts ; 
+
+
+			#debug ok print "ok --- level_num ::: " . $level_num . "\n" ; 
+			$prev_row_id = $id ; 
+			$prev_row	 = $row ; 
+			$rowc++ ; 
+		}
+		#eof foreach my $i
+
+		# ---
+		# build than the logical orders based on filled already level counts 
+		# the $row is just a hash reference
+		foreach my $row ( @$rs )  {
+			# get the id as the key to the logical hash
+			my $id  = $row->{ $item_id_name } || 0 ; 
+			my $hs_i = $hs_seq_logical_order->{ $id }->{'HsLevelCounts'} ;
+			#debug p($hs_i);
+
+			foreach my $key ( sort ( keys ( %$hs_i ) )) {
+				#debug print "hs_i key is " . $key . "\n" ; 
+
+				my $post_dot_maybe			= '.' ; 
+				$post_dot_maybe 				= '' if $key == 1 ; 
+
+				my $curr_level_count = '' ; 
+				$curr_level_count		= $hs_i->{ $key } 
+					if ( $hs_i->{ $key } and $key != 1  ) ; 
+				$post_dot_maybe 				= '' unless $curr_level_count ; 
+
+				#$curr_level_count		= '' 
+				#	if ( $curr_level_count == 0 and $key == 1 ) ; 
+				if ( $key > 2 ) {				
+					my $logical_order = $hs_seq_logical_order->{ $id }->{ 'Hours' } ; 
+					$logical_order  =~ s/(.*)\.\.\./$1/g ; 
+					$logical_order  .= 
+						$curr_level_count . $post_dot_maybe ; 
+					$hs_seq_logical_order->{ $id }->{ 'Hours' } = $logical_order ; 
+				}
+				else {
+					$hs_seq_logical_order->{ $id }->{ 'Hours' } =
+						$curr_level_count . $post_dot_maybe ; 
+				}
+				#debug print "logical order is " . $hs_seq_logical_order->{ $id }->{ 'LogicalOrder' } . "\n" ;  
+			}
+			#eof foreach my $key
+		}
+		#eof foreach my $i
+
+		return $hs_seq_logical_order ; 
+	} 
+	#eof sub doBuidHoursSubTotals
+   
+	#
+   # -----------------------------------------------------------------------------
+	# clear the logical numbers from the node id passed and set to 0
+   # -----------------------------------------------------------------------------
+	sub doResetAllSubordinateLevelsForHours {
+
+		my $self 						= shift ; 
+		my $hs_level_counts		 	= shift ; 
+		my $current_level				= shift ; 
+
+		
+		for ( my $level = 0 ;$level < 20; $level++ ) {
+			next if $level <= $current_level  ; 
+			$hs_level_counts->{ $level } = 0 ; 
+		}
+	
+		#debug print "DocBuilder:: doResetAllSubordinateLevels" ; 
+		#debug p($hs_level_counts);
+
+	}
+	#eof sub doResetAllSubordinateLevelsForHours
+
+	#
+   # -----------------------------------------------------------------------------
+	# the numbering of the view page comes from here ...
+	# call by doBuildLogicalOrderHash ( $item_name , $rs ) ; 
+   # -----------------------------------------------------------------------------
+	sub doBuildLogicalOrderHash { 
+		
+		my $self 						= shift  ;
+		my $item_name 					= shift ; 
+		my $rs 							= shift ; 
+		my $start_upper_level		= shift || 0 ; 
+
+		my $item_id_name				= $item_name . "Id" ;  
+		my $hs_seq_logical_order	= {} ; 
+		my $logical_order				= '1' ; 
+		my $level_count				= '0' ; 	
+		my $hs_level_counts			= {} ; 
+		my $prev_level_num			= 0 ; 
+		my $prev_row_id			= 0 ; 
+		my $prev_row 				= {} ; 
+
+		@$rs = sort { $a->{ 'SeqId' } <=> $b->{ 'SeqId' } } @$rs;
+		my $rowc	= 0 ; 
+		# ---
+		# fill first the level counts
+		foreach my $row ( @$rs )  {
+
+			# set the id as the key to the logical hash
+			my $id  = $row->{ $item_id_name } || $start_upper_level ; 
+			$prev_level_num = $prev_row->{'Level'} || 0 ; 
+
+			$hs_seq_logical_order->{ $id } = {} ; 
+			$hs_seq_logical_order->{ $id }->{'Id'} = $id ; 
+			
+
+			my $level_num 	= $row->{ 'Level' } ; 
+
+			my $start_num = 0 ; 
+			# only the first visible level starts at 1
+			$start_num 	= 0 if $row->{ 'Level' } == 2 ; 
+			
+			$hs_level_counts->{ $level_num } = $start_num 
+				unless ( $hs_level_counts->{ $level_num } ) ; 
+			
+			#old if ( $row->{'Level'} == 1 ) {
+			if ( $rowc == 0 ) {
+				my $current_level = $row->{'Level'} ; 
+				my $current_nxt_level = $row->{'Level'} ; 
+				$hs_level_counts->{ $current_level } = 0 ; 
+				$hs_level_counts->{ $current_nxt_level } = 0 ; 
+				$rowc++ ;
+				next  ;
+			}
+
+
+			if ( $level_num == $prev_level_num ) {
+				my $prev_level_count = $hs_level_counts->{ $level_num } ; 
+				# print "\$prev_level_count ::: $prev_level_count \n" ; 
+				my $curr_level_count = $prev_level_count + 1 ;
+				$hs_level_counts->{ $level_num } = $curr_level_count ; 
+
+			}
+			if ( $level_num < $prev_level_num ) {
+				#$hs_level_counts->{ $level_num } = $start_num  ; 
+				$self->doResetAllSubordinateLevels ( $hs_level_counts , $level_num ) ;
+				my $prev_level_count = $hs_level_counts->{ $level_num } ; 
+				# print "\$prev_level_count ::: $prev_level_count \n" ; 
+				my $curr_level_count = $prev_level_count + 1 ;
+				$hs_level_counts->{ $level_num } = $curr_level_count ; 
+			}
+			if ( $level_num > $prev_level_num ) {
+				my $prev_level_count = $hs_level_counts->{ $level_num } ; 
+				# print "\$prev_level_count ::: $prev_level_count \n" ; 
+				my $curr_level_count = $prev_level_count + 1 ;
+				$hs_level_counts->{ $level_num } = $curr_level_count ; 
+				$hs_level_counts->{ $level_num + 1 } = $start_num ; 
+			}
+
+			my %copy_of_hs_level_counts = %$hs_level_counts ; 
+			$hs_seq_logical_order->{ $id }->{ 'HsLevelCounts' } = \%copy_of_hs_level_counts ; 
+
+
+			#debug ok print "ok --- level_num ::: " . $level_num . "\n" ; 
+			$prev_row_id = $id ; 
+			$prev_row	 = $row ; 
+			$rowc++ ; 
+		}
+		#eof foreach my $i
+
+		# ---
+		# build than the logical orders based on filled already level counts 
+		# the $row is just a hash reference
+		foreach my $row ( @$rs )  {
+			# get the id as the key to the logical hash
+			my $id  = $row->{ $item_id_name } || 0 ; 
+			my $hs_i = $hs_seq_logical_order->{ $id }->{'HsLevelCounts'} ;
+			#debug p($hs_i);
+
+			foreach my $key ( sort ( keys ( %$hs_i ) )) {
+				#debug print "hs_i key is " . $key . "\n" ; 
+
+				my $post_dot_maybe			= '.' ; 
+				$post_dot_maybe 				= '' if $key == 1 ; 
+
+				my $curr_level_count = '' ; 
+				$curr_level_count		= $hs_i->{ $key } 
+					if ( $hs_i->{ $key } and $key != 1  ) ; 
+				$post_dot_maybe 				= '' unless $curr_level_count ; 
+
+				#$curr_level_count		= '' 
+				#	if ( $curr_level_count == 0 and $key == 1 ) ; 
+				if ( $key > 2 ) {				
+					my $logical_order = $hs_seq_logical_order->{ $id }->{ 'LogicalOrder' } ; 
+					$logical_order  =~ s/(.*)\.\.\./$1/g ; 
+					$logical_order  .= 
+						$curr_level_count . $post_dot_maybe ; 
+					$hs_seq_logical_order->{ $id }->{ 'LogicalOrder' } = $logical_order ; 
+				}
+				else {
+					$hs_seq_logical_order->{ $id }->{ 'LogicalOrder' } =
+						$curr_level_count . $post_dot_maybe ; 
+				}
+				#debug print "logical order is " . $hs_seq_logical_order->{ $id }->{ 'LogicalOrder' } . "\n" ;  
+			}
+			#eof foreach my $key
+		}
+		#eof foreach my $i
+
+		return $hs_seq_logical_order ; 
+	} 
+	#eof sub doBuildLogicalOrderHash
+   
+	#
+   # -----------------------------------------------------------------------------
+	# clear the logical numbers from the node id passed and set to 0
+   # -----------------------------------------------------------------------------
+	sub doResetAllSubordinateLevels {
+
+		my $self 						= shift ; 
+		my $hs_level_counts		 	= shift ; 
+		my $current_level				= shift ; 
+
+		
+		for ( my $level = 0 ;$level < 20; $level++ ) {
+			next if $level <= $current_level  ; 
+			$hs_level_counts->{ $level } = 0 ; 
+		}
+	
+		#debug print "DocBuilder:: doResetAllSubordinateLevels" ; 
+		#debug p($hs_level_counts);
+
+	}
+	#eof sub doResetAllSubordinateLevels
 
    #
    # -----------------------------------------------------------------------------

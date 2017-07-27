@@ -318,6 +318,9 @@ package isg_pub::Control::Utils::ETL::ExcelToMariaDbLoader ;
 		my $self = shift ; 
 		my $ref 	= () ; 
 
+      # debug print "usging the following db $project_db \n" ; 
+
+      
 		my $dbh = DBI->connect("dbi:mysql:database=$project_db;host=$mysql_host",
 					"$mysql_user","$mysql_user_pw",{AutoCommit=>1,RaiseError=>1,PrintError=>1});
 		
@@ -345,6 +348,10 @@ package isg_pub::Control::Utils::ETL::ExcelToMariaDbLoader ;
 	sub OpenConnection {
 		my $self = shift ; 
 		my $msg 	= "" ; 
+
+      # debug print "usging the following db $project_db \n" ; 
+      # debug sleep 2 ; 
+
 		$dbh = DBI->connect("dbi:mysql:database=$project_db;host=$mysql_host",
 			"$mysql_user","$mysql_user_pw",{AutoCommit=>1,RaiseError=>1,PrintError=>1});
 

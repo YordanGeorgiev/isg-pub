@@ -135,7 +135,7 @@ sub list_query_data {
 	$self->session('Res' => $res);
 
 
-	# build the View
+	# build the View json
 	my $objControlFactory 	= 'DocPub::View::ControlFactory'->new( \$self );
 	my $objControlBuilder 	= q{} ; 
 	# this is UGLY , but for  now ... must live with it ... 

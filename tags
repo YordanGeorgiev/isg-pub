@@ -94,8 +94,8 @@ AUTOLOAD	doc_pub/lib/DocPub/Controller/Show.pm	312;"	subroutine	language:Perl
 AUTOLOAD	doc_pub/lib/DocPub/Utils/Initiator.pm	490;"	subroutine	language:Perl
 AUTOLOAD	doc_pub/lib/DocPub/View/HtmlHandler.pm	108;"	subroutine	language:Perl
 AUTOLOAD	doc_pub/lib/DocPub/View/LinkBuilder.pm	137;"	subroutine	language:Perl
-AUTOLOAD	sfw/perl/isg_pub/Control/Utils/Configurator.pm	418;"	subroutine	language:Perl
-AUTOLOAD	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1382;"	subroutine	language:Perl
+AUTOLOAD	sfw/perl/isg_pub/Control/Utils/Configurator.pm	414;"	subroutine	language:Perl
+AUTOLOAD	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1381;"	subroutine	language:Perl
 AUTOLOAD	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	152;"	subroutine	language:Perl
 AUTOLOAD	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	210;"	subroutine	language:Perl
 AUTOLOAD	sfw/perl/isg_pub/Control/Utils/Initiator.pm	468;"	subroutine	language:Perl
@@ -136,8 +136,8 @@ DESTROY	doc_pub/lib/DocPub/Controller/Renderer.pm	155;"	subroutine	language:Perl
 DESTROY	doc_pub/lib/DocPub/Controller/Search.pm	235;"	subroutine	language:Perl
 DESTROY	doc_pub/lib/DocPub/Controller/Show.pm	384;"	subroutine	language:Perl
 DESTROY	doc_pub/lib/DocPub/Utils/Initiator.pm	562;"	subroutine	language:Perl
-DESTROY	sfw/perl/isg_pub/Control/Utils/Configurator.pm	434;"	subroutine	language:Perl
-DESTROY	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1445;"	subroutine	language:Perl
+DESTROY	sfw/perl/isg_pub/Control/Utils/Configurator.pm	430;"	subroutine	language:Perl
+DESTROY	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1444;"	subroutine	language:Perl
 DESTROY	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	268;"	subroutine	language:Perl
 DESTROY	sfw/perl/isg_pub/Control/Utils/Initiator.pm	540;"	subroutine	language:Perl
 DESTROY	sfw/perl/isg_pub/Control/Utils/Logger.pm	141;"	subroutine	language:Perl
@@ -198,7 +198,7 @@ DocPub::View::RightMenuBuilder	doc_pub/lib/DocPub/View/RightMenuBuilder.pm	1;"	p
 DocPub::View::SrchResultBuilder	doc_pub/lib/DocPub/View/SrchResultBuilder.pm	1;"	package	language:Perl
 DocPub::View::SrchResultPrgrphBuilder	doc_pub/lib/DocPub/View/SrchResultPrgrphBuilder.pm	1;"	package	language:Perl
 DocPub::View::SrchResultTitleBuilder	doc_pub/lib/DocPub/View/SrchResultTitleBuilder.pm	1;"	package	language:Perl
-DumpEnvVars	sfw/perl/isg_pub/Control/Utils/Configurator.pm	365;"	subroutine	language:Perl
+DumpEnvVars	sfw/perl/isg_pub/Control/Utils/Configurator.pm	361;"	subroutine	language:Perl
 E	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:A
 ESC, O	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	230;"	property	language:JavaScript
 Ea	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Ca
@@ -249,7 +249,7 @@ GetNiceTodayDate	sfw/perl/isg_pub/Control/Utils/Timer.pm	153;"	subroutine	langua
 GetNiceYesterdayDate	sfw/perl/isg_pub/Control/Utils/Timer.pm	173;"	subroutine	language:Perl
 GetTimeUnits	doc_pub/lib/DocPub/Model/HtmlToPdfConverter.pm	142;"	subroutine	language:Perl
 GetTimeUnits	doc_pub/lib/DocPub/Utils/Initiator.pm	429;"	subroutine	language:Perl
-GetTimeUnits	sfw/perl/isg_pub/Control/Utils/Configurator.pm	457;"	subroutine	language:Perl
+GetTimeUnits	sfw/perl/isg_pub/Control/Utils/Configurator.pm	453;"	subroutine	language:Perl
 GetTimeUnits	sfw/perl/isg_pub/Control/Utils/Timer.pm	129;"	subroutine	language:Perl
 H	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:A.F
 Hb	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Gb
@@ -302,7 +302,7 @@ P	doc_pub/public/lib/DataTables-1.10.9/js/jquery.dataTables.min.js	17;"	function
 P	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:M
 P	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	221;"	property	language:JavaScript
 Pa	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Oa
-PrintToFile	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	178;"	subroutine	language:Perl
+PrintToFile	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	179;"	subroutine	language:Perl
 PrintToFile	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	80;"	subroutine	language:Perl
 ProcName	docs/cheat-sheets/nz/nz-cheat-sheet.sql	111;"	procedure	language:SQL
 ProcName	docs/cheat-sheets/nz/nz-cheat-sheet.sql	126;"	procedure	language:SQL
@@ -321,14 +321,14 @@ RunBeforeExit	doc_pub/lib/DocPub/Controller/Renderer.pm	143;"	subroutine	languag
 RunBeforeExit	doc_pub/lib/DocPub/Controller/Search.pm	223;"	subroutine	language:Perl
 RunBeforeExit	doc_pub/lib/DocPub/Controller/Show.pm	372;"	subroutine	language:Perl
 RunBeforeExit	doc_pub/lib/DocPub/Utils/Initiator.pm	550;"	subroutine	language:Perl
-RunBeforeExit	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1435;"	subroutine	language:Perl
+RunBeforeExit	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1434;"	subroutine	language:Perl
 RunBeforeExit	sfw/perl/isg_pub/Control/Utils/Initiator.pm	528;"	subroutine	language:Perl
 RunBeforeExit	sfw/perl/isg_pub/Control/Utils/Logger.pm	129;"	subroutine	language:Perl
 S	doc_pub/public/lib/prettify/run_prettify.js	3;"	variable	language:JavaScript
 SCRIPT_END_PLACEHOLDER	doc_pub/public/lib/reveal/reveal.js-master/plugin/markdown/markdown.js	34;"	variable	language:JavaScript
 Sb	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Rb
 Scroller	doc_pub/public/lib/Scroller-1.3.0/js/dataTables.scroller.js	77;"	class	language:JavaScript
-SetAllIniVarsToEnvironmentVars	sfw/perl/isg_pub/Control/Utils/Configurator.pm	348;"	subroutine	language:Perl
+SetAllIniVarsToEnvironmentVars	sfw/perl/isg_pub/Control/Utils/Configurator.pm	344;"	subroutine	language:Perl
 T	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:S
 TABLE_NAME	sfw/sql/ora/tmpl/ddl/create-oracle-table-template.sql	35;"	table	language:SQL
 TABLE_NAME.DWRUNTIME	sfw/sql/ora/tmpl/ddl/create-oracle-table-template.sql	37;"	field	language:SQL
@@ -961,22 +961,24 @@ doBuildControl	doc_pub/lib/DocPub/View/RightMenuBuilder.pm	32;"	subroutine	langu
 doBuildControl	doc_pub/lib/DocPub/View/SrchResultBuilder.pm	32;"	subroutine	language:Perl
 doBuildControl	doc_pub/lib/DocPub/View/SrchResultPrgrphBuilder.pm	32;"	subroutine	language:Perl
 doBuildControl	doc_pub/lib/DocPub/View/SrchResultTitleBuilder.pm	33;"	subroutine	language:Perl
-doBuildControlOld	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	165;"	subroutine	language:Perl
+doBuildControlOld	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	169;"	subroutine	language:Perl
+doBuildHoursSubTotals	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	203;"	subroutine	language:Perl
 doBuildInlineTable	doc_pub/lib/DocPub/View/DocBuilder.pm	158;"	subroutine	language:Perl
-doBuildInlineTable	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	271;"	subroutine	language:Perl
+doBuildInlineTable	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	275;"	subroutine	language:Perl
 doBuildInlineTable	doc_pub/lib/DocPub/View/PdfDocBuilder.pm	157;"	subroutine	language:Perl
-doBuildLogicalOrderHash	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	224;"	subroutine	language:Perl
+doBuildLogicalOrderHash	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	225;"	subroutine	language:Perl
+doBuildLogicalOrderHash	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	357;"	subroutine	language:Perl
 doBuildLogicalOrderHash	doc_pub/lib/DocPub/View/DocBuilder.pm	207;"	subroutine	language:Perl
-doBuildLogicalOrderHash	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	320;"	subroutine	language:Perl
+doBuildLogicalOrderHash	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	324;"	subroutine	language:Perl
 doBuildLogicalOrderHash	doc_pub/lib/DocPub/View/PdfDocBuilder.pm	206;"	subroutine	language:Perl
 doBuildLogicalOrderHash	doc_pub/lib/DocPub/View/PresentBuilder.pm	254;"	subroutine	language:Perl
 doBuildLogicalOrderHash	doc_pub/lib/DocPub/View/RightMenuBuilder.pm	214;"	subroutine	language:Perl
 doBuildPresentationTitle	doc_pub/lib/DocPub/View/PresentBuilder.pm	109;"	subroutine	language:Perl
 doBuildSubLevel	doc_pub/lib/DocPub/View/PresentBuilder.pm	191;"	subroutine	language:Perl
-doBuildTOC	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	357;"	subroutine	language:Perl
+doBuildTOC	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	358;"	subroutine	language:Perl
 doChangeEnvType	sfw/bash/isg-pub/funcs/dev/change-env-type.func.sh	6;"	function	language:Sh
 doChangeVersion	sfw/bash/isg-pub/funcs/dev/change-version.func.sh	6;"	function	language:Sh
-doCheckPerlSyntax	sfw/sh/isg-pub/isg-pub.sh	1273;"	function	language:Sh
+doCheckPerlSyntax	sfw/sh/isg-pub/isg-pub.sh	1274;"	function	language:Sh
 doCheckReadyToStart	sfw/bash/isg-pub/isg-pub.sh	186;"	function	language:Sh
 doCheckReadyToStart	sfw/sh/file-saver/file-saver.sh	141;"	function	language:Sh
 doCheckReadyToStart	sfw/sh/isg-pub/isg-pub.sh	180;"	function	language:Sh
@@ -989,14 +991,14 @@ doCleanAfterRun	sfw/bash/isg-pub/test-isg-pub.sh	170;"	function	language:Sh
 doCleanAfterRun	sfw/sh/file-saver/file-saver.sh	240;"	function	language:Sh
 doCleanAfterRun	sfw/sh/isg-pub/isg-pub.sh	338;"	function	language:Sh
 doCloneToApp	sfw/bash/isg-pub/funcs/dev/clone-to-app.func.sh	8;"	function	language:Sh
-doConfigureControl	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	537;"	subroutine	language:Perl
+doConfigureControl	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	488;"	subroutine	language:Perl
 doConfigureControl	doc_pub/lib/DocPub/View/DocBuilder.pm	364;"	subroutine	language:Perl
 doConfigureControl	doc_pub/lib/DocPub/View/DocPrgrphBuilder.pm	136;"	subroutine	language:Perl
 doConfigureControl	doc_pub/lib/DocPub/View/DocSrcCodeBuilder.pm	84;"	subroutine	language:Perl
 doConfigureControl	doc_pub/lib/DocPub/View/DocTitleBuilder.pm	238;"	subroutine	language:Perl
-doConfigureControl	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	472;"	subroutine	language:Perl
+doConfigureControl	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	476;"	subroutine	language:Perl
 doConfigureControl	doc_pub/lib/DocPub/View/LinkActionTableBuilder.pm	132;"	subroutine	language:Perl
-doConfigureControl	doc_pub/lib/DocPub/View/NiceSTableBuilder.pm	125;"	subroutine	language:Perl
+doConfigureControl	doc_pub/lib/DocPub/View/NiceSTableBuilder.pm	127;"	subroutine	language:Perl
 doConfigureControl	doc_pub/lib/DocPub/View/NiceTableBuilder.pm	159;"	subroutine	language:Perl
 doConfigureControl	doc_pub/lib/DocPub/View/PdfDocBuilder.pm	367;"	subroutine	language:Perl
 doConfigureControl	doc_pub/lib/DocPub/View/PdfDocPrgrphBuilder.pm	114;"	subroutine	language:Perl
@@ -1014,31 +1016,31 @@ doConfigureRendering	doc_pub/lib/DocPub.pm	289;"	subroutine	language:Perl
 doConvert	doc_pub/lib/DocPub/Model/HtmlToPdfConverter.pm	31;"	subroutine	language:Perl
 doConvert	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	29;"	subroutine	language:Perl
 doConvert	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	30;"	subroutine	language:Perl
-doConvertHtmlFilesToPdfFiles	sfw/sh/isg-pub/isg-pub.sh	1019;"	function	language:Sh
+doConvertHtmlFilesToPdfFiles	sfw/sh/isg-pub/isg-pub.sh	1020;"	function	language:Sh
 doCreateComponentFullPackage	sfw/sh/file-saver/file-saver.sh	518;"	function	language:Sh
 doCreateCtags	sfw/bash/isg-pub/funcs/create-ctags.func.sh	6;"	function	language:Sh
 doCreateCtags	sfw/bash/isg-pub/funcs/dev/create-ctags.func.sh	6;"	function	language:Sh
 doCreateCtags	sfw/sh/file-saver/file-saver.sh	603;"	function	language:Sh
-doCreateCtags	sfw/sh/isg-pub/isg-pub.sh	934;"	function	language:Sh
+doCreateCtags	sfw/sh/isg-pub/isg-pub.sh	935;"	function	language:Sh
 doCreateDefaultConfFile	sfw/bash/isg-pub/isg-pub.sh	165;"	function	language:Sh
 doCreateDeploymentPackage	sfw/bash/isg-pub/funcs/create-deployment-package.func.sh	7;"	function	language:Sh
 doCreateFull7zPackage	sfw/bash/isg-pub/funcs/pckg/create-full-7z-package.func.sh	7;"	function	language:Sh
-doCreateFullComponentVersionPackage	sfw/sh/isg-pub/isg-pub.sh	766;"	function	language:Sh
+doCreateFullComponentVersionPackage	sfw/sh/isg-pub/isg-pub.sh	767;"	function	language:Sh
 doCreateFullPackage	sfw/bash/isg-pub/funcs/pckg/create-full-package.func.sh	6;"	function	language:Sh
 doCreateHostBackup	sfw/sh/file-saver/file-saver.sh	620;"	function	language:Sh
 doCreateInterLinkAnchors	doc_pub/lib/DocPub/View/LinkBuilder.pm	35;"	subroutine	language:Perl
 doCreateLinkToMe	sfw/sh/file-saver/file-saver.sh	705;"	function	language:Sh
-doCreateLinkToMe	sfw/sh/isg-pub/isg-pub.sh	956;"	function	language:Sh
+doCreateLinkToMe	sfw/sh/isg-pub/isg-pub.sh	957;"	function	language:Sh
 doCreatePackage	sfw/sh/file-saver/file-saver.sh	284;"	function	language:Sh
 doCreatePackage	sfw/sh/isg-pub/isg-pub.sh	389;"	function	language:Sh
 doCreateRelative7zPackage	sfw/bash/isg-pub/funcs/pckg/create-relative-7z-package.func.sh	8;"	function	language:Sh
 doCreateRelativePackage	sfw/bash/isg-pub/funcs/pckg/create-relative-package.func.sh	8;"	function	language:Sh
 doCreateSetPermissionsScript	sfw/sh/file-saver/file-saver.sh	667;"	function	language:Sh
-doDeNormalizeHsWorkSheetToHsCellValue	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1693;"	subroutine	language:Perl
+doDeNormalizeHsWorkSheetToHsCellValue	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1692;"	subroutine	language:Perl
 doDeployPackage	sfw/sh/file-saver/file-saver.sh	307;"	function	language:Sh
 doDeployPackage	sfw/sh/isg-pub/isg-pub.sh	413;"	function	language:Sh
-doDumpTables	sfw/sh/isg-pub/isg-pub.sh	1370;"	function	language:Sh
-doEatTables	sfw/sh/isg-pub/isg-pub.sh	1393;"	function	language:Sh
+doDumpTables	sfw/sh/isg-pub/isg-pub.sh	1371;"	function	language:Sh
+doEatTables	sfw/sh/isg-pub/isg-pub.sh	1394;"	function	language:Sh
 doExit	sfw/bash/isg-pub/isg-pub.sh	206;"	function	language:Sh
 doExit	sfw/bash/isg-pub/test-isg-pub.sh	107;"	function	language:Sh
 doExit	sfw/sh/file-saver/file-saver.sh	253;"	function	language:Sh
@@ -1046,7 +1048,7 @@ doExit	sfw/sh/isg-pub/isg-pub.sh	351;"	function	language:Sh
 doFetchDocumentInlineTables	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	274;"	subroutine	language:Perl
 doGenerateActionFiles	sfw/bash/isg-pub/funcs/dev/generate-action-files.func.sh	6;"	function	language:Sh
 doGetCreateSchemaDdlFiles	sfw/perl/isg_pub/db2_to_nz_converter.pl	136;"	subroutine	language:Perl
-doGetItemViews	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1896;"	subroutine	language:Perl
+doGetItemViews	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1893;"	subroutine	language:Perl
 doGetItems	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	316;"	subroutine	language:Perl
 doGmailPackage	sfw/bash/isg-pub/funcs/pckg/gmail-package.func.sh	5;"	function	language:Sh
 doHelpChangeVersion	sfw/bash/isg-pub/helps/change-version.help.sh	7;"	function	language:Sh
@@ -1062,18 +1064,18 @@ doInit	sfw/sh/file-saver/file-saver.sh	16;"	function	language:Sh
 doInit	sfw/sh/isg-pub/isg-pub.sh	17;"	function	language:Sh
 doInitialize	doc_pub/lib/DocPub.pm	221;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/Model/HtmlToPdfConverter.pm	167;"	subroutine	language:Perl
-doInitialize	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2436;"	subroutine	language:Perl
+doInitialize	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2433;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/Model/OracleDbHandler.pm	114;"	subroutine	language:Perl
-doInitialize	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	583;"	subroutine	language:Perl
-doInitialize	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	189;"	subroutine	language:Perl
+doInitialize	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	534;"	subroutine	language:Perl
+doInitialize	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	510;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/DocBuilder.pm	387;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/DocPrgrphBuilder.pm	159;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/DocSrcCodeBuilder.pm	107;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/DocTitleBuilder.pm	261;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/InlineTableControlBuilder.pm	141;"	subroutine	language:Perl
-doInitialize	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	495;"	subroutine	language:Perl
+doInitialize	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	499;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/LinkActionTableBuilder.pm	184;"	subroutine	language:Perl
-doInitialize	doc_pub/lib/DocPub/View/NiceSTableBuilder.pm	198;"	subroutine	language:Perl
+doInitialize	doc_pub/lib/DocPub/View/NiceSTableBuilder.pm	200;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/NiceTableBuilder.pm	252;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/PdfDocBuilder.pm	390;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/PdfDocPrgrphBuilder.pm	137;"	subroutine	language:Perl
@@ -1087,21 +1089,21 @@ doInitialize	doc_pub/lib/DocPub/View/RightMenuBuilder.pm	393;"	subroutine	langua
 doInitialize	doc_pub/lib/DocPub/View/SrchResultBuilder.pm	205;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/SrchResultPrgrphBuilder.pm	92;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/SrchResultTitleBuilder.pm	97;"	subroutine	language:Perl
-doInitialize	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1458;"	subroutine	language:Perl
+doInitialize	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1457;"	subroutine	language:Perl
 doInitialize	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	38;"	subroutine	language:Perl
 doInitialize	sfw/perl/isg_pub/db2_to_nz_converter.pl	241;"	subroutine	language:Perl
 doInitialize	sfw/perl/isg_pub/load.pl	197;"	subroutine	language:Perl
 doInitializeLogger	doc_pub/lib/DocPub/Utils/Initiator.pm	397;"	subroutine	language:Perl
-doInitializeProjectAppLayer	sfw/sh/isg-pub/isg-pub.sh	1195;"	function	language:Sh
+doInitializeProjectAppLayer	sfw/sh/isg-pub/isg-pub.sh	1196;"	function	language:Sh
 doInstantiate	doc_pub/lib/DocPub/Model/ConverterFactory.pm	21;"	subroutine	language:Perl
 doInstantiate	doc_pub/lib/DocPub/Model/DbHandlerFactory.pm	33;"	subroutine	language:Perl
 doInstantiate	doc_pub/lib/DocPub/View/ControlFactory.pm	39;"	subroutine	language:Perl
 doListAllInstalledModules	sfw/perl/isg_pub/isg_pub_preq_checker.pl	33;"	subroutine	language:Perl
-doListFoldersAndDocsTitles	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2273;"	subroutine	language:Perl
+doListFoldersAndDocsTitles	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2270;"	subroutine	language:Perl
 doListTable	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	474;"	subroutine	language:Perl
 doListTableHierarchy	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	520;"	subroutine	language:Perl
 doLoadAppPages	doc_pub/lib/DocPub/Controller/Initializer.pm	18;"	subroutine	language:Perl
-doLoadAppPagesData	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1812;"	subroutine	language:Perl
+doLoadAppPagesData	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1809;"	subroutine	language:Perl
 doLog	sfw/bash/isg-pub/isg-pub.sh	246;"	function	language:Sh
 doLog	sfw/bash/isg-pub/test-isg-pub.sh	147;"	function	language:Sh
 doLog	sfw/sh/file-saver/file-saver.sh	154;"	function	language:Sh
@@ -1110,18 +1112,18 @@ doLog	sfw/sql/mysql/product/39.create-log-table.sql	18;"	procedure	language:SQL
 doMorphDir	sfw/bash/isg-pub/funcs/dev/morph-dir.func.sh	14;"	function	language:Sh
 doMorphDir	sfw/sh/file-saver/file-saver.sh	392;"	function	language:Sh
 doMorphDir	sfw/sh/isg-pub/isg-pub.sh	503;"	function	language:Sh
-doOverWriteConfHolder	sfw/perl/isg_pub/Control/Utils/Configurator.pm	327;"	subroutine	language:Perl
+doOverWriteConfHolder	sfw/perl/isg_pub/Control/Utils/Configurator.pm	323;"	subroutine	language:Perl
 doParametrize	sfw/perl/isg_pub/Control/Utils/Configurator.pm	123;"	subroutine	language:Perl
 doParseCmdArgs	sfw/bash/isg-pub/isg-pub.sh	130;"	function	language:Sh
 doParseCmdArgs	sfw/sh/file-saver/file-saver.sh	91;"	function	language:Sh
 doParseCmdArgs	sfw/sh/isg-pub/isg-pub.sh	120;"	function	language:Sh
 doParseConfFile	sfw/bash/isg-pub/isg-pub.sh	379;"	function	language:Sh
 doParseConfFile	sfw/bash/isg-pub/test-isg-pub.sh	287;"	function	language:Sh
-doParseExcelSheet	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1184;"	subroutine	language:Perl
+doParseExcelSheet	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1183;"	subroutine	language:Perl
 doParseIniFile	sfw/sh/file-saver/file-saver.sh	70;"	function	language:Sh
 doParseIniFile	sfw/sh/isg-pub/isg-pub.sh	88;"	function	language:Sh
 doParseSchemaFile	sfw/perl/isg_pub/db2_to_nz_converter.pl	167;"	subroutine	language:Perl
-doPerlMysqlMorping	sfw/sh/isg-pub/isg-pub.sh	986;"	function	language:Sh
+doPerlMysqlMorping	sfw/sh/isg-pub/isg-pub.sh	987;"	function	language:Sh
 doPrintHelp	sfw/bash/isg-pub/funcs/man/print-help.func.sh	5;"	function	language:Sh
 doPrintHelp	sfw/sh/file-saver/file-saver.sh	426;"	function	language:Sh
 doPrintHelp	sfw/sh/isg-pub/isg-pub.sh	548;"	function	language:Sh
@@ -1135,13 +1137,13 @@ doPrintHelpForRemovePackageFiles	sfw/bash/isg-pub/help/pckg/remove-package-files
 doPrintHelpForRestoreTmuxSession	sfw/bash/isg-pub/help/sys/tmux/restore-tmux-session.func.sh	7;"	function	language:Sh
 doPrintHelpForSaveTmuxSession	sfw/bash/isg-pub/help/sys/tmux/save-tmux-session.func.sh	7;"	function	language:Sh
 doPrintHelpForSaveTmuxSession	sfw/bash/isg-pub/help/sys/tmux/tmux-common.func.sh	12;"	function	language:Sh
-doPrintInsertTable	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1786;"	subroutine	language:Perl
-doPrintNiceSql	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2116;"	subroutine	language:Perl
+doPrintInsertTable	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1785;"	subroutine	language:Perl
+doPrintNiceSql	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2113;"	subroutine	language:Perl
 doPrintUsage	sfw/bash/isg-pub/funcs/man/print-usage.func.sh	5;"	function	language:Sh
 doPrintUsage	sfw/sh/isg-pub/isg-pub.sh	701;"	function	language:Sh
-doReadIniFile	sfw/perl/isg_pub/Control/Utils/Configurator.pm	200;"	subroutine	language:Perl
+doReadConfFile	sfw/perl/isg_pub/Control/Utils/Configurator.pm	211;"	subroutine	language:Perl
 doRemoveComponentPackage	sfw/sh/file-saver/file-saver.sh	547;"	function	language:Sh
-doRemoveComponentPackage	sfw/sh/isg-pub/isg-pub.sh	840;"	function	language:Sh
+doRemoveComponentPackage	sfw/sh/isg-pub/isg-pub.sh	841;"	function	language:Sh
 doRemovePackage	docs/txt/isg-pub/helps/pckg/remove-package.help.txt	8;"	function	language:Sh
 doRemovePackage	docs/txt/isg-pub/specs/pckg/remove-package.spec.txt	8;"	function	language:Sh
 doRemovePackage	sfw/bash/isg-pub/funcs/pckg/remove-package.func.sh	8;"	function	language:Sh
@@ -1150,13 +1152,15 @@ doRemovePackageFiles	docs/txt/isg-pub/helps/pckg/remove-package-files.help.txt	7
 doRemovePackageFiles	docs/txt/isg-pub/specs/pckg/remove-package-files.spec.txt	7;"	function	language:Sh
 doRemovePackageFiles	sfw/bash/isg-pub/funcs/pckg/remove-package-files.func.sh	7;"	function	language:Sh
 doRemovePackageFiles	sfw/bash/isg-pub/funcs/remove-package-files.func.sh	7;"	function	language:Sh
-doRemoveProjectPackage	sfw/sh/isg-pub/isg-pub.sh	872;"	function	language:Sh
-doResetAllSubordinateLevels	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	561;"	subroutine	language:Perl
+doRemoveProjectPackage	sfw/sh/isg-pub/isg-pub.sh	873;"	function	language:Sh
+doResetAllSubordinateLevels	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	512;"	subroutine	language:Perl
+doResetAllSubordinateLevels	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	488;"	subroutine	language:Perl
 doResetAllSubordinateLevels	doc_pub/lib/DocPub/View/DocBuilder.pm	342;"	subroutine	language:Perl
-doResetAllSubordinateLevels	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	450;"	subroutine	language:Perl
+doResetAllSubordinateLevels	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	454;"	subroutine	language:Perl
 doResetAllSubordinateLevels	doc_pub/lib/DocPub/View/PdfDocBuilder.pm	345;"	subroutine	language:Perl
 doResetAllSubordinateLevels	doc_pub/lib/DocPub/View/PresentBuilder.pm	386;"	subroutine	language:Perl
 doResetAllSubordinateLevels	doc_pub/lib/DocPub/View/RightMenuBuilder.pm	348;"	subroutine	language:Perl
+doResetAllSubordinateLevelsForHours	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	334;"	subroutine	language:Perl
 doResolveMyConfFile	doc_pub/lib/DocPub/Utils/Initiator.pm	328;"	subroutine	language:Perl
 doResolveMyEnvironmentName	doc_pub/lib/DocPub/Utils/Initiator.pm	178;"	subroutine	language:Perl
 doResolveMyEnvironmentName	sfw/perl/isg_pub/Control/Utils/Initiator.pm	176;"	subroutine	language:Perl
@@ -1190,14 +1194,14 @@ doRunCmdOrExit	sfw/bash/isg-pub/isg-pub.sh	306;"	function	language:Sh
 doRunCmdOrExit	sfw/bash/isg-pub/test-isg-pub.sh	207;"	function	language:Sh
 doRunCmdOrExit	sfw/sh/file-saver/file-saver.sh	194;"	function	language:Sh
 doRunCmdOrExit	sfw/sh/isg-pub/isg-pub.sh	278;"	function	language:Sh
-doRunDeNormalizedUpsertSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	944;"	subroutine	language:Perl
-doRunNestedSetSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	663;"	subroutine	language:Perl
-doRunPerlTests	sfw/sh/isg-pub/isg-pub.sh	1336;"	function	language:Sh
+doRunDeNormalizedUpsertSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	943;"	subroutine	language:Perl
+doRunNestedSetSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	662;"	subroutine	language:Perl
+doRunPerlTests	sfw/sh/isg-pub/isg-pub.sh	1337;"	function	language:Sh
 doRunProcsInParallel	sfw/sh/isg-pub/isg-pub.sh	537;"	function	language:Sh
-doRunProjectMySqlScripts	sfw/sh/isg-pub/isg-pub.sh	1105;"	function	language:Sh
+doRunProjectMySqlScripts	sfw/sh/isg-pub/isg-pub.sh	1106;"	function	language:Sh
 doRunTests	sfw/bash/isg-pub/test-isg-pub.sh	51;"	function	language:Sh
-doRunTruncateTableSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1149;"	subroutine	language:Perl
-doRunUpsertSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1072;"	subroutine	language:Perl
+doRunTruncateTableSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1148;"	subroutine	language:Perl
+doRunUpsertSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1071;"	subroutine	language:Perl
 doSaveTmuxSession	docs/txt/isg-pub/helps/sys/tmux/save-tmux-session.help.txt	7;"	function	language:Sh
 doSaveTmuxSession	docs/txt/isg-pub/helps/sys/tmux/tmux-common.help.txt	12;"	function	language:Sh
 doSaveTmuxSession	docs/txt/isg-pub/specs/sys/tmux/save-tmux-session.spec.txt	7;"	function	language:Sh
@@ -1205,8 +1209,8 @@ doSaveTmuxSession	docs/txt/isg-pub/specs/sys/tmux/tmux-common.spec.txt	12;"	func
 doSaveTmuxSession	sfw/bash/isg-pub/funcs/save-tmux-session.func.sh	7;"	function	language:Sh
 doSaveTmuxSession	sfw/bash/isg-pub/funcs/sys/tmux/save-tmux-session.func.sh	7;"	function	language:Sh
 doSaveTmuxSession	sfw/bash/isg-pub/funcs/sys/tmux/tmux-common.func.sh	12;"	function	language:Sh
-doSearchForTag	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2143;"	subroutine	language:Perl
-doSearchNamesAndDescriptions	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1993;"	subroutine	language:Perl
+doSearchForTag	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2140;"	subroutine	language:Perl
+doSearchNamesAndDescriptions	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1990;"	subroutine	language:Perl
 doSendReport	sfw/sh/file-saver/file-saver.sh	214;"	function	language:Sh
 doSendReport	sfw/sh/isg-pub/isg-pub.sh	298;"	function	language:Sh
 doSetVars	sfw/bash/isg-pub/isg-pub.sh	326;"	function	language:Sh
@@ -1293,10 +1297,10 @@ doTestSaveTmuxSession	sfw/bash/isg-pub/tests/sys/tmux/tmux-common.test.sh	12;"	f
 doTestToAppCloning	sfw/bash/isg-pub/isg-pub-test.sh	83;"	function	language:Sh
 doTestUsage	sfw/bash/isg-pub/isg-pub-test.sh	321;"	function	language:Sh
 doTestVersionChanges	sfw/bash/isg-pub/isg-pub-test.sh	249;"	function	language:Sh
-doUpdateItemLevel	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2380;"	subroutine	language:Perl
+doUpdateItemLevel	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2377;"	subroutine	language:Perl
 doWaitForChildProcsToExit	sfw/sh/file-saver/file-saver.sh	577;"	function	language:Sh
-doWaitForChildProcsToExit	sfw/sh/isg-pub/isg-pub.sh	908;"	function	language:Sh
-doXlsToHashOfHashes	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1584;"	subroutine	language:Perl
+doWaitForChildProcsToExit	sfw/sh/isg-pub/isg-pub.sh	909;"	function	language:Sh
+doXlsToHashOfHashes	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1583;"	subroutine	language:Perl
 do_get_item_views	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	528;"	subroutine	language:Perl
 do_reshuffle	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	34;"	subroutine	language:Perl
 docElem	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	8912;"	variable	language:JavaScript
@@ -1328,13 +1332,13 @@ dumpFields	doc_pub/lib/DocPub/Controller/Renderer.pm	128;"	subroutine	language:P
 dumpFields	doc_pub/lib/DocPub/Controller/Search.pm	208;"	subroutine	language:Perl
 dumpFields	doc_pub/lib/DocPub/Controller/Show.pm	357;"	subroutine	language:Perl
 dumpFields	doc_pub/lib/DocPub/Utils/Initiator.pm	535;"	subroutine	language:Perl
-dumpFields	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1421;"	subroutine	language:Perl
+dumpFields	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1420;"	subroutine	language:Perl
 dumpFields	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	229;"	subroutine	language:Perl
 dumpFields	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	253;"	subroutine	language:Perl
 dumpFields	sfw/perl/isg_pub/Control/Utils/Initiator.pm	513;"	subroutine	language:Perl
 dumpFields	sfw/perl/isg_pub/Control/Utils/Logger.pm	114;"	subroutine	language:Perl
 dumpFields	sfw/perl/isg_pub/Control/Utils/Timer.pm	76;"	subroutine	language:Perl
-dumpIni	sfw/perl/isg_pub/Control/Utils/Configurator.pm	305;"	subroutine	language:Perl
+dumpIni	sfw/perl/isg_pub/Control/Utils/Configurator.pm	301;"	subroutine	language:Perl
 dump_tmux_session	docs/txt/isg-pub/helps/sys/tmux/tmux-common.help.txt	6;"	function	language:Sh
 dump_tmux_session	docs/txt/isg-pub/specs/sys/tmux/tmux-common.spec.txt	6;"	function	language:Sh
 dump_tmux_session	sfw/bash/isg-pub/funcs/sys/tmux/tmux-common.func.sh	6;"	function	language:Sh
@@ -1550,7 +1554,7 @@ get	doc_pub/lib/DocPub/Controller/PresentView.pm	142;"	subroutine	language:Perl
 get	doc_pub/lib/DocPub/Controller/Renderer.pm	101;"	subroutine	language:Perl
 get	doc_pub/lib/DocPub/Controller/Search.pm	181;"	subroutine	language:Perl
 get	doc_pub/lib/DocPub/Controller/Show.pm	330;"	subroutine	language:Perl
-get	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2482;"	subroutine	language:Perl
+get	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2479;"	subroutine	language:Perl
 get	doc_pub/lib/DocPub/Model/OracleDbHandler.pm	176;"	subroutine	language:Perl
 get	doc_pub/lib/DocPub/Utils/Initiator.pm	508;"	subroutine	language:Perl
 get	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	2543;"	method	language:JavaScript	class:Editor
@@ -1564,8 +1568,8 @@ get	doc_pub/public/lib/FieldType-Select2/editor.select2.min.js	2;"	method	langua
 get	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	3613;"	method	language:JavaScript	class:Data
 get	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	7138;"	method	language:JavaScript	class:jQuery.propHooks.selected
 get	doc_pub/public/lib/reveal/reveal.js-master/lib/js/classList.js	2;"	property	language:JavaScript	class:var.l
-get	sfw/perl/isg_pub/Control/Utils/Configurator.pm	383;"	subroutine	language:Perl
-get	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1398;"	subroutine	language:Perl
+get	sfw/perl/isg_pub/Control/Utils/Configurator.pm	379;"	subroutine	language:Perl
+get	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1397;"	subroutine	language:Perl
 get	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	181;"	subroutine	language:Perl
 get	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	228;"	subroutine	language:Perl
 get	sfw/perl/isg_pub/Control/Utils/Initiator.pm	486;"	subroutine	language:Perl
@@ -1576,8 +1580,8 @@ getAll	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	5018;"	function	language:
 getAppStructureData	doc_pub/lib/DocPub.pm	263;"	subroutine	language:Perl
 getBranch	doc_pub/public/lib/jquery-layout/jquery.layout.js	976;"	function	language:JavaScript
 getComputedSlideSize	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	1682;"	function	language:JavaScript
-getConfHolder	sfw/perl/isg_pub/Control/Utils/Configurator.pm	408;"	subroutine	language:Perl
-getConfHolderRef	sfw/perl/isg_pub/Control/Utils/Configurator.pm	480;"	subroutine	language:Perl
+getConfHolder	sfw/perl/isg_pub/Control/Utils/Configurator.pm	404;"	subroutine	language:Perl
+getConfHolderRef	sfw/perl/isg_pub/Control/Utils/Configurator.pm	476;"	subroutine	language:Perl
 getDaysInMonth	doc_pub/public/lib/MomentJS/moment.js	707;"	function	language:JavaScript
 getDimensions	doc_pub/public/lib/jQueryUI-1.11.4/jquery-ui.js	1082;"	function	language:JavaScript
 getElementStyles	doc_pub/public/lib/jQueryUI-1.11.4/jquery-ui.js	10059;"	function	language:JavaScript
@@ -1800,7 +1804,7 @@ l	doc_pub/public/lib/Buttons-1.0.3/js/dataTables.buttons.min.js	18;"	method	lang
 l	doc_pub/public/lib/MouseTrap/mousetrap.min.js	5;"	function	language:JavaScript	function:g
 l	doc_pub/public/lib/Select-1.0.1/js/dataTables.select.min.js	7;"	function	language:JavaScript
 la	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:ha
-label	doc_pub/lib/DocPub/View/NiceSTableBuilder.pm	170;"	label	language:Perl
+label	doc_pub/lib/DocPub/View/NiceSTableBuilder.pm	172;"	label	language:Perl
 label	doc_pub/lib/DocPub/View/NiceTableBuilder.pm	221;"	label	language:Perl
 label	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	1012;"	property	language:JavaScript	class:Editor.models.button
 label	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	321;"	method	language:JavaScript	class:Editor.Field
@@ -1832,12 +1836,12 @@ linear	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	6251;"	method	language:Ja
 linkify	doc_pub/public/lib/reveal/reveal.js-master/index.html	228;"	function	language:HTML
 list_doc_items	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1386;"	subroutine	language:Perl
 list_doc_items_bottom_up	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1187;"	subroutine	language:Perl
-list_images_data	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1580;"	subroutine	language:Perl
+list_images_data	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1577;"	subroutine	language:Perl
 list_items	doc_pub/lib/DocPub/Controller/Edit.pm	19;"	subroutine	language:Perl
 list_items	doc_pub/lib/DocPub/Controller/List.pm	19;"	subroutine	language:Perl
 list_items	doc_pub/lib/DocPub/Controller/List1.pm	87;"	subroutine	language:Perl
 list_items	doc_pub/lib/DocPub/Controller/List2.pm	136;"	subroutine	language:Perl
-list_items	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1642;"	subroutine	language:Perl
+list_items	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1639;"	subroutine	language:Perl
 list_items_json	doc_pub/lib/DocPub/Controller/List1.pm	13;"	subroutine	language:Perl
 list_items_json	doc_pub/lib/DocPub/Controller/List2.pm	17;"	subroutine	language:Perl
 list_items_meta	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	743;"	subroutine	language:Perl
@@ -1873,7 +1877,7 @@ main	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	89;"	subroutine	
 main	sfw/perl/isg_pub/db2_to_nz_converter.pl	91;"	subroutine	language:Perl
 main	sfw/perl/isg_pub/load.pl	93;"	subroutine	language:Perl
 main	sfw/sh/file-saver/file-saver.sh	793;"	function	language:Sh
-main	sfw/sh/isg-pub/isg-pub.sh	1411;"	function	language:Sh
+main	sfw/sh/isg-pub/isg-pub.sh	1412;"	function	language:Sh
 main	sfw/sh/isg-pub/test-isg-pub.sh	880;"	function	language:Sh
 makeFormatFunction	doc_pub/public/lib/MomentJS/moment.js	455;"	function	language:JavaScript
 makeGetSet	doc_pub/public/lib/MomentJS/moment.js	369;"	function	language:JavaScript
@@ -1937,7 +1941,7 @@ n	doc_pub/public/lib/jQueryUI-1.11.4/jquery-ui.min.js	10;"	function	language:Jav
 n	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	function	language:JavaScript	function:u.s
 n	doc_pub/public/lib/reveal/reveal.js-master/plugin/markdown/marked.js	6;"	class	language:JavaScript	class:t
 na	doc_pub/public/lib/DataTables-1.10.9/js/jquery.dataTables.min.js	20;"	function	language:JavaScript	function:$
-name	doc_pub/lib/DocPub/View/NiceSTableBuilder.pm	171;"	label	language:Perl
+name	doc_pub/lib/DocPub/View/NiceSTableBuilder.pm	173;"	label	language:Perl
 name	doc_pub/lib/DocPub/View/NiceTableBuilder.pm	222;"	label	language:Perl
 name	doc_pub/lib/DocPub/View/PlainTableBuilder.pm	258;"	label	language:Perl
 name	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	409;"	method	language:JavaScript	class:Editor.Field
@@ -1954,10 +1958,10 @@ new	doc_pub/lib/DocPub/Controller/Initializer.pm	40;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/Model/ConverterFactory.pm	72;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/Model/DbHandlerFactory.pm	71;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/Model/HtmlToPdfConverter.pm	185;"	subroutine	language:Perl
-new	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2462;"	subroutine	language:Perl
+new	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2459;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/Model/OracleDbHandler.pm	156;"	subroutine	language:Perl
-new	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	601;"	subroutine	language:Perl
-new	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	207;"	subroutine	language:Perl
+new	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	552;"	subroutine	language:Perl
+new	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	528;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/Utils/Initiator.pm	458;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/ControlFactory.pm	142;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/DocBuilder.pm	404;"	subroutine	language:Perl
@@ -1965,9 +1969,9 @@ new	doc_pub/lib/DocPub/View/DocPrgrphBuilder.pm	176;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/DocSrcCodeBuilder.pm	124;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/DocTitleBuilder.pm	278;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/InlineTableControlBuilder.pm	159;"	subroutine	language:Perl
-new	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	512;"	subroutine	language:Perl
+new	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	516;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/LinkActionTableBuilder.pm	199;"	subroutine	language:Perl
-new	doc_pub/lib/DocPub/View/NiceSTableBuilder.pm	216;"	subroutine	language:Perl
+new	doc_pub/lib/DocPub/View/NiceSTableBuilder.pm	218;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/NiceTableBuilder.pm	270;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/PdfDocBuilder.pm	407;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/PdfDocPrgrphBuilder.pm	154;"	subroutine	language:Perl
@@ -1982,7 +1986,7 @@ new	doc_pub/lib/DocPub/View/SrchResultBuilder.pm	222;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/SrchResultPrgrphBuilder.pm	109;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/SrchResultTitleBuilder.pm	114;"	subroutine	language:Perl
 new	sfw/perl/isg_pub/Control/Utils/Configurator.pm	57;"	subroutine	language:Perl
-new	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1355;"	subroutine	language:Perl
+new	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1354;"	subroutine	language:Perl
 new	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	126;"	subroutine	language:Perl
 new	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	183;"	subroutine	language:Perl
 new	sfw/perl/isg_pub/Control/Utils/Initiator.pm	438;"	subroutine	language:Perl
@@ -2247,7 +2251,7 @@ set	doc_pub/lib/DocPub/Controller/PresentView.pm	156;"	subroutine	language:Perl
 set	doc_pub/lib/DocPub/Controller/Renderer.pm	115;"	subroutine	language:Perl
 set	doc_pub/lib/DocPub/Controller/Search.pm	195;"	subroutine	language:Perl
 set	doc_pub/lib/DocPub/Controller/Show.pm	344;"	subroutine	language:Perl
-set	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2494;"	subroutine	language:Perl
+set	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2491;"	subroutine	language:Perl
 set	doc_pub/lib/DocPub/Model/OracleDbHandler.pm	188;"	subroutine	language:Perl
 set	doc_pub/lib/DocPub/Utils/Initiator.pm	522;"	subroutine	language:Perl
 set	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	3182;"	method	language:JavaScript	class:Editor
@@ -2261,8 +2265,8 @@ set	doc_pub/public/lib/FieldType-Select2/editor.select2.js	124;"	method	language
 set	doc_pub/public/lib/FieldType-Select2/editor.select2.min.js	2;"	method	language:JavaScript	class:f.select2
 set	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	3587;"	method	language:JavaScript	class:Data
 set	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	7045;"	method	language:JavaScript	class:boolHook
-set	sfw/perl/isg_pub/Control/Utils/Configurator.pm	395;"	subroutine	language:Perl
-set	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1409;"	subroutine	language:Perl
+set	sfw/perl/isg_pub/Control/Utils/Configurator.pm	391;"	subroutine	language:Perl
+set	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1408;"	subroutine	language:Perl
 set	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	194;"	subroutine	language:Perl
 set	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	240;"	subroutine	language:Perl
 set	sfw/perl/isg_pub/Control/Utils/Initiator.pm	500;"	subroutine	language:Perl
@@ -2441,8 +2445,8 @@ trace	doc_pub/public/lib/Scroller-1.3.0/js/dataTables.scroller.min.js	22;"	prope
 transformElement	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	1147;"	function	language:JavaScript
 transformSlides	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	1161;"	function	language:JavaScript
 trigger	doc_pub/public/lib/MouseTrap/mousetrap.min.js	9;"	method	language:JavaScript	class:c
-trim	sfw/perl/isg_pub/Control/Utils/Configurator.pm	445;"	subroutine	language:Perl
-trim	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1340;"	subroutine	language:Perl
+trim	sfw/perl/isg_pub/Control/Utils/Configurator.pm	441;"	subroutine	language:Perl
+trim	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1339;"	subroutine	language:Perl
 tt	doc_pub/public/lib/Editor-1.5.1/js/editor.bootstrap.js	19;"	variable	language:JavaScript
 type	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	2165;"	property	language:JavaScript	class:Editor.var.ajaxOpts
 type	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	3943;"	property	language:JavaScript	class:Editor.var.opts

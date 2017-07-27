@@ -3,10 +3,10 @@
 
 export ts=$(date "+%Y%m%d_%H%M%S")
 export app_version=''
-#export mysql_host='doc-pub-host'
-#export mysql_port='13306'
-#export mysql_user='root' 
-#export mysql_user_pw='0024plapla'
+export mysql_host='doc-pub-host'
+export mysql_port='13306'
+export mysql_user='root' 
+export mysql_user_pw='0024plapla'
 #
 #export app_db='isg_pub_en'
 #export web_host='doc-pub-host'

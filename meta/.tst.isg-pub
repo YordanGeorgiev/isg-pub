@@ -802,7 +802,6 @@ docs/dia
 docs/dia/05.control-flow-diagrams
 docs/dia/05.control-flow-diagrams/page-load-control-flow-diagram.jpg
 docs/dia/05.control-flow-diagrams/page-load-control-flow-diagram.gliffy
-docs/dia/04.network-diagram
 docs/dia/02.entity-model-diagram
 docs/dia/02.entity-model-diagram/entity-model-diagram.jpg
 docs/dia/02.entity-model-diagram/entity-model-diagram.gliffy
@@ -1210,7 +1209,7 @@ sfw/sql/mysql/product/42.create-ServiceGuide-table.sql
 sfw/sql/mysql/product/43.create-Git-table.sql
 sfw/sql/mysql/product/44.create-Development-table.sql
 sfw/sql/mysql/product/46.create-DevOps-table.sql
-sfw/sql/mysql/product/47.create-TechnicalOverview-table.sql
+sfw/sql/mysql/product/47.create-TechOverview-table.sql
 sfw/sql/mysql/product/48.create-ExportFile-table.sql
 sfw/sql/mysql/product/50.create-ReadMe-table.sql
 sfw/sql/mysql/product/51.create-Principle-table.sql

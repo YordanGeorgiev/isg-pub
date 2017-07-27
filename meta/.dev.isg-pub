@@ -1228,7 +1228,7 @@ sfw/sql/mysql/product/42.create-ServiceGuide-table.sql
 sfw/sql/mysql/product/43.create-Git-table.sql
 sfw/sql/mysql/product/44.create-Development-table.sql
 sfw/sql/mysql/product/46.create-DevOps-table.sql
-sfw/sql/mysql/product/47.create-TechnicalOverview-table.sql
+sfw/sql/mysql/product/47.create-TechOverview-table.sql
 sfw/sql/mysql/product/48.create-ExportFile-table.sql
 sfw/sql/mysql/product/50.create-ReadMe-table.sql
 sfw/sql/mysql/product/hierarchy

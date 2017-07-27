@@ -15,7 +15,7 @@ CREATE TABLE `ItemView` (
  , `BranchId` 					bigint 			DEFAULT '1'		-- the description of this item
  , `doGenerateUi`				boolean NOT NULL					-- whether or not to generate html page for this item
  , `doGeneratePdf`			boolean NOT NULL					-- whether or not to generate the pdf files per page
- , `doExportToPdf`			boolean NOT NULL					-- whether or not to export to pdf this document
+ , `doExportToPdf`			boolean NOT NULL					-- whether or not to export to pdf this document doExportToXls
  , `doExportToMd`				boolean NOT NULL					-- whether or not to export to mdf this entry
  , `doExportToXls`		   boolean NOT NULL					-- whether or not to export to mdf this entry
  , `doGenerateLeftMenu`		boolean NOT NULL					-- whether or not to generate the pdf files per page

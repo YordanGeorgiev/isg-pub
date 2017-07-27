@@ -417,11 +417,6 @@ doDeployPackage(){
 	doLog "[DEBUG] START doDeployPackage"
 	deploy_tmp_dir="$os_tmp_dir/.$component_name/.$$"	
 
-
-	cp -v $product_version_dir/conf/hosts/doc-pub-host/etc/apache2/sites-available/000-default.conf \
-	/etc/apache2/sites-available/000-default.conf
-
-
 	# if no morphing is involved just unpack
    test -z "$search_and_replace_pairs" && \
 			unzip -o "$product_version_dir/$component_name.zip" -d "$target_dir"
@@ -1221,7 +1216,8 @@ doInitializeProjectAppLayer(){
 	echo "@doInitializeProjectAppLayer:: proj_version_dir:: \"$proj_version_dir\""
 	sleep 5
 
-
+   test -f $list_file && rm -fv $list_file
+   sleep 2
 	cat $list_file | { while read -r line ;
 	do (
 		echo -e "START === $line" ; 
