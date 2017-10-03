@@ -1,0 +1,5 @@
+# edit your search history in this file before q:
+
+# search for the silly sleep_interval
+:g/sleep_interval/|:vimgrep /sleep_interval/ `find . -type f \| grep -v '.git'`
+

@@ -1,0 +1,13 @@
+#file: /opt/csitea/isg-pub/isg-pub.0.0.7.dev.ysg/src/bash/isg-pub/isg-pub.cnf 
+[MAIN_SETTINGS]
+
+#use simple var_name=var_value syntax 
+
+#the name of this application 
+run_unit=isg-pub
+
+#the name of this application's db
+db_name=dev_isg-pub
+
+
+#eof file: /opt/csitea/isg-pub/isg-pub.0.0.7.dev.ysg/src/bash/isg-pub/isg-pub.cnf

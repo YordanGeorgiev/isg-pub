@@ -1,0 +1,12 @@
+# file: cnf/isg-pub.host-name.cnf
+# file: cnf/isg-pub.host-name.cnf
+[MAIN_SETTINGS]
+
+
+Emails=yordan.georgiev@gmail.com
+
+# where to place the backups of the 
+network_backup_dir=/vagrant/csitea/isg-pub/dat/zip
+
+foo=bar
+# eof file: cnf/isg-pub.host-name.cnf

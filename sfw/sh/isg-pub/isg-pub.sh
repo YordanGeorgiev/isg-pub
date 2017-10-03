@@ -575,9 +575,6 @@ doPrintHelp(){
 		bash $0 -a check-perl-syntax
 
 
-		3. to clone / initialize a new project from the product
-		#--------------------------------------------------------
-		bash $0 -j \$project -a init-proj-app
 
 
 		4. to create the tags file in the \$product_version_dir
@@ -613,13 +610,8 @@ doPrintHelp(){
 		doParseIniEnvVars sfw/sh/isg-pub/isg-pub.isg-pub.doc-pub-host.conf
 		bash sfw/bash/isg-pub/isg-pub.sh -a create-relative-package
 
-		doParseIniEnvVars sfw/sh/isg-pub/isg-pub.<<proj_name>>.doc-pub-host.conf
-
-		bash $0 -j \$project -a init-proj-app
 		bash $0 -j \$project -a check-perl-syntax
 		bash $0 -j \$project -a run-project-mysql-scripts
-		bash $0 -j \$project -a dump-tables
-		bash $0 -j \$project -a eat-tables
 
 
 		# to create the tags file in the $backup_root
@@ -723,11 +715,8 @@ doPrintUsage(){
       bash sfw/bash/isg-pub/isg-pub.sh -a create-relative-package
       doParseIniEnvVars sfw/sh/isg-pub/isg-pub.<<proj-name>>.`hostname -s`.conf
 
-      bash $0 -j \$project -a init-proj-app
       bash $0 -j \$project -a check-perl-syntax
       bash $0 -j \$project -a run-project-mysql-scripts
-      bash $0 -j \$project -a dump-tables
-      bash $0 -j \$project -a eat-tables
       echo bash sfw/bash/scripts/to-win.sh \$proj_version_dir
       bash sfw/bash/scripts/to-win.sh \$proj_version_dir
 
@@ -1185,83 +1174,6 @@ doRunProjectMySqlScripts(){
 #eof func doRunProjectMySqlScripts
 
 
-#----------------------------------------------------------
-# do morph the needed dirs in the project dir
-#----------------------------------------------------------
-doInitializeProjectAppLayer(){
-   #set -x
-	test -d $proj_version_dir && mv -v $proj_version_dir $proj_version_dir.`date +%Y%m%d_%H%M%S`
-	mkdir -p $proj_version_dir/data/zip
-	# define the latest zip file from the product dir as the latest deployment zip file
-	src_zip_file=$(stat -c "%y %n" $product_dir/*| sort -nr| grep "$component_name" |head -n 1|perl -nle '@t=split /\s+/, $_;print $t[3] ')
-   echo $src_zip_file
-	unzip -o "$src_zip_file" -d "$proj_version_dir/"
-   # sleep 10
-	mkdir -p $product_version_dir/conf/hosts/$host_name/projects/$project
-	# define the list file
-	list_file="$product_version_dir/conf/hosts/$host_name/projects/$project/search-and-replace.lst"
-	
-	# create the list file
-	mkdir -p $(dirname $list_file)
-	echo -e "$component_name""\t""$project">$list_file
-	product_alias=$(echo $component_name|perl -ne 's/-/_/g;print')
-	echo -e "$product_alias""\t""$proj_alias">>$list_file
-	
-	cat $list_file
-	
-	echo "@doInitializeProjectAppLayer:: product:: \"$component_name\""
-	echo "@doInitializeProjectAppLayer:: product_alias:: \"$product_alias\""
-	echo "@doInitializeProjectAppLayer:: project:: \"$project\""
-	echo "@doInitializeProjectAppLayer:: product_version_dir:: \"$product_version_dir\""
-	echo "@doInitializeProjectAppLayer:: proj_version_dir:: \"$proj_version_dir\""
-	sleep 5
-
-   test -f $list_file && rm -fv $list_file
-   sleep 2
-	cat $list_file | { while read -r line ;
-	do (
-		echo -e "START === $line" ; 
-		doLog "line: $line"
-		export to_srch=$(echo $line|cut --delimiter=$' ' -f 1)
-		doLog "to_srch:\"$to_srch\" " ; 
-		export to_repl=$(echo $line|cut --delimiter=$' ' -f 2) 
-		doLog "to_repl:\"$to_repl\" " ; 
-		doLog "proj_version_dir: $proj_version_dir"
-
-		#search and repl %var_id% with var_id_val in deploy_tmp_dir 
-		find $proj_version_dir -type d|perl -nle '$o=$_;s#'"$to_srch"'#'"$to_repl"'#g;$n=$_;`mkdir -p $n` ;'
-		find $proj_version_dir -type f|perl -nle '$o=$_;s#'"$to_srch"'#'"$to_repl"'#g;$n=$_;rename($o,$n) unless -e $n ;'
-
-
-		doLog "start search and replace in non-binary files"
-		#search and replace ONLY in the txt files and omit the binary files
-		find $proj_version_dir -exec file {} \; | grep text | cut -d: -f1| { while read -r file ;
-				do (
-					#debug doLog doing find and replace in $file 
-					perl -pi -e "s#$to_srch#$to_repl#g" "$file"
-				);
-				done ;
-			}
-			#eof while 2
-		doLog "stop search and replace in non-binary files"
-	);
-	done ; 
-
-		find "$proj_version_dir/" -type f -name '*.bak' | xargs rm -f
-	}
-	#eof while 1
-
-   # and create the app link
-   export link_path="$product_version_dir""/doc_pub/public/img/apps/""$proj_alias""_en"
-   export target_path="$proj_version_dir""/doc_pub/public/img/apps/""$proj_alias""_en"
-   mkdir -p `dirname $link_path`
-   test -L "$link_path" && unlink $link_path
-   ln -s "$target_path" "$link_path"
-   sudo chmod -Rv 755 "$link_path"
-   ls -la $link_path;
-}
-#eof func doInitializeProjectAppLayer
-
 
 #
 #------------------------------------------------------------------------------
@@ -1438,7 +1350,6 @@ main(){
 		test "$action" == 'run-project-mysql-scripts'		&& doRunProjectMySqlScripts
 		test "$action" == 'check-perl-syntax'					&& doCheckPerlSyntax
 		test "$action" == 'run-perl-tests'						&& doRunPerlTests
-		test "$action" == 'init-proj-app'						&& doInitializeProjectAppLayer
 		test "$action" == 'dump-tables'							&& doDumpTables
 		test "$action" == 'eat-tables'							&& doEatTables
 		popd

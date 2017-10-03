@@ -1,7 +1,8 @@
 # exclude all the zip files
 **/*.zip
 **/*.log
-dat/xls/run/*.xlsx
-dat/tests/t*.txt
-dat/isg-pub/**
-src/bash/isg-pub/tmp/**
+dat/tmp/**
+dat/**
+cnf/hosts/doc-pub-host/home/ysg/.vimrc.*
+sfw/sh/isg-pub/tmp/**
+doc_pub/script/hypnotoad.pid

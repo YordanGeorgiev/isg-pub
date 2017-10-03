@@ -7,7 +7,6 @@
 		`ItemControllerId` 	bigint NOT NULL UNIQUE			-- the same id's in the MetaEntity table
 	 , `Level`					smallint 		NOT NULL 
 	 , `SeqId`					bigint 			NOT NULL 
-	 , `DocId`					bigint 			NOT NULL 
 	 , `LeftRank`				bigint			NOT NULL
 	 , `RightRank`				bigint			NOT NULL
 	 , `doTruncTable`			boolean NOT NULL					-- whether or not to truncate the table before load

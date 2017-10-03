@@ -1,0 +1,35 @@
+# doc/txt/enricher/remove-package-files/remove-package-files.func.txt
+
+   doRemovePackageFiles
+
+   # Purpose:
+   # ------------------------------------------------------
+   remove the deployed package files of the product instance
+
+   # Prequisites
+   # ------------------------------------------------------
+
+   # Installation
+   # ------------------------------------------------------
+   default deployment
+
+   # Interdependancies
+   # ------------------------------------------------------
+   - the include file
+
+   # Usage:
+   # ------------------------------------------------------
+   $0 -a remove-package-files
+
+   # Issues
+   # ------------------------------------------------------
+   more testing ...
+
+   # Caveats:
+   # ------------------------------------------------------
+   properly hairy things could occur because this is not tested
+   enough
+
+
+
+# eof file: doc/txt/enricher/remove-package-files/remove-package-files.func.txt

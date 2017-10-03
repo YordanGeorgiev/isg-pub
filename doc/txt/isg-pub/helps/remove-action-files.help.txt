@@ -1,0 +1,41 @@
+# doc/txt/isg-pub/remove-action-files/remove-action-files.spec.txt
+
+	doSpecRemoveActionFiles
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to provide a quick oneliner for removing specified action files
+
+	# Prequisites
+	# ------------------------------------------------------
+	perl , bash
+
+	# Installation
+	# ------------------------------------------------------
+	install perl , bash 
+
+	# Interdependancies
+	# ------------------------------------------------------
+	you need to specify the action files to be removed in the : 
+	src/bash/isg-pub/tests/rem-isg-pub-actions.lst
+	list file
+	echo create-full-7z-package >> src/bash/isg-pub/tests/rem-isg-pub-actions.lst
+
+	# Usage:
+	# ------------------------------------------------------
+	bash src/bash/isg-pub/isg-pub.sh -a remove-action-files
+
+
+	# Issues
+	# ------------------------------------------------------
+	console output ?!:
+	bash: line 1: src/bash/isg-pub/funcs/action-to-remove.func.sh: No such file or directory
+
+	# Caveats:
+	# ------------------------------------------------------
+	of course your actions to be removed should not overlap with 
+	actions you do not want to remove , since we use grep ... 
+
+
+
+# eof file: doc/txt/isg-pub/remove-action-files/remove-action-files.spec.txt

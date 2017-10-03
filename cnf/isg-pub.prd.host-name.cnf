@@ -1,0 +1,60 @@
+# file: cnf/isg-pub.host-name.cnf
+
+# multiple projects support
+issue_tracker_project = isg-pub
+
+# where to get the DDL's for the db from
+sql_dir=/opt/csitea/isg-pub/isg-pub.0.1.8.prd.ysg/src/sql/pgsql/prd_issue_tracker
+
+# The logging directory 
+LogDir = %ProductInstanceDir%/dat/log
+
+# the default Log file
+LogFile =         %LogDir%/%ProductName%.log
+
+# the default chars separating the time from the txt
+LogTimeToTextSeparator = ###
+
+# whether or not to log to a file
+LogToFile =          1
+
+# the time format of the logging 
+TimeFormat =         YYYY-MM-DD hh:mm:ss
+
+# the time format of the logging 
+DbType 	=         mariadb
+
+# the log file
+LogFile=%LogDir%/%ProductName%.%YYYY%-%MM%-%DD%.log
+
+# the host on which the mariadb is running 
+db_host = host-name
+
+# the pgsql port
+db_port = 13306
+
+# OBS ! dev , tst , prd product instances to own db !
+db_name   = %ProductType%_issue_tracker
+
+# the mariadb user name
+db_user = ysg
+
+# Whether or not to print messages to STDOUT and / or STDERR
+PrintConsoleMsgs =               1
+
+# Whether or not to pring INFO messages
+PrintInfoMsgs =                  1                             
+
+# Whether or not to pring WARNING messages
+PrintWarningMsgs =               1                             
+
+# Whether or not to pring ERROR messages
+PrintErrorMsgs =                 1                             
+
+# Whether or not to pring DEBUG messages
+PrintDebugMsgs =                 1
+
+# Whether or not to pring TRACE messages
+PrintTraceMsgs =                 1 
+
+# eof file: cnf/isg-pub.host-name.cnf

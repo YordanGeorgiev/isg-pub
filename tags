@@ -83,7 +83,6 @@ $b	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	fu
 >	doc_pub/public/lib/MouseTrap/mousetrap.min.js	8;"	property	language:JavaScript
 ?	doc_pub/public/lib/MouseTrap/mousetrap.min.js	8;"	property	language:JavaScript
 @	doc_pub/public/lib/MouseTrap/mousetrap.min.js	8;"	property	language:JavaScript
-@TABLE_NAME	docs/cheat-sheets/sql/mssql/mssql-cheat-sheet.sql	85;"	variable	language:SQL
 A	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	7;"	function	language:JavaScript
 AUTOLOAD	doc_pub/lib/DocPub/Controller/DocView.pm	365;"	subroutine	language:Perl
 AUTOLOAD	doc_pub/lib/DocPub/Controller/PdfView.pm	153;"	subroutine	language:Perl
@@ -95,7 +94,7 @@ AUTOLOAD	doc_pub/lib/DocPub/Utils/Initiator.pm	490;"	subroutine	language:Perl
 AUTOLOAD	doc_pub/lib/DocPub/View/HtmlHandler.pm	108;"	subroutine	language:Perl
 AUTOLOAD	doc_pub/lib/DocPub/View/LinkBuilder.pm	137;"	subroutine	language:Perl
 AUTOLOAD	sfw/perl/isg_pub/Control/Utils/Configurator.pm	414;"	subroutine	language:Perl
-AUTOLOAD	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1381;"	subroutine	language:Perl
+AUTOLOAD	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1388;"	subroutine	language:Perl
 AUTOLOAD	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	152;"	subroutine	language:Perl
 AUTOLOAD	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	210;"	subroutine	language:Perl
 AUTOLOAD	sfw/perl/isg_pub/Control/Utils/Initiator.pm	468;"	subroutine	language:Perl
@@ -107,7 +106,6 @@ Animation	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	6538;"	function	langua
 Api	doc_pub/public/lib/Scroller-1.3.0/js/dataTables.scroller.js	1214;"	variable	language:JavaScript
 AppendToFile	sfw/perl/isg_pub/Control/Utils/Logger.pm	675;"	subroutine	language:Perl
 Array	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	class	language:JavaScript
-Attention	docs/cheat-sheets/perl/perl-cheat-sheet.pl	218;"	label	language:Perl
 B	doc_pub/public/lib/DataTables-1.10.9/js/jquery.dataTables.min.js	16;"	function	language:JavaScript	function:function
 B	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:A
 B  ,  .	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	228;"	property	language:JavaScript
@@ -121,11 +119,10 @@ Buttons.instanceSelector	doc_pub/public/lib/Buttons-1.0.3/js/dataTables.buttons.
 C	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:A
 CLASS	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	7229;"	method	language:JavaScript	class:Editor
 CLASS	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	114;"	method	language:JavaScript	class:f
-COLUMNS	docs/cheat-sheets/sql/ora/oracle-cheat-sheet.sql	382;"	label	language:SQL
 CSS	doc_pub/public/lib/jquery-layout/jquery.layout.js	519;"	variable	language:JavaScript
 Cb	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:tb
 Cc	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:pc
-CloseConnection	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	367;"	subroutine	language:Perl
+CloseConnection	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	374;"	subroutine	language:Perl
 D	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:A
 D	doc_pub/public/lib/MouseTrap/mousetrap.min.js	2;"	function	language:JavaScript
 DEFAULT_SLIDE_SEPARATOR	doc_pub/public/lib/reveal/reveal.js-master/plugin/markdown/markdown.js	29;"	variable	language:JavaScript
@@ -137,7 +134,7 @@ DESTROY	doc_pub/lib/DocPub/Controller/Search.pm	235;"	subroutine	language:Perl
 DESTROY	doc_pub/lib/DocPub/Controller/Show.pm	384;"	subroutine	language:Perl
 DESTROY	doc_pub/lib/DocPub/Utils/Initiator.pm	562;"	subroutine	language:Perl
 DESTROY	sfw/perl/isg_pub/Control/Utils/Configurator.pm	430;"	subroutine	language:Perl
-DESTROY	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1444;"	subroutine	language:Perl
+DESTROY	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1451;"	subroutine	language:Perl
 DESTROY	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	268;"	subroutine	language:Perl
 DESTROY	sfw/perl/isg_pub/Control/Utils/Initiator.pm	540;"	subroutine	language:Perl
 DESTROY	sfw/perl/isg_pub/Control/Utils/Logger.pm	141;"	subroutine	language:Perl
@@ -211,27 +208,6 @@ Editor.pairs	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	3595;"	func
 Editor.safeId	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	3655;"	function	language:JavaScript
 Editor.upload	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	3669;"	function	language:JavaScript
 End	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	227;"	property	language:JavaScript
-ExampleTable	docs/cheat-sheets/nz/nz-cheat-sheet.sql	54;"	table	language:SQL
-ExampleTable.BigIntCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	59;"	field	language:SQL
-ExampleTable.BooleanCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	71;"	field	language:SQL
-ExampleTable.ByteIntCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	55;"	field	language:SQL
-ExampleTable.CharCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	67;"	field	language:SQL
-ExampleTable.DateCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	72;"	field	language:SQL
-ExampleTable.DecimalCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	63;"	field	language:SQL
-ExampleTable.DoubleCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	66;"	field	language:SQL
-ExampleTable.FloatCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	64;"	field	language:SQL
-ExampleTable.IntegerCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	58;"	field	language:SQL
-ExampleTable.NcharCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	69;"	field	language:SQL
-ExampleTable.NumericCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	62;"	field	language:SQL
-ExampleTable.NumericPCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	61;"	field	language:SQL
-ExampleTable.NumericPSCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	60;"	field	language:SQL
-ExampleTable.NvarcharCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	70;"	field	language:SQL
-ExampleTable.RealCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	65;"	field	language:SQL
-ExampleTable.SmallIntCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	57;"	field	language:SQL
-ExampleTable.TimeCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	73;"	field	language:SQL
-ExampleTable.TimeTzCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	74;"	field	language:SQL
-ExampleTable.TimestampCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	75;"	field	language:SQL
-ExampleTable.VarcharCol	docs/cheat-sheets/nz/nz-cheat-sheet.sql	68;"	field	language:SQL
 F	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	229;"	property	language:JavaScript
 Fa	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Ca
 Fc	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Ec
@@ -297,15 +273,13 @@ N  ,  SPACE	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	220;"	proper
 Na	doc_pub/public/lib/DataTables-1.10.9/js/jquery.dataTables.min.js	24;"	function	language:JavaScript	function:function
 Nb	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Kb
 O	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:M
-OpenConnection	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	345;"	subroutine	language:Perl
+OpenConnection	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	348;"	subroutine	language:Perl
 P	doc_pub/public/lib/DataTables-1.10.9/js/jquery.dataTables.min.js	17;"	function	language:JavaScript	function:B
 P	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:M
 P	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	221;"	property	language:JavaScript
 Pa	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Oa
 PrintToFile	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	179;"	subroutine	language:Perl
 PrintToFile	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	80;"	subroutine	language:Perl
-ProcName	docs/cheat-sheets/nz/nz-cheat-sheet.sql	111;"	procedure	language:SQL
-ProcName	docs/cheat-sheets/nz/nz-cheat-sheet.sql	126;"	procedure	language:SQL
 Q	doc_pub/public/lib/DataTables-1.10.9/js/jquery.dataTables.min.js	18;"	function	language:JavaScript	function:Ia
 Q	doc_pub/public/lib/prettify/run_prettify.js	3;"	function	language:JavaScript
 Qa	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Oa
@@ -321,7 +295,7 @@ RunBeforeExit	doc_pub/lib/DocPub/Controller/Renderer.pm	143;"	subroutine	languag
 RunBeforeExit	doc_pub/lib/DocPub/Controller/Search.pm	223;"	subroutine	language:Perl
 RunBeforeExit	doc_pub/lib/DocPub/Controller/Show.pm	372;"	subroutine	language:Perl
 RunBeforeExit	doc_pub/lib/DocPub/Utils/Initiator.pm	550;"	subroutine	language:Perl
-RunBeforeExit	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1434;"	subroutine	language:Perl
+RunBeforeExit	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1441;"	subroutine	language:Perl
 RunBeforeExit	sfw/perl/isg_pub/Control/Utils/Initiator.pm	528;"	subroutine	language:Perl
 RunBeforeExit	sfw/perl/isg_pub/Control/Utils/Logger.pm	129;"	subroutine	language:Perl
 S	doc_pub/public/lib/prettify/run_prettify.js	3;"	variable	language:JavaScript
@@ -333,36 +307,12 @@ T	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	fun
 TABLE_NAME	sfw/sql/ora/tmpl/ddl/create-oracle-table-template.sql	35;"	table	language:SQL
 TABLE_NAME.DWRUNTIME	sfw/sql/ora/tmpl/ddl/create-oracle-table-template.sql	37;"	field	language:SQL
 TABLE_NAME.TABLE_NAME_ID	sfw/sql/ora/tmpl/ddl/create-oracle-table-template.sql	35;"	field	language:SQL
-TBL_NAME.TRG_TBL_NAME	docs/cheat-sheets/sql/ora/oracle-cheat-sheet.sql	342;"	trigger	language:SQL
 Ta	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Sa
-TableWithAllTypes	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	140;"	table	language:SQL
-TableWithAllTypes.col_asciistream1	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	152;"	field	language:SQL
-TableWithAllTypes.col_asciistream2	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	153;"	field	language:SQL
-TableWithAllTypes.col_asciistream3	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	154;"	field	language:SQL
-TableWithAllTypes.col_asciistream4	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	155;"	field	language:SQL
-TableWithAllTypes.col_bigdecimal	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	147;"	field	language:SQL
-TableWithAllTypes.col_blob1	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	156;"	field	language:SQL
-TableWithAllTypes.col_blob2	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	157;"	field	language:SQL
-TableWithAllTypes.col_blob3	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	158;"	field	language:SQL
-TableWithAllTypes.col_blob4	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	159;"	field	language:SQL
-TableWithAllTypes.col_boolean	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	140;"	field	language:SQL
-TableWithAllTypes.col_byte	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	141;"	field	language:SQL
-TableWithAllTypes.col_date	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	149;"	field	language:SQL
-TableWithAllTypes.col_double	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	146;"	field	language:SQL
-TableWithAllTypes.col_float	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	145;"	field	language:SQL
-TableWithAllTypes.col_int	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	143;"	field	language:SQL
-TableWithAllTypes.col_long	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	144;"	field	language:SQL
-TableWithAllTypes.col_short	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	142;"	field	language:SQL
-TableWithAllTypes.col_string	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	148;"	field	language:SQL
-TableWithAllTypes.col_time	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	150;"	field	language:SQL
-TableWithAllTypes.col_timestamp	docs/cheat-sheets/sql/mysql/mysql-cheat-sheet.sql	151;"	field	language:SQL
 Tb	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Rb
 Tween	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	6157;"	function	language:JavaScript
 Tween	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	6160;"	class	language:JavaScript
 U	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:S
 V	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:S
-VAR	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	182;"	variable	language:DosBatch
-VAR	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	185;"	variable	language:DosBatch
 VIEW_NAME	sfw/sql/ora/tmpl/ddl/create-oracle-view-template.sql	17;"	view	language:SQL
 Va	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:function
 Vb	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:Ub
@@ -597,13 +547,7 @@ addUnitAlias	doc_pub/public/lib/MomentJS/moment.js	343;"	function	language:JavaS
 add_new_item	doc_pub/lib/DocPub/Controller/Edit.pm	219;"	subroutine	language:Perl
 add_new_item	doc_pub/lib/DocPub/Controller/Remove.pm	69;"	subroutine	language:Perl
 add_new_item	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	864;"	subroutine	language:Perl
-add_window	docs/txt/isg-pub/helps/sys/tmux/tmux-common.help.txt	27;"	function	language:Sh
-add_window	docs/txt/isg-pub/specs/sys/tmux/tmux-common.spec.txt	27;"	function	language:Sh
-add_window	sfw/bash/isg-pub/funcs/sys/tmux/tmux-common.func.sh	27;"	function	language:Sh
-add_window	sfw/bash/isg-pub/help/sys/tmux/tmux-common.func.sh	27;"	function	language:Sh
-add_window	sfw/bash/isg-pub/specs/sys/tmux/tmux-common.spec.sh	27;"	function	language:Sh
-add_window	sfw/bash/isg-pub/tests/sys/tmux/tmux-common.test.sh	27;"	function	language:Sh
-agent	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	197;"	variable	language:DosBatch
+add_window	src/bash/isg-pub/funcs/sys/tmux/tmux-common.sh	27;"	function	language:Sh
 ajax	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	898;"	property	language:JavaScript	class:Editor.models.settings
 ajax	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	19;"	property	language:JavaScript	class:f.f.f
 ajaxConvert	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	7721;"	function	language:JavaScript
@@ -703,7 +647,6 @@ c	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	
 c	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	function	language:JavaScript	function:u.l.o
 c	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	property	language:JavaScript	class:ASM
 c	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	property	language:JavaScript	class:QSM
-c	docs/cheat-sheets/sql/ora/oracle-cheat-sheet.sql	323;"	variable	language:SQL
 c	sfw/sql/ora/tmpl/ddl/create-oracle-table-template.sql	21;"	variable	language:SQL
 c.ext.renderer.header.jqueryui	doc_pub/public/lib/DataTables-1.10.9/js/dataTables.jqueryui.min.js	6;"	function	language:JavaScript
 cN	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	property	language:JavaScript	class:ASM
@@ -746,7 +689,6 @@ classPrefix	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highligh
 classes	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	691;"	property	language:JavaScript	class:Editor.Field.models.settings
 classes	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	19;"	property	language:JavaScript	class:f.f.f.f
 clean_up	conf/hosts/doc-pub-host/usr/bin/xvfb-run	81;"	function	language:Sh
-clean_up	conf/hosts/ysg-host-name/usr/bin/xvfb-run	81;"	function	language:Sh
 clear	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	2030;"	method	language:JavaScript	class:Editor
 clear	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	38;"	method	language:JavaScript	class:f
 clear	doc_pub/public/lib/Select-1.0.1/js/dataTables.select.js	491;"	function	language:JavaScript
@@ -923,10 +865,11 @@ displayed	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	241;"	method	l
 displayed	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	12;"	method	language:JavaScript	class:f
 distanceBetween	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	1135;"	function	language:JavaScript
 div	doc_pub/public/lib/KeyTable-2.0.0/js/dataTables.keyTable.js	649;"	variable	language:JavaScript
+doActionToRemove	src/bash/isg-pub/funcs/action-to-remove.func.sh	7;"	function	language:Sh
 doAddItemNextToSibling	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	232;"	subroutine	language:Perl
-doAddItemToParentWithChildren	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	380;"	subroutine	language:Perl
+doAddItemToParentWithChildren	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	387;"	subroutine	language:Perl
 doAddItemToParentWithoutChildren	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	192;"	subroutine	language:Perl
-doAddItemToParentWithoutChildren	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	571;"	subroutine	language:Perl
+doAddItemToParentWithoutChildren	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	578;"	subroutine	language:Perl
 doAssureCmdOutputVisually	sfw/sh/isg-pub/test-isg-pub.sh	343;"	function	language:Sh
 doAssureCmdReturnsEqualToNumValue	sfw/sh/isg-pub/test-isg-pub.sh	314;"	function	language:Sh
 doAssureCmdReturnsGreaterThanNumValue	sfw/sh/isg-pub/test-isg-pub.sh	287;"	function	language:Sh
@@ -936,9 +879,9 @@ doAssureIsLink	sfw/sh/isg-pub/test-isg-pub.sh	392;"	function	language:Sh
 doAssureIsNotDir	sfw/sh/isg-pub/test-isg-pub.sh	488;"	function	language:Sh
 doAssureIsNotFile	sfw/sh/isg-pub/test-isg-pub.sh	440;"	function	language:Sh
 doAssureIsNotLink	sfw/sh/isg-pub/test-isg-pub.sh	416;"	function	language:Sh
-doBackupFile	docs/txt/isg-pub/helps/sys/backup-file.help.txt	9;"	function	language:Sh
-doBackupFile	sfw/bash/isg-pub/funcs/sys/backup-file.func.sh	9;"	function	language:Sh
+doBackupFile	doc/txt/isg-pub/helps/sys/backup-file.help.txt	9;"	function	language:Sh
 doBackupFile	sfw/sh/file-saver/file-saver.sh	732;"	function	language:Sh
+doBackupFile	src/bash/isg-pub/funcs/sys/backup-file.func.sh	9;"	function	language:Sh
 doBootStrap	sfw/perl/isg_pub/Control/Utils/Initiator.pm	325;"	subroutine	language:Perl
 doBuildControl	doc_pub/lib/DocPub/View/DocBuilder.pm	31;"	subroutine	language:Perl
 doBuildControl	doc_pub/lib/DocPub/View/DocPrgrphBuilder.pm	32;"	subroutine	language:Perl
@@ -962,7 +905,7 @@ doBuildControl	doc_pub/lib/DocPub/View/SrchResultBuilder.pm	32;"	subroutine	lang
 doBuildControl	doc_pub/lib/DocPub/View/SrchResultPrgrphBuilder.pm	32;"	subroutine	language:Perl
 doBuildControl	doc_pub/lib/DocPub/View/SrchResultTitleBuilder.pm	33;"	subroutine	language:Perl
 doBuildControlOld	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	169;"	subroutine	language:Perl
-doBuildHoursSubTotals	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	203;"	subroutine	language:Perl
+doBuildHoursSubTotals	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	201;"	subroutine	language:Perl
 doBuildInlineTable	doc_pub/lib/DocPub/View/DocBuilder.pm	158;"	subroutine	language:Perl
 doBuildInlineTable	doc_pub/lib/DocPub/View/LeftMenuBuilder.pm	275;"	subroutine	language:Perl
 doBuildInlineTable	doc_pub/lib/DocPub/View/PdfDocBuilder.pm	157;"	subroutine	language:Perl
@@ -976,21 +919,19 @@ doBuildLogicalOrderHash	doc_pub/lib/DocPub/View/RightMenuBuilder.pm	214;"	subrou
 doBuildPresentationTitle	doc_pub/lib/DocPub/View/PresentBuilder.pm	109;"	subroutine	language:Perl
 doBuildSubLevel	doc_pub/lib/DocPub/View/PresentBuilder.pm	191;"	subroutine	language:Perl
 doBuildTOC	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	358;"	subroutine	language:Perl
-doChangeEnvType	sfw/bash/isg-pub/funcs/dev/change-env-type.func.sh	6;"	function	language:Sh
-doChangeVersion	sfw/bash/isg-pub/funcs/dev/change-version.func.sh	6;"	function	language:Sh
-doCheckPerlSyntax	sfw/sh/isg-pub/isg-pub.sh	1274;"	function	language:Sh
-doCheckReadyToStart	sfw/bash/isg-pub/isg-pub.sh	186;"	function	language:Sh
+doChangeEnvType	src/bash/isg-pub/funcs/change-env-type.func.sh	7;"	function	language:Sh
+doChangeVersion	src/bash/isg-pub/funcs/dev/change-version.func.sh	6;"	function	language:Sh
+doCheckPerlSyntax	sfw/sh/isg-pub/isg-pub.sh	1182;"	function	language:Sh
 doCheckReadyToStart	sfw/sh/file-saver/file-saver.sh	141;"	function	language:Sh
 doCheckReadyToStart	sfw/sh/isg-pub/isg-pub.sh	180;"	function	language:Sh
+doCheckReadyToStart	src/bash/isg-pub/isg-pub.sh	190;"	function	language:Sh
 doCheckRequiredModules	sfw/perl/isg_pub/isg_pub_preq_checker.pl	43;"	subroutine	language:Perl
-doCheckTmuxIsInstalled	docs/txt/isg-pub/helps/sys/tmux/tmux-common.help.txt	38;"	function	language:Sh
-doCheckTmuxIsInstalled	docs/txt/isg-pub/specs/sys/tmux/tmux-common.spec.txt	38;"	function	language:Sh
-doCheckTmuxIsInstalled	sfw/bash/isg-pub/funcs/sys/tmux/tmux-common.func.sh	38;"	function	language:Sh
-doCleanAfterRun	sfw/bash/isg-pub/isg-pub.sh	269;"	function	language:Sh
-doCleanAfterRun	sfw/bash/isg-pub/test-isg-pub.sh	170;"	function	language:Sh
+doCheckTmuxIsInstalled	src/bash/isg-pub/funcs/sys/tmux/tmux-common.sh	38;"	function	language:Sh
 doCleanAfterRun	sfw/sh/file-saver/file-saver.sh	240;"	function	language:Sh
 doCleanAfterRun	sfw/sh/isg-pub/isg-pub.sh	338;"	function	language:Sh
-doCloneToApp	sfw/bash/isg-pub/funcs/dev/clone-to-app.func.sh	8;"	function	language:Sh
+doCleanAfterRun	src/bash/isg-pub/isg-pub.sh	295;"	function	language:Sh
+doCleanAfterRun	src/bash/isg-pub/test-isg-pub.sh	190;"	function	language:Sh
+doCloneToApp	src/bash/isg-pub/funcs/dev/clone-to-app.func.sh	8;"	function	language:Sh
 doConfigureControl	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	488;"	subroutine	language:Perl
 doConfigureControl	doc_pub/lib/DocPub/View/DocBuilder.pm	364;"	subroutine	language:Perl
 doConfigureControl	doc_pub/lib/DocPub/View/DocPrgrphBuilder.pm	136;"	subroutine	language:Perl
@@ -1016,52 +957,64 @@ doConfigureRendering	doc_pub/lib/DocPub.pm	289;"	subroutine	language:Perl
 doConvert	doc_pub/lib/DocPub/Model/HtmlToPdfConverter.pm	31;"	subroutine	language:Perl
 doConvert	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	29;"	subroutine	language:Perl
 doConvert	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	30;"	subroutine	language:Perl
-doConvertHtmlFilesToPdfFiles	sfw/sh/isg-pub/isg-pub.sh	1020;"	function	language:Sh
+doConvertHtmlFilesToPdfFiles	sfw/sh/isg-pub/isg-pub.sh	1004;"	function	language:Sh
 doCreateComponentFullPackage	sfw/sh/file-saver/file-saver.sh	518;"	function	language:Sh
-doCreateCtags	sfw/bash/isg-pub/funcs/create-ctags.func.sh	6;"	function	language:Sh
-doCreateCtags	sfw/bash/isg-pub/funcs/dev/create-ctags.func.sh	6;"	function	language:Sh
 doCreateCtags	sfw/sh/file-saver/file-saver.sh	603;"	function	language:Sh
-doCreateCtags	sfw/sh/isg-pub/isg-pub.sh	935;"	function	language:Sh
-doCreateDefaultConfFile	sfw/bash/isg-pub/isg-pub.sh	165;"	function	language:Sh
-doCreateDeploymentPackage	sfw/bash/isg-pub/funcs/create-deployment-package.func.sh	7;"	function	language:Sh
-doCreateFull7zPackage	sfw/bash/isg-pub/funcs/pckg/create-full-7z-package.func.sh	7;"	function	language:Sh
-doCreateFullComponentVersionPackage	sfw/sh/isg-pub/isg-pub.sh	767;"	function	language:Sh
-doCreateFullPackage	sfw/bash/isg-pub/funcs/pckg/create-full-package.func.sh	6;"	function	language:Sh
+doCreateCtags	sfw/sh/isg-pub/isg-pub.sh	919;"	function	language:Sh
+doCreateCtags	src/bash/isg-pub/funcs/dev/create-ctags.func.sh	6;"	function	language:Sh
+doCreateDefaultConfFile	src/bash/isg-pub/isg-pub.sh	169;"	function	language:Sh
+doCreateFull7zPackage	src/bash/isg-pub/funcs/pckg/create-full-7z-package.func.sh	7;"	function	language:Sh
+doCreateFullComponentVersionPackage	sfw/sh/isg-pub/isg-pub.sh	751;"	function	language:Sh
+doCreateFullPackage	src/bash/isg-pub/funcs/pckg/create-full-package.func.sh	7;"	function	language:Sh
 doCreateHostBackup	sfw/sh/file-saver/file-saver.sh	620;"	function	language:Sh
 doCreateInterLinkAnchors	doc_pub/lib/DocPub/View/LinkBuilder.pm	35;"	subroutine	language:Perl
 doCreateLinkToMe	sfw/sh/file-saver/file-saver.sh	705;"	function	language:Sh
-doCreateLinkToMe	sfw/sh/isg-pub/isg-pub.sh	957;"	function	language:Sh
+doCreateLinkToMe	sfw/sh/isg-pub/isg-pub.sh	941;"	function	language:Sh
 doCreatePackage	sfw/sh/file-saver/file-saver.sh	284;"	function	language:Sh
 doCreatePackage	sfw/sh/isg-pub/isg-pub.sh	389;"	function	language:Sh
-doCreateRelative7zPackage	sfw/bash/isg-pub/funcs/pckg/create-relative-7z-package.func.sh	8;"	function	language:Sh
-doCreateRelativePackage	sfw/bash/isg-pub/funcs/pckg/create-relative-package.func.sh	8;"	function	language:Sh
+doCreateRelative7zPackage	src/bash/isg-pub/funcs/pckg/create-relative-7z-package.func.sh	8;"	function	language:Sh
+doCreateRelativePackage	src/bash/isg-pub/funcs/pckg/create-relative-package.func.sh	8;"	function	language:Sh
 doCreateSetPermissionsScript	sfw/sh/file-saver/file-saver.sh	667;"	function	language:Sh
-doDeNormalizeHsWorkSheetToHsCellValue	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1692;"	subroutine	language:Perl
+doDeNormalizeHsWorkSheetToHsCellValue	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1699;"	subroutine	language:Perl
 doDeployPackage	sfw/sh/file-saver/file-saver.sh	307;"	function	language:Sh
 doDeployPackage	sfw/sh/isg-pub/isg-pub.sh	413;"	function	language:Sh
-doDumpTables	sfw/sh/isg-pub/isg-pub.sh	1371;"	function	language:Sh
-doEatTables	sfw/sh/isg-pub/isg-pub.sh	1394;"	function	language:Sh
-doExit	sfw/bash/isg-pub/isg-pub.sh	206;"	function	language:Sh
-doExit	sfw/bash/isg-pub/test-isg-pub.sh	107;"	function	language:Sh
+doDumpTables	sfw/sh/isg-pub/isg-pub.sh	1279;"	function	language:Sh
+doEatTables	sfw/sh/isg-pub/isg-pub.sh	1302;"	function	language:Sh
 doExit	sfw/sh/file-saver/file-saver.sh	253;"	function	language:Sh
 doExit	sfw/sh/isg-pub/isg-pub.sh	351;"	function	language:Sh
+doExit	src/bash/isg-pub/isg-pub.sh	220;"	function	language:Sh
+doExit	src/bash/isg-pub/test-isg-pub.sh	126;"	function	language:Sh
 doFetchDocumentInlineTables	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	274;"	subroutine	language:Perl
-doGenerateActionFiles	sfw/bash/isg-pub/funcs/dev/generate-action-files.func.sh	6;"	function	language:Sh
+doGenerateActionFiles	src/bash/isg-pub/funcs/dev/generate-action-files.func.sh	6;"	function	language:Sh
+doGenerateSQL	src/bash/isg-pub/funcs/generate-sql.func.sh	9;"	function	language:Sh
 doGetCreateSchemaDdlFiles	sfw/perl/isg_pub/db2_to_nz_converter.pl	136;"	subroutine	language:Perl
 doGetItemViews	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1893;"	subroutine	language:Perl
 doGetItems	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	316;"	subroutine	language:Perl
-doGmailPackage	sfw/bash/isg-pub/funcs/pckg/gmail-package.func.sh	5;"	function	language:Sh
-doHelpChangeVersion	sfw/bash/isg-pub/helps/change-version.help.sh	7;"	function	language:Sh
-doHelpCreateCtags	sfw/bash/isg-pub/helps/create-ctags.help.sh	7;"	function	language:Sh
-doHelpCreateFull7zPackage	sfw/bash/isg-pub/helps/pckg/create-full-7z-package.help.sh	7;"	function	language:Sh
-doHelpCreateFullPackage	sfw/bash/isg-pub/helps/pckg/create-full-package.help.sh	7;"	function	language:Sh
-doHelpCreateRelative7zPackage	sfw/bash/isg-pub/helps/pckg/create-relative-7z-package.help.sh	7;"	function	language:Sh
-doHelpCreateRelativePackage	sfw/bash/isg-pub/helps/pckg/create-relative-package.help.sh	7;"	function	language:Sh
-doHelpPrintHelp	sfw/bash/isg-pub/helps/print-help.help.sh	7;"	function	language:Sh
-doInit	sfw/bash/isg-pub/isg-pub.sh	111;"	function	language:Sh
-doInit	sfw/bash/isg-pub/test-isg-pub.sh	89;"	function	language:Sh
+doGmailPackage	src/bash/isg-pub/funcs/pckg/gmail-package.func.sh	5;"	function	language:Sh
+doHelpActionToRemove	src/bash/isg-pub/helps/action-to-remove.help.sh	7;"	function	language:Sh
+doHelpBackupFile	src/bash/isg-pub/helps/backup-file.help.sh	7;"	function	language:Sh
+doHelpChangeEnvType	src/bash/isg-pub/helps/change-env-type.help.sh	7;"	function	language:Sh
+doHelpChangeVersion	src/bash/isg-pub/helps/change-version.help.sh	7;"	function	language:Sh
+doHelpCloneToApp	src/bash/isg-pub/helps/clone-to-app.help.sh	7;"	function	language:Sh
+doHelpCreateCtags	src/bash/isg-pub/helps/create-ctags.help.sh	7;"	function	language:Sh
+doHelpCreateFull7zPackage	src/bash/isg-pub/helps/pckg/create-full-7z-package.help.sh	7;"	function	language:Sh
+doHelpCreateFullPackage	src/bash/isg-pub/helps/pckg/create-full-package.help.sh	7;"	function	language:Sh
+doHelpCreateRelative7zPackage	src/bash/isg-pub/helps/pckg/create-relative-7z-package.help.sh	7;"	function	language:Sh
+doHelpCreateRelativePackage	src/bash/isg-pub/helps/pckg/create-relative-package.help.sh	7;"	function	language:Sh
+doHelpGenerateActionFiles	src/bash/isg-pub/helps/generate-action-files.help.sh	7;"	function	language:Sh
+doHelpGenerateSQL	src/bash/isg-pub/helps/generate-sql.help.sh	7;"	function	language:Sh
+doHelpGmailPackage	src/bash/isg-pub/helps/pckg/gmail-package.help.sh	7;"	function	language:Sh
+doHelpMorphDir	src/bash/isg-pub/helps/dev/morph-dir.help.sh	7;"	function	language:Sh
+doHelpPrintHelp	src/bash/isg-pub/helps/print-help.help.sh	7;"	function	language:Sh
+doHelpPrintUsage	src/bash/isg-pub/helps/print-usage.help.sh	7;"	function	language:Sh
+doHelpRemoveActionFiles	src/bash/isg-pub/helps/remove-action-files.help.sh	7;"	function	language:Sh
+doHelpRemovePackage	src/bash/isg-pub/helps/remove-package.help.sh	7;"	function	language:Sh
+doHelpRemovePackageFiles	src/bash/isg-pub/helps/remove-package-files.help.sh	7;"	function	language:Sh
+doHelpRestoreTmuxSession	src/bash/isg-pub/helps/restore-tmux-session.help.sh	7;"	function	language:Sh
 doInit	sfw/sh/file-saver/file-saver.sh	16;"	function	language:Sh
 doInit	sfw/sh/isg-pub/isg-pub.sh	17;"	function	language:Sh
+doInit	src/bash/isg-pub/isg-pub.sh	115;"	function	language:Sh
+doInit	src/bash/isg-pub/test-isg-pub.sh	108;"	function	language:Sh
 doInitialize	doc_pub/lib/DocPub.pm	221;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/Model/HtmlToPdfConverter.pm	167;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2433;"	subroutine	language:Perl
@@ -1089,70 +1042,58 @@ doInitialize	doc_pub/lib/DocPub/View/RightMenuBuilder.pm	393;"	subroutine	langua
 doInitialize	doc_pub/lib/DocPub/View/SrchResultBuilder.pm	205;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/SrchResultPrgrphBuilder.pm	92;"	subroutine	language:Perl
 doInitialize	doc_pub/lib/DocPub/View/SrchResultTitleBuilder.pm	97;"	subroutine	language:Perl
-doInitialize	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1457;"	subroutine	language:Perl
+doInitialize	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1464;"	subroutine	language:Perl
 doInitialize	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	38;"	subroutine	language:Perl
 doInitialize	sfw/perl/isg_pub/db2_to_nz_converter.pl	241;"	subroutine	language:Perl
 doInitialize	sfw/perl/isg_pub/load.pl	197;"	subroutine	language:Perl
 doInitializeLogger	doc_pub/lib/DocPub/Utils/Initiator.pm	397;"	subroutine	language:Perl
-doInitializeProjectAppLayer	sfw/sh/isg-pub/isg-pub.sh	1196;"	function	language:Sh
 doInstantiate	doc_pub/lib/DocPub/Model/ConverterFactory.pm	21;"	subroutine	language:Perl
 doInstantiate	doc_pub/lib/DocPub/Model/DbHandlerFactory.pm	33;"	subroutine	language:Perl
 doInstantiate	doc_pub/lib/DocPub/View/ControlFactory.pm	39;"	subroutine	language:Perl
 doListAllInstalledModules	sfw/perl/isg_pub/isg_pub_preq_checker.pl	33;"	subroutine	language:Perl
 doListFoldersAndDocsTitles	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2270;"	subroutine	language:Perl
-doListTable	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	474;"	subroutine	language:Perl
-doListTableHierarchy	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	520;"	subroutine	language:Perl
+doListTable	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	481;"	subroutine	language:Perl
+doListTableHierarchy	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	527;"	subroutine	language:Perl
 doLoadAppPages	doc_pub/lib/DocPub/Controller/Initializer.pm	18;"	subroutine	language:Perl
 doLoadAppPagesData	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1809;"	subroutine	language:Perl
-doLog	sfw/bash/isg-pub/isg-pub.sh	246;"	function	language:Sh
-doLog	sfw/bash/isg-pub/test-isg-pub.sh	147;"	function	language:Sh
 doLog	sfw/sh/file-saver/file-saver.sh	154;"	function	language:Sh
 doLog	sfw/sh/isg-pub/isg-pub.sh	238;"	function	language:Sh
 doLog	sfw/sql/mysql/product/39.create-log-table.sql	18;"	procedure	language:SQL
-doMorphDir	sfw/bash/isg-pub/funcs/dev/morph-dir.func.sh	14;"	function	language:Sh
+doLog	src/bash/isg-pub/isg-pub.sh	251;"	function	language:Sh
+doLog	src/bash/isg-pub/test-isg-pub.sh	167;"	function	language:Sh
+doLogTestRunEntry	lib/bash/funcs/log-test-run-entry.func.sh	12;"	function	language:Sh
 doMorphDir	sfw/sh/file-saver/file-saver.sh	392;"	function	language:Sh
-doMorphDir	sfw/sh/isg-pub/isg-pub.sh	503;"	function	language:Sh
+doMorphDir	sfw/sh/isg-pub/isg-pub.sh	498;"	function	language:Sh
+doMorphDir	src/bash/isg-pub/funcs/dev/morph-dir.func.sh	14;"	function	language:Sh
 doOverWriteConfHolder	sfw/perl/isg_pub/Control/Utils/Configurator.pm	323;"	subroutine	language:Perl
 doParametrize	sfw/perl/isg_pub/Control/Utils/Configurator.pm	123;"	subroutine	language:Perl
-doParseCmdArgs	sfw/bash/isg-pub/isg-pub.sh	130;"	function	language:Sh
 doParseCmdArgs	sfw/sh/file-saver/file-saver.sh	91;"	function	language:Sh
 doParseCmdArgs	sfw/sh/isg-pub/isg-pub.sh	120;"	function	language:Sh
-doParseConfFile	sfw/bash/isg-pub/isg-pub.sh	379;"	function	language:Sh
-doParseConfFile	sfw/bash/isg-pub/test-isg-pub.sh	287;"	function	language:Sh
-doParseExcelSheet	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1183;"	subroutine	language:Perl
+doParseCmdArgs	src/bash/isg-pub/isg-pub.sh	134;"	function	language:Sh
+doParseCnfEnvVars	lib/bash/funcs/parse-cnf-env-vars.sh	11;"	function	language:Sh
+doParseConfFile	src/bash/isg-pub/isg-pub.sh	455;"	function	language:Sh
+doParseConfFile	src/bash/isg-pub/test-isg-pub.sh	320;"	function	language:Sh
+doParseExcelSheet	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1190;"	subroutine	language:Perl
 doParseIniFile	sfw/sh/file-saver/file-saver.sh	70;"	function	language:Sh
 doParseIniFile	sfw/sh/isg-pub/isg-pub.sh	88;"	function	language:Sh
 doParseSchemaFile	sfw/perl/isg_pub/db2_to_nz_converter.pl	167;"	subroutine	language:Perl
-doPerlMysqlMorping	sfw/sh/isg-pub/isg-pub.sh	987;"	function	language:Sh
-doPrintHelp	sfw/bash/isg-pub/funcs/man/print-help.func.sh	5;"	function	language:Sh
+doPerlMysqlMorping	sfw/sh/isg-pub/isg-pub.sh	971;"	function	language:Sh
 doPrintHelp	sfw/sh/file-saver/file-saver.sh	426;"	function	language:Sh
-doPrintHelp	sfw/sh/isg-pub/isg-pub.sh	548;"	function	language:Sh
+doPrintHelp	sfw/sh/isg-pub/isg-pub.sh	543;"	function	language:Sh
 doPrintHelp	sfw/sh/isg-pub/test-isg-pub.sh	855;"	function	language:Sh
-doPrintHelpForBackupFile	sfw/bash/isg-pub/help/sys/backup-file.func.sh	9;"	function	language:Sh
-doPrintHelpForCheckTmuxIsInstalled	sfw/bash/isg-pub/help/sys/tmux/tmux-common.func.sh	38;"	function	language:Sh
-doPrintHelpForCreateCtags	sfw/bash/isg-pub/help/dev/create-ctags.func.sh	6;"	function	language:Sh
-doPrintHelpForGmailPackage	sfw/bash/isg-pub/help/pckg/gmail-package.func.sh	5;"	function	language:Sh
-doPrintHelpForRemovePackage	sfw/bash/isg-pub/help/pckg/remove-package.func.sh	8;"	function	language:Sh
-doPrintHelpForRemovePackageFiles	sfw/bash/isg-pub/help/pckg/remove-package-files.func.sh	7;"	function	language:Sh
-doPrintHelpForRestoreTmuxSession	sfw/bash/isg-pub/help/sys/tmux/restore-tmux-session.func.sh	7;"	function	language:Sh
-doPrintHelpForSaveTmuxSession	sfw/bash/isg-pub/help/sys/tmux/save-tmux-session.func.sh	7;"	function	language:Sh
-doPrintHelpForSaveTmuxSession	sfw/bash/isg-pub/help/sys/tmux/tmux-common.func.sh	12;"	function	language:Sh
-doPrintInsertTable	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1785;"	subroutine	language:Perl
+doPrintHelp	src/bash/isg-pub/funcs/man/print-help.func.sh	5;"	function	language:Sh
+doPrintInsertTable	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1792;"	subroutine	language:Perl
 doPrintNiceSql	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2113;"	subroutine	language:Perl
-doPrintUsage	sfw/bash/isg-pub/funcs/man/print-usage.func.sh	5;"	function	language:Sh
-doPrintUsage	sfw/sh/isg-pub/isg-pub.sh	701;"	function	language:Sh
+doPrintUsage	sfw/sh/isg-pub/isg-pub.sh	688;"	function	language:Sh
+doPrintUsage	src/bash/isg-pub/funcs/man/print-usage.func.sh	5;"	function	language:Sh
 doReadConfFile	sfw/perl/isg_pub/Control/Utils/Configurator.pm	211;"	subroutine	language:Perl
+doRemoveActionFiles	src/bash/isg-pub/funcs/remove-action-files.func.sh	9;"	function	language:Sh
 doRemoveComponentPackage	sfw/sh/file-saver/file-saver.sh	547;"	function	language:Sh
-doRemoveComponentPackage	sfw/sh/isg-pub/isg-pub.sh	841;"	function	language:Sh
-doRemovePackage	docs/txt/isg-pub/helps/pckg/remove-package.help.txt	8;"	function	language:Sh
-doRemovePackage	docs/txt/isg-pub/specs/pckg/remove-package.spec.txt	8;"	function	language:Sh
-doRemovePackage	sfw/bash/isg-pub/funcs/pckg/remove-package.func.sh	8;"	function	language:Sh
-doRemovePackage	sfw/bash/isg-pub/funcs/remove-package.func.sh	7;"	function	language:Sh
-doRemovePackageFiles	docs/txt/isg-pub/helps/pckg/remove-package-files.help.txt	7;"	function	language:Sh
-doRemovePackageFiles	docs/txt/isg-pub/specs/pckg/remove-package-files.spec.txt	7;"	function	language:Sh
-doRemovePackageFiles	sfw/bash/isg-pub/funcs/pckg/remove-package-files.func.sh	7;"	function	language:Sh
-doRemovePackageFiles	sfw/bash/isg-pub/funcs/remove-package-files.func.sh	7;"	function	language:Sh
-doRemoveProjectPackage	sfw/sh/isg-pub/isg-pub.sh	873;"	function	language:Sh
+doRemoveComponentPackage	sfw/sh/isg-pub/isg-pub.sh	825;"	function	language:Sh
+doRemovePackage	src/bash/isg-pub/funcs/pckg/remove-package.func.sh	8;"	function	language:Sh
+doRemovePackage	src/bash/isg-pub/funcs/remove-package.func.sh	7;"	function	language:Sh
+doRemovePackageFiles	src/bash/isg-pub/funcs/remove-package-files.func.sh	7;"	function	language:Sh
+doRemoveProjectPackage	sfw/sh/isg-pub/isg-pub.sh	857;"	function	language:Sh
 doResetAllSubordinateLevels	doc_pub/lib/DocPub/Model/RsToGitHubMdConverter.pm	512;"	subroutine	language:Perl
 doResetAllSubordinateLevels	doc_pub/lib/DocPub/Model/RsToXlsConverter.pm	488;"	subroutine	language:Perl
 doResetAllSubordinateLevels	doc_pub/lib/DocPub/View/DocBuilder.pm	342;"	subroutine	language:Perl
@@ -1182,125 +1123,103 @@ doResolveMyProductVersion	doc_pub/lib/DocPub/Utils/Initiator.pm	223;"	subroutine
 doResolveMyProductVersion	sfw/perl/isg_pub/Control/Utils/Initiator.pm	221;"	subroutine	language:Perl
 doResolveMyProductVersionDir	doc_pub/lib/DocPub/Utils/Initiator.pm	140;"	subroutine	language:Perl
 doResolveMyProductVersionDir	sfw/perl/isg_pub/Control/Utils/Initiator.pm	138;"	subroutine	language:Perl
-doRestoreTmuxSession	docs/txt/isg-pub/helps/sys/tmux/restore-tmux-session.help.txt	11;"	function	language:Sh
-doRestoreTmuxSession	docs/txt/isg-pub/specs/sys/tmux/restore-tmux-session.spec.txt	11;"	function	language:Sh
-doRestoreTmuxSession	sfw/bash/isg-pub/funcs/sys/tmux/restore-tmux-session.func.sh	11;"	function	language:Sh
-doRunActions	sfw/bash/isg-pub/isg-pub.sh	69;"	function	language:Sh
-doRunCmdAndLog	sfw/bash/isg-pub/isg-pub.sh	283;"	function	language:Sh
-doRunCmdAndLog	sfw/bash/isg-pub/test-isg-pub.sh	184;"	function	language:Sh
+doRestoreTmuxSession	doc/txt/isg-pub/helps/sys/tmux/restore-tmux-session.help.txt	11;"	function	language:Sh
+doRestoreTmuxSession	doc/txt/isg-pub/specs/sys/tmux/restore-tmux-session.spec.txt	11;"	function	language:Sh
+doRestoreTmuxSession	src/bash/isg-pub/funcs/sys/tmux/restore-tmux-session.func.sh	11;"	function	language:Sh
+doRunActions	src/bash/isg-pub/isg-pub.sh	72;"	function	language:Sh
 doRunCmdAndLog	sfw/sh/file-saver/file-saver.sh	173;"	function	language:Sh
 doRunCmdAndLog	sfw/sh/isg-pub/isg-pub.sh	257;"	function	language:Sh
-doRunCmdOrExit	sfw/bash/isg-pub/isg-pub.sh	306;"	function	language:Sh
-doRunCmdOrExit	sfw/bash/isg-pub/test-isg-pub.sh	207;"	function	language:Sh
+doRunCmdAndLog	src/bash/isg-pub/isg-pub.sh	313;"	function	language:Sh
+doRunCmdAndLog	src/bash/isg-pub/test-isg-pub.sh	208;"	function	language:Sh
 doRunCmdOrExit	sfw/sh/file-saver/file-saver.sh	194;"	function	language:Sh
 doRunCmdOrExit	sfw/sh/isg-pub/isg-pub.sh	278;"	function	language:Sh
-doRunDeNormalizedUpsertSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	943;"	subroutine	language:Perl
-doRunNestedSetSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	662;"	subroutine	language:Perl
-doRunPerlTests	sfw/sh/isg-pub/isg-pub.sh	1337;"	function	language:Sh
-doRunProcsInParallel	sfw/sh/isg-pub/isg-pub.sh	537;"	function	language:Sh
-doRunProjectMySqlScripts	sfw/sh/isg-pub/isg-pub.sh	1106;"	function	language:Sh
-doRunTests	sfw/bash/isg-pub/test-isg-pub.sh	51;"	function	language:Sh
-doRunTruncateTableSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1148;"	subroutine	language:Perl
-doRunUpsertSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1071;"	subroutine	language:Perl
-doSaveTmuxSession	docs/txt/isg-pub/helps/sys/tmux/save-tmux-session.help.txt	7;"	function	language:Sh
-doSaveTmuxSession	docs/txt/isg-pub/helps/sys/tmux/tmux-common.help.txt	12;"	function	language:Sh
-doSaveTmuxSession	docs/txt/isg-pub/specs/sys/tmux/save-tmux-session.spec.txt	7;"	function	language:Sh
-doSaveTmuxSession	docs/txt/isg-pub/specs/sys/tmux/tmux-common.spec.txt	12;"	function	language:Sh
-doSaveTmuxSession	sfw/bash/isg-pub/funcs/save-tmux-session.func.sh	7;"	function	language:Sh
-doSaveTmuxSession	sfw/bash/isg-pub/funcs/sys/tmux/save-tmux-session.func.sh	7;"	function	language:Sh
-doSaveTmuxSession	sfw/bash/isg-pub/funcs/sys/tmux/tmux-common.func.sh	12;"	function	language:Sh
+doRunCmdOrExit	src/bash/isg-pub/isg-pub.sh	336;"	function	language:Sh
+doRunCmdOrExit	src/bash/isg-pub/test-isg-pub.sh	231;"	function	language:Sh
+doRunDeNormalizedUpsertSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	950;"	subroutine	language:Perl
+doRunLog	src/bash/isg-pub/isg-pub.sh	276;"	function	language:Sh
+doRunNestedSetSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	669;"	subroutine	language:Perl
+doRunPerlTests	sfw/sh/isg-pub/isg-pub.sh	1245;"	function	language:Sh
+doRunProcsInParallel	sfw/sh/isg-pub/isg-pub.sh	532;"	function	language:Sh
+doRunProjectMySqlScripts	sfw/sh/isg-pub/isg-pub.sh	1090;"	function	language:Sh
+doRunTests	src/bash/isg-pub/test-isg-pub.sh	54;"	function	language:Sh
+doRunTruncateTableSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1155;"	subroutine	language:Perl
+doRunUpsertSql	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1078;"	subroutine	language:Perl
+doSaveTmuxSession	doc/txt/isg-pub/helps/sys/tmux/save-tmux-session.help.txt	7;"	function	language:Sh
+doSaveTmuxSession	doc/txt/isg-pub/specs/sys/tmux/save-tmux-session.spec.txt	7;"	function	language:Sh
+doSaveTmuxSession	src/bash/isg-pub/funcs/save-tmux-session.func.sh	7;"	function	language:Sh
+doSaveTmuxSession	src/bash/isg-pub/funcs/sys/tmux/save-tmux-session.func.sh	7;"	function	language:Sh
+doSaveTmuxSession	src/bash/isg-pub/funcs/sys/tmux/tmux-common.sh	12;"	function	language:Sh
 doSearchForTag	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2140;"	subroutine	language:Perl
 doSearchNamesAndDescriptions	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1990;"	subroutine	language:Perl
 doSendReport	sfw/sh/file-saver/file-saver.sh	214;"	function	language:Sh
 doSendReport	sfw/sh/isg-pub/isg-pub.sh	298;"	function	language:Sh
-doSetVars	sfw/bash/isg-pub/isg-pub.sh	326;"	function	language:Sh
-doSetVars	sfw/bash/isg-pub/test-isg-pub.sh	227;"	function	language:Sh
+doSetUndefinedShellVarsFromCnfFile	src/bash/isg-pub/isg-pub.sh	412;"	function	language:Sh
 doSetVars	sfw/sh/file-saver/file-saver.sh	35;"	function	language:Sh
 doSetVars	sfw/sh/isg-pub/isg-pub.sh	35;"	function	language:Sh
 doSetVars	sfw/sh/isg-pub/test-isg-pub.sh	7;"	function	language:Sh
-doSpecBackupFile	sfw/bash/isg-pub/specs/sys/backup-file.spec.sh	9;"	function	language:Sh
-doSpecChangeVersion	sfw/bash/isg-pub/specs/change-version.spec.sh	7;"	function	language:Sh
-doSpecCheckPerlSyntax	sfw/bash/isg-pub/specs/perl/check-perl-syntax.spec.sh	20;"	function	language:Sh
-doSpecCheckTmuxIsInstalled	sfw/bash/isg-pub/specs/sys/tmux/tmux-common.spec.sh	38;"	function	language:Sh
-doSpecCreateCtags	sfw/bash/isg-pub/specs/create-ctags.spec.sh	7;"	function	language:Sh
-doSpecCreateCtags	sfw/bash/isg-pub/specs/dev/create-ctags.spec.sh	6;"	function	language:Sh
-doSpecCreateFull7zPackage	sfw/bash/isg-pub/specs/pckg/create-full-7z-package.spec.sh	7;"	function	language:Sh
-doSpecCreateFullPackage	sfw/bash/isg-pub/specs/pckg/create-full-package.spec.sh	7;"	function	language:Sh
-doSpecCreateRelative7zPackage	sfw/bash/isg-pub/specs/create-relative-7z-package.spec.sh	7;"	function	language:Sh
-doSpecCreateRelative7zPackage	sfw/bash/isg-pub/specs/pckg/create-relative-7z-package.spec.sh	7;"	function	language:Sh
-doSpecCreateRelativePackage	sfw/bash/isg-pub/specs/pckg/create-relative-package.spec.sh	7;"	function	language:Sh
-doSpecGenerateActionFiles	sfw/bash/isg-pub/specs/generate-action-files.spec.sh	7;"	function	language:Sh
-doSpecGmailPackage	sfw/bash/isg-pub/specs/gmail-package.spec.sh	7;"	function	language:Sh
-doSpecGmailPackage	sfw/bash/isg-pub/specs/pckg/gmail-package.spec.sh	5;"	function	language:Sh
-doSpecMorphDir	sfw/bash/isg-pub/specs/dev/morph-dir.spec.sh	11;"	function	language:Sh
-doSpecMorphDir	sfw/bash/isg-pub/specs/morph-dir.spec.sh	7;"	function	language:Sh
-doSpecPrintHelp	sfw/bash/isg-pub/specs/print-help.spec.sh	7;"	function	language:Sh
-doSpecPrintUsage	sfw/bash/isg-pub/specs/print-usage.spec.sh	7;"	function	language:Sh
-doSpecRemovePackage	sfw/bash/isg-pub/specs/pckg/remove-package.spec.sh	8;"	function	language:Sh
-doSpecRemovePackage	sfw/bash/isg-pub/specs/remove-package.spec.sh	7;"	function	language:Sh
-doSpecRemovePackageFiles	sfw/bash/isg-pub/specs/pckg/remove-package-files.spec.sh	7;"	function	language:Sh
-doSpecRemovePackageFiles	sfw/bash/isg-pub/specs/remove-package-files.spec.sh	7;"	function	language:Sh
-doSpecRestoreTmuxSession	sfw/bash/isg-pub/specs/sys/tmux/restore-tmux-session.spec.sh	7;"	function	language:Sh
-doSpecSaveTmuxSession	sfw/bash/isg-pub/specs/save-tmux-session.spec.sh	7;"	function	language:Sh
-doSpecSaveTmuxSession	sfw/bash/isg-pub/specs/sys/tmux/save-tmux-session.spec.sh	7;"	function	language:Sh
-doSpecSaveTmuxSession	sfw/bash/isg-pub/specs/sys/tmux/tmux-common.spec.sh	12;"	function	language:Sh
-doSpecTmuxCommon	sfw/bash/isg-pub/specs/sys/tmux-common.spec.sh	7;"	function	language:Sh
-doTestBackupFile	sfw/bash/isg-pub/tests/backup-file.test.sh	7;"	function	language:Sh
-doTestBackupFile	sfw/bash/isg-pub/tests/sys/backup-file.test.sh	7;"	function	language:Sh
-doTestChangeVersion	sfw/bash/isg-pub/tests/change-version.test.sh	7;"	function	language:Sh
-doTestCheckPerlSyntax	sfw/bash/isg-pub/isg-pub-test.sh	41;"	function	language:Sh
-doTestCheckPerlSyntax	sfw/bash/isg-pub/tests/perl/check-perl-syntax.test.sh	20;"	function	language:Sh
-doTestCheckTmuxIsInstalled	sfw/bash/isg-pub/tests/sys/tmux/tmux-common.test.sh	38;"	function	language:Sh
-doTestCloneToEnvTypes	sfw/bash/isg-pub/isg-pub-test.sh	291;"	function	language:Sh
-doTestCreateCtags	sfw/bash/isg-pub/tests/create-ctags.test.sh	7;"	function	language:Sh
-doTestCreateCtags	sfw/bash/isg-pub/tests/dev/create-ctags.test.sh	6;"	function	language:Sh
+doSetVars	src/bash/isg-pub/isg-pub.sh	356;"	function	language:Sh
+doSetVars	src/bash/isg-pub/test-isg-pub.sh	251;"	function	language:Sh
+doSpecActionToRemove	src/bash/isg-pub/specs/action-to-remove.spec.sh	7;"	function	language:Sh
+doSpecBackupFile	src/bash/isg-pub/specs/sys/backup-file.spec.sh	9;"	function	language:Sh
+doSpecChangeEnvType	src/bash/isg-pub/specs/change-env-type.spec.sh	7;"	function	language:Sh
+doSpecChangeVersion	src/bash/isg-pub/specs/change-version.spec.sh	7;"	function	language:Sh
+doSpecCloneToApp	src/bash/isg-pub/specs/clone-to-app.spec.sh	7;"	function	language:Sh
+doSpecCreateCtags	src/bash/isg-pub/specs/create-ctags.spec.sh	7;"	function	language:Sh
+doSpecCreateFull7zPackage	src/bash/isg-pub/specs/pckg/create-full-7z-package.spec.sh	7;"	function	language:Sh
+doSpecCreateFullPackage	src/bash/isg-pub/specs/pckg/create-full-package.spec.sh	7;"	function	language:Sh
+doSpecCreateRelative7zPackage	src/bash/isg-pub/specs/pckg/create-relative-7z-package.spec.sh	7;"	function	language:Sh
+doSpecCreateRelativePackage	src/bash/isg-pub/specs/pckg/create-relative-package.spec.sh	7;"	function	language:Sh
+doSpecGenerateActionFiles	src/bash/isg-pub/specs/generate-action-files.spec.sh	7;"	function	language:Sh
+doSpecGenerateSQL	src/bash/isg-pub/specs/generate-sql.spec.sh	7;"	function	language:Sh
+doSpecGmailPackage	src/bash/isg-pub/specs/pckg/gmail-package.spec.sh	7;"	function	language:Sh
+doSpecMorphDir	src/bash/isg-pub/specs/dev/morph-dir.spec.sh	11;"	function	language:Sh
+doSpecPrintHelp	src/bash/isg-pub/specs/print-help.spec.sh	7;"	function	language:Sh
+doSpecPrintUsage	src/bash/isg-pub/specs/print-usage.spec.sh	7;"	function	language:Sh
+doSpecRemoveActionFiles	src/bash/isg-pub/specs/remove-action-files.spec.sh	7;"	function	language:Sh
+doSpecRemovePackage	src/bash/isg-pub/specs/pckg/remove-package.spec.sh	8;"	function	language:Sh
+doSpecRemovePackage	src/bash/isg-pub/specs/remove-package.spec.sh	7;"	function	language:Sh
+doSpecRemovePackageFiles	src/bash/isg-pub/specs/remove-package-files.spec.sh	7;"	function	language:Sh
+doSpecRestoreTmuxSession	src/bash/isg-pub/specs/sys/tmux/restore-tmux-session.spec.sh	7;"	function	language:Sh
+doSpecSaveTmuxSession	src/bash/isg-pub/specs/save-tmux-session.spec.sh	7;"	function	language:Sh
+doSpecSaveTmuxSession	src/bash/isg-pub/specs/sys/tmux/save-tmux-session.spec.sh	7;"	function	language:Sh
+doTestActionToRemove	src/bash/isg-pub/tests/action-to-remove.test.sh	7;"	function	language:Sh
+doTestBackupFile	src/bash/isg-pub/tests/sys/backup-file.test.sh	7;"	function	language:Sh
+doTestChangeEnvType	src/bash/isg-pub/tests/change-env-type.test.sh	7;"	function	language:Sh
+doTestChangeVersion	src/bash/isg-pub/tests/change-version.test.sh	7;"	function	language:Sh
+doTestCloneToApp	src/bash/isg-pub/tests/dev/clone-to-app.test.sh	7;"	function	language:Sh
 doTestCreateCtags	sfw/sh/isg-pub/test-isg-pub.sh	512;"	function	language:Sh
-doTestCreateFull7zPackage	sfw/bash/isg-pub/tests/pckg/create-full-7z-package.test.sh	7;"	function	language:Sh
-doTestCreateFullPackage	sfw/bash/isg-pub/tests/pckg/create-full-package.test.sh	7;"	function	language:Sh
+doTestCreateCtags	src/bash/isg-pub/tests/create-ctags.test.sh	7;"	function	language:Sh
+doTestCreateFull7zPackage	src/bash/isg-pub/tests/pckg/create-full-7z-package.test.sh	7;"	function	language:Sh
+doTestCreateFullPackage	src/bash/isg-pub/tests/pckg/create-full-package.test.sh	7;"	function	language:Sh
 doTestCreateLinkNok	sfw/sh/isg-pub/test-isg-pub.sh	572;"	function	language:Sh
 doTestCreateLinkOk	sfw/sh/isg-pub/test-isg-pub.sh	541;"	function	language:Sh
-doTestCreateRelative7zPackage	sfw/bash/isg-pub/tests/create-relative-7z-package.test.sh	7;"	function	language:Sh
-doTestCreateRelative7zPackage	sfw/bash/isg-pub/tests/pckg/create-relative-7z-package.test.sh	7;"	function	language:Sh
-doTestCreateRelativePackage	sfw/bash/isg-pub/tests/pckg/create-relative-package.test.sh	8;"	function	language:Sh
+doTestCreateRelative7zPackage	src/bash/isg-pub/tests/pckg/create-relative-7z-package.test.sh	7;"	function	language:Sh
+doTestCreateRelativePackage	src/bash/isg-pub/tests/pckg/create-relative-package.test.sh	8;"	function	language:Sh
 doTestCreationOfDevelopmentPackage	sfw/sh/isg-pub/test-isg-pub.sh	223;"	function	language:Sh
 doTestCreationOfTarPackage	sfw/sh/isg-pub/test-isg-pub.sh	255;"	function	language:Sh
-doTestCtagsCreation	sfw/bash/isg-pub/isg-pub-test.sh	270;"	function	language:Sh
-doTestDeploymentPackageCreation	sfw/bash/isg-pub/isg-pub-test.sh	228;"	function	language:Sh
 doTestDocsGeneration	sfw/sh/isg-pub/test-isg-pub.sh	712;"	function	language:Sh
 doTestDocsGenerationForProject	sfw/sh/isg-pub/test-isg-pub.sh	604;"	function	language:Sh
-doTestFullPackageCreation	sfw/bash/isg-pub/isg-pub-test.sh	184;"	function	language:Sh
-doTestFullPackageCreationOfContainedApp	sfw/bash/isg-pub/isg-pub-test.sh	124;"	function	language:Sh
-doTestGenerateActionFiles	sfw/bash/isg-pub/tests/generate-action-files.test.sh	7;"	function	language:Sh
-doTestGmailPackage	sfw/bash/isg-pub/tests/gmail-package.test.sh	7;"	function	language:Sh
-doTestGmailPackage	sfw/bash/isg-pub/tests/pckg/gmail-package.test.sh	5;"	function	language:Sh
-doTestGmailSending	sfw/bash/isg-pub/isg-pub-test.sh	58;"	function	language:Sh
-doTestHelp	sfw/bash/isg-pub/isg-pub-test.sh	343;"	function	language:Sh
+doTestGenerateActionFiles	src/bash/isg-pub/tests/generate-action-files.test.sh	7;"	function	language:Sh
+doTestGenerateSQL	src/bash/isg-pub/tests/generate-sql.test.sh	7;"	function	language:Sh
+doTestGmailPackage	src/bash/isg-pub/tests/pckg/gmail-package.test.sh	7;"	function	language:Sh
 doTestHelp	sfw/sh/isg-pub/test-isg-pub.sh	30;"	function	language:Sh
-doTestMorphDir	sfw/bash/isg-pub/tests/dev/morph-dir.test.sh	6;"	function	language:Sh
-doTestMorphDir	sfw/bash/isg-pub/tests/morph-dir.test.sh	7;"	function	language:Sh
+doTestMorphDir	src/bash/isg-pub/tests/dev/morph-dir.test.sh	6;"	function	language:Sh
 doTestMorphingDeployment	sfw/sh/isg-pub/test-isg-pub.sh	69;"	function	language:Sh
 doTestNonMorphingDeployment	sfw/sh/isg-pub/test-isg-pub.sh	137;"	function	language:Sh
-doTestPrintHelp	sfw/bash/isg-pub/tests/print-help.test.sh	7;"	function	language:Sh
-doTestPrintUsage	sfw/bash/isg-pub/tests/print-usage.test.sh	7;"	function	language:Sh
-doTestRelativePackageCreation	sfw/bash/isg-pub/isg-pub-test.sh	206;"	function	language:Sh
-doTestRelativePackageCreationOfContainedApp	sfw/bash/isg-pub/isg-pub-test.sh	105;"	function	language:Sh
-doTestRemovePackage	sfw/bash/isg-pub/isg-pub-test.sh	165;"	function	language:Sh
-doTestRemovePackage	sfw/bash/isg-pub/tests/pckg/remove-package.test.sh	8;"	function	language:Sh
-doTestRemovePackage	sfw/bash/isg-pub/tests/remove-package.test.sh	7;"	function	language:Sh
-doTestRemovePackageFiles	sfw/bash/isg-pub/isg-pub-test.sh	145;"	function	language:Sh
-doTestRemovePackageFiles	sfw/bash/isg-pub/tests/pckg/remove-package-files.test.sh	7;"	function	language:Sh
-doTestRestoreTmuxSession	sfw/bash/isg-pub/tests/sys/tmux/restore-tmux-session.test.sh	7;"	function	language:Sh
+doTestPrintHelp	src/bash/isg-pub/tests/print-help.test.sh	7;"	function	language:Sh
+doTestPrintUsage	src/bash/isg-pub/tests/print-usage.test.sh	7;"	function	language:Sh
+doTestRemoveActionFiles	src/bash/isg-pub/tests/remove-action-files.test.sh	10;"	function	language:Sh
+doTestRemovePackage	src/bash/isg-pub/tests/pckg/remove-package.test.sh	8;"	function	language:Sh
+doTestRemovePackage	src/bash/isg-pub/tests/remove-package.test.sh	7;"	function	language:Sh
+doTestRemovePackageFiles	src/bash/isg-pub/tests/remove-package-files.test.sh	7;"	function	language:Sh
+doTestRestoreTmuxSession	src/bash/isg-pub/tests/sys/tmux/restore-tmux-session.test.sh	7;"	function	language:Sh
 doTestRunMySqlScripts	sfw/sh/isg-pub/test-isg-pub.sh	823;"	function	language:Sh
-doTestSaveTmuxSession	sfw/bash/isg-pub/tests/save-tmux-session.test.sh	7;"	function	language:Sh
-doTestSaveTmuxSession	sfw/bash/isg-pub/tests/sys/tmux/save-tmux-session.test.sh	7;"	function	language:Sh
-doTestSaveTmuxSession	sfw/bash/isg-pub/tests/sys/tmux/tmux-common.test.sh	12;"	function	language:Sh
-doTestToAppCloning	sfw/bash/isg-pub/isg-pub-test.sh	83;"	function	language:Sh
-doTestUsage	sfw/bash/isg-pub/isg-pub-test.sh	321;"	function	language:Sh
-doTestVersionChanges	sfw/bash/isg-pub/isg-pub-test.sh	249;"	function	language:Sh
+doTestSaveTmuxSession	src/bash/isg-pub/tests/save-tmux-session.test.sh	7;"	function	language:Sh
+doTestSaveTmuxSession	src/bash/isg-pub/tests/sys/tmux/save-tmux-session.test.sh	7;"	function	language:Sh
 doUpdateItemLevel	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	2377;"	subroutine	language:Perl
 doWaitForChildProcsToExit	sfw/sh/file-saver/file-saver.sh	577;"	function	language:Sh
-doWaitForChildProcsToExit	sfw/sh/isg-pub/isg-pub.sh	909;"	function	language:Sh
-doXlsToHashOfHashes	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1583;"	subroutine	language:Perl
+doWaitForChildProcsToExit	sfw/sh/isg-pub/isg-pub.sh	893;"	function	language:Sh
+doXlsToHashOfHashes	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1590;"	subroutine	language:Perl
 do_get_item_views	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	528;"	subroutine	language:Perl
 do_reshuffle	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	34;"	subroutine	language:Perl
 docElem	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	8912;"	variable	language:JavaScript
@@ -1332,19 +1251,14 @@ dumpFields	doc_pub/lib/DocPub/Controller/Renderer.pm	128;"	subroutine	language:P
 dumpFields	doc_pub/lib/DocPub/Controller/Search.pm	208;"	subroutine	language:Perl
 dumpFields	doc_pub/lib/DocPub/Controller/Show.pm	357;"	subroutine	language:Perl
 dumpFields	doc_pub/lib/DocPub/Utils/Initiator.pm	535;"	subroutine	language:Perl
-dumpFields	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1420;"	subroutine	language:Perl
+dumpFields	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1427;"	subroutine	language:Perl
 dumpFields	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	229;"	subroutine	language:Perl
 dumpFields	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	253;"	subroutine	language:Perl
 dumpFields	sfw/perl/isg_pub/Control/Utils/Initiator.pm	513;"	subroutine	language:Perl
 dumpFields	sfw/perl/isg_pub/Control/Utils/Logger.pm	114;"	subroutine	language:Perl
 dumpFields	sfw/perl/isg_pub/Control/Utils/Timer.pm	76;"	subroutine	language:Perl
 dumpIni	sfw/perl/isg_pub/Control/Utils/Configurator.pm	301;"	subroutine	language:Perl
-dump_tmux_session	docs/txt/isg-pub/helps/sys/tmux/tmux-common.help.txt	6;"	function	language:Sh
-dump_tmux_session	docs/txt/isg-pub/specs/sys/tmux/tmux-common.spec.txt	6;"	function	language:Sh
-dump_tmux_session	sfw/bash/isg-pub/funcs/sys/tmux/tmux-common.func.sh	6;"	function	language:Sh
-dump_tmux_session	sfw/bash/isg-pub/help/sys/tmux/tmux-common.func.sh	6;"	function	language:Sh
-dump_tmux_session	sfw/bash/isg-pub/specs/sys/tmux/tmux-common.spec.sh	6;"	function	language:Sh
-dump_tmux_session	sfw/bash/isg-pub/tests/sys/tmux/tmux-common.test.sh	6;"	function	language:Sh
+dump_tmux_session	src/bash/isg-pub/funcs/sys/tmux/tmux-common.sh	6;"	function	language:Sh
 e	doc_pub/public/lib/Buttons-1.0.3/js/buttons.html5.min.js	1;"	variable	language:JavaScript
 e	doc_pub/public/lib/FieldType-Select2/editor.select2.min.js	1;"	variable	language:JavaScript
 e	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:d
@@ -1406,11 +1320,9 @@ enableRollingLinks	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	1384;
 enableSlidable	doc_pub/public/lib/jquery-layout/jquery.layout.js	5099;"	property	language:JavaScript	class:Instance
 enableSlideable	doc_pub/public/lib/jquery-layout/jquery.layout.js	2286;"	property	language:JavaScript	class:paneMethods
 enabled	doc_pub/public/lib/jquery-layout/jquery.layout.js	5267;"	property	language:JavaScript	class:$.layout.defaults.stateManagement
-end	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	465;"	label	language:DosBatch
 enterFullscreen	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	1975;"	function	language:JavaScript
 enumerable	doc_pub/public/lib/reveal/reveal.js-master/lib/js/classList.js	2;"	property	language:JavaScript	class:var.l
 error	conf/hosts/doc-pub-host/usr/bin/xvfb-run	36;"	function	language:Sh
-error	conf/hosts/ysg-host-name/usr/bin/xvfb-run	36;"	function	language:Sh
 error	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	2452;"	method	language:JavaScript	class:Editor
 error	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	254;"	method	language:JavaScript	class:Editor.Field
 error	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	3947;"	property	language:JavaScript	class:Editor.var.opts
@@ -1483,7 +1395,6 @@ fields	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	89;"	method	l
 fields	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	90;"	property	language:JavaScript	class:b
 fileName	doc_pub/public/lib/Buttons-1.0.3/js/buttons.flash.js	117;"	property	language:JavaScript	class:ZeroClipboard_TableTools.Client
 find_free_servernum	conf/hosts/doc-pub-host/usr/bin/xvfb-run	67;"	function	language:Sh
-find_free_servernum	conf/hosts/ysg-host-name/usr/bin/xvfb-run	67;"	function	language:Sh
 fit	doc_pub/public/lib/jQueryUI-1.11.4/jquery-ui.js	1349;"	property	language:JavaScript	class:$.ui.position
 fixInput	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	5029;"	function	language:JavaScript
 floatingHeader	doc_pub/public/lib/FixedHeader-3.0.0/js/dataTables.fixedHeader.js	68;"	property	language:JavaScript	class:dom
@@ -1541,7 +1452,6 @@ g	doc_pub/public/lib/jquery-layout/jquery.layout.js	58;"	function	language:JavaS
 g	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	function	language:JavaScript	function:u.l.o
 g	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	function	language:JavaScript	function:v
 g:colors_name	conf/hosts/doc-pub-host/root/.vim/colors/elflord.vim	12;"	variable	language:Vim
-g:colors_name	conf/hosts/ysg-host-name/root/.vim/colors/elflord.vim	12;"	variable	language:Vim
 ga	doc_pub/public/lib/DataTables-1.10.9/js/jquery.dataTables.min.js	26;"	function	language:JavaScript	function:kb
 ga	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:da
 gb	doc_pub/public/lib/DataTables-1.10.9/js/jquery.dataTables.min.js	9;"	function	language:JavaScript	function:fb
@@ -1569,7 +1479,7 @@ get	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	3613;"	method	language:JavaS
 get	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	7138;"	method	language:JavaScript	class:jQuery.propHooks.selected
 get	doc_pub/public/lib/reveal/reveal.js-master/lib/js/classList.js	2;"	property	language:JavaScript	class:var.l
 get	sfw/perl/isg_pub/Control/Utils/Configurator.pm	379;"	subroutine	language:Perl
-get	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1397;"	subroutine	language:Perl
+get	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1404;"	subroutine	language:Perl
 get	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	181;"	subroutine	language:Perl
 get	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	228;"	subroutine	language:Perl
 get	sfw/perl/isg_pub/Control/Utils/Initiator.pm	486;"	subroutine	language:Perl
@@ -1602,8 +1512,8 @@ getSubClassVar	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	209;"	subroutine	lan
 getWidthOrHeight	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	5815;"	function	language:JavaScript
 getWindow	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	8917;"	function	language:JavaScript
 get_field_content_for_edit	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	338;"	subroutine	language:Perl
-get_function_list	sfw/bash/isg-pub/isg-pub.sh	49;"	function	language:Sh
-get_function_list	sfw/bash/isg-pub/test-isg-pub.sh	32;"	function	language:Sh
+get_function_list	src/bash/isg-pub/isg-pub.sh	52;"	function	language:Sh
+get_function_list	src/bash/isg-pub/test-isg-pub.sh	34;"	function	language:Sh
 get_item_to_edit	doc_pub/lib/DocPub/Controller/DocView.pm	132;"	subroutine	language:Perl
 get_item_to_edit	doc_pub/lib/DocPub/Controller/Show.pm	128;"	subroutine	language:Perl
 get_set__get	doc_pub/public/lib/MomentJS/moment.js	381;"	function	language:JavaScript
@@ -1831,7 +1741,6 @@ left	doc_pub/public/lib/Buttons-1.0.3/js/buttons.flash.min.js	2;"	property	langu
 left	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	1858;"	property	language:JavaScript	class:Editor.var.position
 left	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	2938;"	property	language:JavaScript	class:availableRoutes.routes
 letterSpacing	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	5738;"	property	language:JavaScript
-line	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	63;"	variable	language:DosBatch
 linear	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	6251;"	method	language:JavaScript	class:jQuery.easing
 linkify	doc_pub/public/lib/reveal/reveal.js-master/index.html	228;"	function	language:HTML
 list_doc_items	doc_pub/lib/DocPub/Model/MariaDbHandler.pm	1386;"	subroutine	language:Perl
@@ -1869,16 +1778,14 @@ m	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	
 m	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	function	language:JavaScript	function:v
 ma	doc_pub/public/lib/DataTables-1.10.9/js/jquery.dataTables.min.js	15;"	function	language:JavaScript	function:function
 ma	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:ha
-mailadd	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	242;"	variable	language:DosBatch
-main	sfw/bash/isg-pub/isg-pub-test.sh	16;"	function	language:Sh
-main	sfw/bash/isg-pub/isg-pub.sh	18;"	function	language:Sh
-main	sfw/bash/isg-pub/test-isg-pub.sh	18;"	function	language:Sh
 main	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	89;"	subroutine	language:Perl
 main	sfw/perl/isg_pub/db2_to_nz_converter.pl	91;"	subroutine	language:Perl
 main	sfw/perl/isg_pub/load.pl	93;"	subroutine	language:Perl
 main	sfw/sh/file-saver/file-saver.sh	793;"	function	language:Sh
-main	sfw/sh/isg-pub/isg-pub.sh	1412;"	function	language:Sh
+main	sfw/sh/isg-pub/isg-pub.sh	1320;"	function	language:Sh
 main	sfw/sh/isg-pub/test-isg-pub.sh	880;"	function	language:Sh
+main	src/bash/isg-pub/isg-pub.sh	19;"	function	language:Sh
+main	src/bash/isg-pub/test-isg-pub.sh	20;"	function	language:Sh
 makeFormatFunction	doc_pub/public/lib/MomentJS/moment.js	455;"	function	language:JavaScript
 makeGetSet	doc_pub/public/lib/MomentJS/moment.js	369;"	function	language:JavaScript
 manipulationTarget	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	4946;"	function	language:JavaScript
@@ -1898,7 +1805,6 @@ mb	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	fu
 mc	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:gc
 menu	doc_pub/public/lib/jQueryUI-1.11.4/jquery-ui.js	2140;"	variable	language:JavaScript
 message	conf/hosts/doc-pub-host/usr/bin/xvfb-run	31;"	function	language:Sh
-message	conf/hosts/ysg-host-name/usr/bin/xvfb-run	31;"	function	language:Sh
 message	doc_pub/public/lib/Buttons-1.0.3/js/buttons.print.js	112;"	property	language:JavaScript	class:DataTable.ext.buttons.print
 message	doc_pub/public/lib/Buttons-1.0.3/js/buttons.print.min.js	3;"	property	language:JavaScript	class:h.ext.buttons.print
 message	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	1120;"	property	language:JavaScript	class:Editor.models.formOptions
@@ -1986,18 +1892,13 @@ new	doc_pub/lib/DocPub/View/SrchResultBuilder.pm	222;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/SrchResultPrgrphBuilder.pm	109;"	subroutine	language:Perl
 new	doc_pub/lib/DocPub/View/SrchResultTitleBuilder.pm	114;"	subroutine	language:Perl
 new	sfw/perl/isg_pub/Control/Utils/Configurator.pm	57;"	subroutine	language:Perl
-new	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1354;"	subroutine	language:Perl
+new	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1361;"	subroutine	language:Perl
 new	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	126;"	subroutine	language:Perl
 new	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	183;"	subroutine	language:Perl
 new	sfw/perl/isg_pub/Control/Utils/Initiator.pm	438;"	subroutine	language:Perl
 new	sfw/perl/isg_pub/Control/Utils/Logger.pm	53;"	subroutine	language:Perl
 new	sfw/perl/isg_pub/Control/Utils/Timer.pm	27;"	subroutine	language:Perl
-new_tmux_session	docs/txt/isg-pub/helps/sys/tmux/tmux-common.help.txt	32;"	function	language:Sh
-new_tmux_session	docs/txt/isg-pub/specs/sys/tmux/tmux-common.spec.txt	32;"	function	language:Sh
-new_tmux_session	sfw/bash/isg-pub/funcs/sys/tmux/tmux-common.func.sh	32;"	function	language:Sh
-new_tmux_session	sfw/bash/isg-pub/help/sys/tmux/tmux-common.func.sh	32;"	function	language:Sh
-new_tmux_session	sfw/bash/isg-pub/specs/sys/tmux/tmux-common.spec.sh	32;"	function	language:Sh
-new_tmux_session	sfw/bash/isg-pub/tests/sys/tmux/tmux-common.test.sh	32;"	function	language:Sh
+new_tmux_session	src/bash/isg-pub/funcs/sys/tmux/tmux-common.sh	32;"	function	language:Sh
 node	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	2898;"	method	language:JavaScript	class:Editor
 node	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	413;"	method	language:JavaScript	class:Editor.Field
 node	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	6042;"	property	language:JavaScript	class:out
@@ -2099,15 +2000,12 @@ prcReShuffleItemAfterUpdate	sfw/sql/mysql/product/08.02.PrcReShuffleItemAfterUpd
 prep	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	5878;"	method	language:JavaScript	class:__dataSources.dataTable
 prep	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	87;"	method	language:JavaScript	class:E.dataTable
 preventDefault	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	4710;"	method	language:JavaScript	class:jQuery.Event
-procPrintHelloWorld	docs/cheat-sheets/sql/ora/oracle-cheat-sheet.sql	188;"	procedure	language:SQL
 proceed	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	336;"	function	language:JavaScript	function:load
 process	doc_pub/public/lib/Buttons-1.0.3/js/dataTables.buttons.js	858;"	function	language:JavaScript	function:Buttons.instanceSelector
-process	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	461;"	label	language:DosBatch
 processSlides	doc_pub/public/lib/reveal/reveal.js-master/plugin/markdown/markdown.js	208;"	function	language:JavaScript
 processing	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	6096;"	property	language:JavaScript	class:Editor.classes
 processing	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	90;"	property	language:JavaScript	class:f.classes
 progressbar	doc_pub/public/lib/jQueryUI-1.11.4/jquery-ui.js	11781;"	variable	language:JavaScript
-prompt	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	4;"	variable	language:DosBatch
 propFilter	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	6501;"	function	language:JavaScript
 q	doc_pub/public/lib/DataTables-1.10.9/js/jquery.dataTables.min.js	36;"	function	language:JavaScript	function:ub
 q	doc_pub/public/lib/reveal/reveal.js-master/lib/js/head.min.js	8;"	function	language:JavaScript	function:u.t
@@ -2238,12 +2136,7 @@ send	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	3331;"	method	langu
 server	doc_pub/public/lib/reveal/reveal.js-master/plugin/multiplex/index.js	9;"	variable	language:JavaScript
 server	doc_pub/public/lib/reveal/reveal.js-master/plugin/notes-server/index.js	10;"	variable	language:JavaScript
 serverWait	doc_pub/public/lib/Scroller-1.3.0/js/dataTables.scroller.js	1057;"	property	language:JavaScript	class:Scroller.defaults
-session_exists	docs/txt/isg-pub/helps/sys/tmux/tmux-common.help.txt	22;"	function	language:Sh
-session_exists	docs/txt/isg-pub/specs/sys/tmux/tmux-common.spec.txt	22;"	function	language:Sh
-session_exists	sfw/bash/isg-pub/funcs/sys/tmux/tmux-common.func.sh	22;"	function	language:Sh
-session_exists	sfw/bash/isg-pub/help/sys/tmux/tmux-common.func.sh	22;"	function	language:Sh
-session_exists	sfw/bash/isg-pub/specs/sys/tmux/tmux-common.spec.sh	22;"	function	language:Sh
-session_exists	sfw/bash/isg-pub/tests/sys/tmux/tmux-common.test.sh	22;"	function	language:Sh
+session_exists	src/bash/isg-pub/funcs/sys/tmux/tmux-common.sh	22;"	function	language:Sh
 set	doc_pub/lib/DocPub.pm	319;"	subroutine	language:Perl
 set	doc_pub/lib/DocPub/Controller/DocView.pm	397;"	subroutine	language:Perl
 set	doc_pub/lib/DocPub/Controller/PdfView.pm	185;"	subroutine	language:Perl
@@ -2266,7 +2159,7 @@ set	doc_pub/public/lib/FieldType-Select2/editor.select2.min.js	2;"	method	langua
 set	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	3587;"	method	language:JavaScript	class:Data
 set	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	7045;"	method	language:JavaScript	class:boolHook
 set	sfw/perl/isg_pub/Control/Utils/Configurator.pm	391;"	subroutine	language:Perl
-set	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1408;"	subroutine	language:Perl
+set	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1415;"	subroutine	language:Perl
 set	sfw/perl/isg_pub/Control/Utils/ETL/Loader.pm	194;"	subroutine	language:Perl
 set	sfw/perl/isg_pub/Control/Utils/FileHandler.pm	240;"	subroutine	language:Perl
 set	sfw/perl/isg_pub/Control/Utils/Initiator.pm	500;"	subroutine	language:Perl
@@ -2363,7 +2256,6 @@ stopPropagation	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	4720;"	method	la
 stringParse	doc_pub/public/lib/jQueryUI-1.11.4/jquery-ui.js	9543;"	function	language:JavaScript
 stringify	doc_pub/public/lib/jquery-layout/jquery.layout.js	5507;"	function	language:JavaScript
 strip	doc_pub/public/lib/Buttons-1.0.3/js/dataTables.buttons.js	1379;"	function	language:JavaScript	function:_exportData
-strip	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	67;"	label	language:DosBatch
 strundefined	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	4053;"	variable	language:JavaScript
 styleDifference	doc_pub/public/lib/jQueryUI-1.11.4/jquery-ui.js	10086;"	function	language:JavaScript
 submit	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	1089;"	property	language:JavaScript	class:Editor.models.formOptions
@@ -2379,7 +2271,6 @@ swapPanes	doc_pub/public/lib/jquery-layout/jquery.layout.js	2290;"	property	lang
 swapPanes	doc_pub/public/lib/jquery-layout/jquery.layout.js	5087;"	property	language:JavaScript	class:Instance
 swing	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	6254;"	method	language:JavaScript	class:jQuery.easing
 sync	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	2234;"	function	language:JavaScript
-synonym_name	docs/cheat-sheets/nz/nz-cheat-sheet.sql	50;"	synonym	language:SQL
 system	doc_pub/public/lib/reveal/reveal.js-master/plugin/print-pdf/print-pdf.js	12;"	variable	language:JavaScript
 t	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	52;"	class	language:JavaScript	class:var
 t	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:q
@@ -2393,12 +2284,7 @@ tabReplace	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight
 table	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	5156;"	property	language:JavaScript	class:Editor.defaults
 table	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.min.js	81;"	property	language:JavaScript	class:f.f
 tc	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:pc
-terminal_size	docs/txt/isg-pub/helps/sys/tmux/tmux-common.help.txt	18;"	function	language:Sh
-terminal_size	docs/txt/isg-pub/specs/sys/tmux/tmux-common.spec.txt	18;"	function	language:Sh
-terminal_size	sfw/bash/isg-pub/funcs/sys/tmux/tmux-common.func.sh	18;"	function	language:Sh
-terminal_size	sfw/bash/isg-pub/help/sys/tmux/tmux-common.func.sh	18;"	function	language:Sh
-terminal_size	sfw/bash/isg-pub/specs/sys/tmux/tmux-common.spec.sh	18;"	function	language:Sh
-terminal_size	sfw/bash/isg-pub/tests/sys/tmux/tmux-common.test.sh	18;"	function	language:Sh
+terminal_size	src/bash/isg-pub/funcs/sys/tmux/tmux-common.sh	18;"	function	language:Sh
 text	doc_pub/public/lib/Buttons-1.0.3/js/buttons.html5.js	398;"	method	language:JavaScript	class:DataTable.ext.buttons.copyHtml5
 text	doc_pub/public/lib/Buttons-1.0.3/js/buttons.html5.js	473;"	method	language:JavaScript	class:DataTable.ext.buttons.csvHtml5
 text	doc_pub/public/lib/Buttons-1.0.3/js/buttons.html5.js	513;"	method	language:JavaScript	class:DataTable.ext.buttons.excelHtml5
@@ -2414,7 +2300,6 @@ thingy.hasClass	doc_pub/public/lib/Buttons-1.0.3/js/buttons.flash.js	42;"	functi
 thingy.hide	doc_pub/public/lib/Buttons-1.0.3/js/buttons.flash.js	35;"	class	language:JavaScript
 thingy.removeClass	doc_pub/public/lib/Buttons-1.0.3/js/buttons.flash.js	39;"	class	language:JavaScript
 thingy.show	doc_pub/public/lib/Buttons-1.0.3/js/buttons.flash.js	37;"	class	language:JavaScript
-timestamp	docs/cheat-sheets/perl/perl-cheat-sheet.pl	73;"	subroutine	language:Perl
 title	doc_pub/public/lib/Buttons-1.0.3/js/buttons.html5.js	488;"	property	language:JavaScript	class:DataTable.ext.buttons.csvHtml5
 title	doc_pub/public/lib/Buttons-1.0.3/js/buttons.html5.js	566;"	property	language:JavaScript	class:DataTable.ext.buttons.excelHtml5
 title	doc_pub/public/lib/Buttons-1.0.3/js/buttons.html5.min.js	13;"	property	language:JavaScript	class:n.ext.buttons.csvHtml5
@@ -2446,7 +2331,7 @@ transformElement	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	1147;"	
 transformSlides	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	1161;"	function	language:JavaScript
 trigger	doc_pub/public/lib/MouseTrap/mousetrap.min.js	9;"	method	language:JavaScript	class:c
 trim	sfw/perl/isg_pub/Control/Utils/Configurator.pm	441;"	subroutine	language:Perl
-trim	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1339;"	subroutine	language:Perl
+trim	sfw/perl/isg_pub/Control/Utils/ETL/ExcelToMariaDbLoader.pm	1346;"	subroutine	language:Perl
 tt	doc_pub/public/lib/Editor-1.5.1/js/editor.bootstrap.js	19;"	variable	language:JavaScript
 type	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	2165;"	property	language:JavaScript	class:Editor.var.ajaxOpts
 type	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	3943;"	property	language:JavaScript	class:Editor.var.opts
@@ -2487,12 +2372,8 @@ updateSlideNumber	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	2550;"
 updateSlides	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	2333;"	function	language:JavaScript
 updateSlidesVisibility	doc_pub/public/lib/reveal/reveal.js-master/js/reveal.js	2439;"	function	language:JavaScript
 url	doc_pub/public/lib/Editor-1.5.1/js/dataTables.editor.js	3714;"	property	language:JavaScript	class:ajax
-urldecode	docs/cheat-sheets/perl/perl-cheat-sheet.pl	363;"	subroutine	language:Perl
-urlencode	docs/cheat-sheets/perl/perl-cheat-sheet.pl	356;"	subroutine	language:Perl
 usage	conf/hosts/doc-pub-host/usr/bin/xvfb-run	41;"	function	language:Sh
-usage	conf/hosts/ysg-host-name/usr/bin/xvfb-run	41;"	function	language:Sh
 useBR	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	property	language:JavaScript	class:w.E
-usr	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	69;"	variable	language:DosBatch
 utils_hooks__hooks	doc_pub/public/lib/MomentJS/moment.js	15;"	function	language:JavaScript
 v	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:q
 v	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	function	language:JavaScript	function:b
@@ -2510,7 +2391,6 @@ valid__createInvalid	doc_pub/public/lib/MomentJS/moment.js	112;"	function	langua
 valid__isValid	doc_pub/public/lib/MomentJS/moment.js	90;"	function	language:JavaScript
 value	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	3570;"	property	language:JavaScript	class:descriptor
 value	doc_pub/public/lib/reveal/reveal.js-master/plugin/highlight/highlight.js	30;"	property	language:JavaScript	class:f.r
-variable	docs/cheat-sheets/cmd/cmd-cheat-sheet.cmd	493;"	variable	language:DosBatch
 vb	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:ub
 vc	doc_pub/public/lib/MomentJS/moment.min.js	6;"	function	language:JavaScript	function:tc
 vendorPropName	doc_pub/public/lib/jQuery-2.1.4/jquery-2.1.4.js	5746;"	function	language:JavaScript
