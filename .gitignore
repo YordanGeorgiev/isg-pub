@@ -6,3 +6,4 @@ dat/**
 cnf/hosts/doc-pub-host/home/ysg/.vimrc.*
 sfw/sh/isg-pub/tmp/**
 doc_pub/script/hypnotoad.pid
+src/bash/isg-pub/tmp/**

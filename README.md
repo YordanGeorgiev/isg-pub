@@ -1,4 +1,4 @@
-#  WRAPP
+#  issue-tracker
 
 
 Table of Contents
@@ -7,35 +7,42 @@ Table of Contents
   * [2. INSTALLATION AND CONFIGURATION](#2-installation-and-configuration)
     * [2.1. Prerequisites](#21-prerequisites)
     * [2.2. Fetch the source](#22-fetch-the-source)
-    * [2.3. Build the first isg-pub instance](#23-build-the-first-isg-pub-instance)
-    * [2.4. Check the runnable actions](#24-check-the-runnable-actions)
-    * [2.5. Start hacking](#25-start-hacking)
+    * [2.3. run the boot-strap script](#23-run-the-boot-strap-script)
+    * [2.4. Apply the db and issue create scirpts](#24-apply-the-db-and-issue-create-scirpts)
+    * [2.5. Install the required Perl modules](#25-install-the-required-perl-modules)
+    * [2.6. Start hacking](#26-start-hacking)
+  * [3. ADDITIONAL DOCS](#3-additional-docs)
+  * [4. AND FINALLY THE PROJECT STATUS](#4-and-finally-the-project-status)
 
 
     
 
 ## 1. What is it ?!
-A generic swiss knife wanna be bash / perl centric application isg-puber for quicky packaging and deploying your tools, create new tools out of your existing ones , generating code for additonal functions, search and replace in both file paths and contents ... and all the rest not mentioned actions in the [sfw/bash/isg-pub/tests](sfw/bash/isg-pub/tests/all-isg-pub-tests.lst) file ...
+A tool to manage multiple projects issues programmatically using txt files , xls files and PostgreSQL db.
 
     
 
 ## 2. INSTALLATION AND CONFIGURATION
-The isg-pub instances and clones have been running on *Nix boxes with bash &gt; 3.0 … , but some actions require 4.0 and older …
-Cygwin has been tested also … 
+
 
     
 
 ### 2.1. Prerequisites
 The must have binaries are:
- bash, perl, zip
+ bash, perl, zip,postgres 9.6
 
 The nice to have are:
  tmux, vim ,ctags
 
-The examples are for Ubuntu - use you OS package manager …
+The examples are for Ubuntu - use your OS package manager …
 
-    apt-get autoclean
-    apt-get install --only-upgrade bash
+If you do not have postgres than you would have to follow the longer installation instructions :
+https://github.com/YordanGeorgiev/issue-tracker/blob/master/doc/md/issue-tracker-devops-guide.md#1-installations-and-configurations
+
+    # use your OS package manager … if you are not on Ubuntu 
+    
+    sudo apt-get autoclean
+    sudo apt-get install --only-upgrade bash
     
     sudo apt-get install -y perl
     
@@ -43,45 +50,72 @@ The examples are for Ubuntu - use you OS package manager …
     sudo apt-get install -y excuberant-ctags
     sudo apt-get install -y 7z
     
-    apt-get upgrade
+    sudo apt-get upgrade
 
 ### 2.2. Fetch the source
 Fetch the source from git hub as follows:
 
-    # create your product dir:
-    mkdir -p /opt/csitea/isg-pub
-    cd /opt/csitea/isg-pub/
+    # got to a dir you have write permissions , for example:
+    cd ~ 
     
     # fetch the source
-    git clone git@github.com:YordanGeorgiev/isg-pub.git
+    git clone git@github.com:YordanGeorgiev/issue-tracker.git
+
+### 2.3. run the boot-strap script
+The bootstrap script will interpolate change the git deployment dir to a "product_instance_dir" ( your instance of the issue-tracker, having the same version as this one, but running on a different host with different owner - your )
+
+    # defiine the latest and greates product_version
+    export product_version=$(cd issue-tracker;git tag|sort -nr| head -n 1;cd ..)
     
-    # DO NOT CD into the new dir !!!!
-
-### 2.3. Build the first isg-pub instance
-Build the isg-pub instance by running the bootstrap script
-
-    # bootstrap the product instance dir
-    bash isg-pub/src/bash/isg-pub/bootstrap-isg-pub.sh
+    # run the bootstrap script : 
+    bash issue-tracker/src/bash/issue-tracker/bootstrap-issue-tracker.sh
     
-    # the script should prompt you to
-    cd /opt/csitea/isg-pub/isg-pub.1.1.5.dev.$USER
+    
+    # now go to your product instance dir , note it is a DEV environment
+    cd /opt/csitea/issue-tracker/issue-tracker.$product_version.dev.$USER
     
 
-### 2.4. Check the runnable actions
-You could check the functions which could be run - aka "actions" by issuing the following command. 
+### 2.4. Apply the db and issue create scirpts
+If you do not have the PostgreSQL ( v9.5 &gt; ) with currrent Linux user configured role installed check the instructions in the installations and configuratios section of the DevOps guide:
+https://github.com/YordanGeorgiev/issue-tracker/blob/master/doc/md/issue-tracker-devops-guide.md#1-installations-and-configurations
+If you do have it , apply the db and issue create scirpts as follows:
 
-    # check the runnable with the -a cmd arg actions 
-    find . -name '*.func.sh' | sort
+    # apply the postgre sql scripts
+    bash src/bash/issue-tracker/issue-tracker.sh -a run-pgsql-scripts
 
-### 2.5. Start hacking
-Start hacking … or wait check at least the test call running all the functions of the tool … 
+### 2.5. Install the required Perl modules
+Just run the prerequisites checker script which will provide you with copy pastable instructions
 
-    # opionally if you are in the vim camp open the "project relative files list file"
-    vim meta/.dev.isg-pub
+    sudo perl src/perl/issue_tracker/script/issue_tracker_preq_checker.pl
     
-    # Ctrl + Z , 
-    bash sfw/bash/isg-pub/test-isg-pub.sh 
+    # after installing all the modules check the perl syntax of the whole project:
+    bash src/bash/issue-tracker/issue-tracker.sh -a check-perl-syntax
+
+### 2.6. Start hacking
+Start usage:
+
+    doParseIniEnvVars cnf/issue-tracker-issues.dev.doc-pub-host.cnf
     
-    # now clone your own instance
-    bash sfw/bash/isg-pub/isg-pub.sh -a to-app=my-tool
+    bash src/bash/issue-tracker/issue-tracker.sh -a txt-to-db
+    bash src/bash/issue-tracker/issue-tracker.sh -a db-to-xls
+    
+    # now edit the files in the xls 
+    bash src/bash/issue-tracker/issue-tracker.sh -a xls-to-db
+    bash src/bash/issue-tracker/issue-tracker.sh -a db-to-txt
+    export issues_order_by_attribute=start_time
+    export issues_order_by_attribute=prio
+    bash src/bash/issue-tracker/issue-tracker.sh -a db-to-txt
+    
+    # publish to gsheet issues:
+    export do_truncate_tables=1 ; bash src/bash/issue-tracker/issue-tracker.sh -a db-to-gsheet -t daily_issues,weekly_issues,monthly_issues,yearly_issues
+
+## 3. ADDITIONAL DOCS
+Additonal docs could be found in the doc/md dir. 
+
+    
+
+## 4. AND FINALLY THE PROJECT STATUS
+The issue tracker project status could be tracked by the issue-tracker data stored in the following gsheet:
+
+    
 
