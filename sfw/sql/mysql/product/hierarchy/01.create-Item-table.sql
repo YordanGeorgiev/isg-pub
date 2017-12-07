@@ -7,7 +7,6 @@
 		`ItemId` 			bigint 			NOT NULL UNIQUE
 	 , `Level`				smallint 		NOT NULL 
 	 , `SeqId` 				bigint 			NULL 
-	 , `DocId` 				int 				NULL 
 	 , `LeftRank`			bigint			NOT NULL
 	 , `RightRank`			bigint			NOT NULL
 	 , `Name` 				varchar(200) 	NOT NULL

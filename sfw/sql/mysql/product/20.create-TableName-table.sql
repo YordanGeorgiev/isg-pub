@@ -9,7 +9,6 @@
 	  `TableNameId` bigint 			NOT NULL UNIQUE	/* a technical id - OBLIGATORY */
 	, `Level`				smallint 		NOT NULL  	/* models the level in the doc hierarchy in gui - OBLIGATORY */
 	, `SeqId`				bigint 			NOT NULL 	/* defines the logical order of the items in gui - OBLIGATORY */
-	, `DocId`				bigint 			NOT NULL		/* defines to which document this record belongs to - OBLIGATORY */ 
 	, `LeftRank`			bigint			NOT NULL
 	, `RightRank`			bigint			NOT NULL
  	, `LogicalOrder`	   varchar(30) 	NOT NULL

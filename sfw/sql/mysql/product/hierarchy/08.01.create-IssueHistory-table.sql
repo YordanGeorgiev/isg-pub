@@ -8,7 +8,6 @@
  	 ,	`IssueId` 					bigint 			NOT NULL UNIQUE
 	 , `Level`						smallint 		NOT NULL 
 	 , `SeqId`						bigint 			NOT NULL 
-	 , `DocId`						bigint 			NOT NULL 
 	 , `LeftRank`					bigint			NOT NULL
 	 , `RightRank`					bigint			NOT NULL
 	 , `Status` 					varchar(12) 	DEFAULT NULL

@@ -11,7 +11,6 @@
 	, `SeqId`					bigint 			NOT NULL 
    , `LeftRank`				bigint			NOT NULL
  	, `RightRank`				bigint			NOT NULL
- 	, `LogicalOrder`			varchar(30) 	NOT NULL
 	, `Status` 					varchar(12) 	DEFAULT NULL
 	, `Type` 					varchar(14) 	DEFAULT NULL
 	, `Prio` 					smallint 		DEFAULT NULL

@@ -8,7 +8,6 @@
 		  `SourceFieldId` bigint 			NOT NULL UNIQUE
 		, `Level`			int 				NOT NULL
 		, `SeqId`			bigint			NOT NULL
-		, `DocId`			int				NOT NULL
 		, `LeftRank`		bigint			NOT NULL
 		, `RightRank`		bigint			NOT NULL
  	   , `LogicalOrder`  varchar(30) 	NOT NULL

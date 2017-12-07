@@ -8,7 +8,6 @@
 		  ShortCutId			bigint					NOT NULL UNIQUE
 		, Level					smallint					not null
 		, SeqId					bigint					not null
-		, DocId					smallint					not null
 		, LeftRank 				bigint 					not null
 		, RightRank				bigint					not null 
 		, Weight					int 						not null

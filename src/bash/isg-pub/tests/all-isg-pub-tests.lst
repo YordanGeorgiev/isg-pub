@@ -21,4 +21,5 @@ print-help
 print-usage
 action-to-remove
 log-test-run-entry
+create-mysql-user
 do-something

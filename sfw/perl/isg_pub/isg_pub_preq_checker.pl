@@ -1,3 +1,4 @@
+#!/usr/bin/env perl
 use strict ; use warnings ; 
 use 5.10.0 ; 
 use ExtUtils::Installed;
@@ -66,7 +67,6 @@ use ExtUtils::Installed;
 			JSON
 			Carp::Always
 			Mojolicious::Plugin::PDFRenderer
-         Redis::Client
 			);
 
 		for(@modules) {

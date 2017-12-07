@@ -4,7 +4,6 @@
 --| ItemId    | bigint(20)   | NO   | PRI | NULL    |       |
 --| Level     | smallint(6)  | NO   |     | NULL    |       |
 --| SeqId     | bigint(20)   | YES  |     | NULL    |       |
---| DocId     | int(11)      | YES  |     | NULL    |       |
 --| LeftRank  | bigint(20)   | NO   |     | NULL    |       |
 --| RightRank | bigint(20)   | NO   |     | NULL    |       |
 --| Name      | varchar(200) | NO   |     | NULL    |       |

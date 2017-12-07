@@ -505,7 +505,6 @@ doParseConfFile(){
 #eof func doParseConfFile
 
 
-
 # Action !!!
 main "$@"
 
