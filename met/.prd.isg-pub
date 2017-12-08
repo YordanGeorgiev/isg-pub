@@ -1,5 +1,6 @@
 # perl_ignore_file_pattern=.*\.swp$|.*\.log|$.*\.swo$
 1
+src/bash/isg-pub/install-prerequisites-on-ubuntu.sh
 conf
 sfw/sh/isg-pub/isg-pub.host_name.conf
 conf/hosts
@@ -57,6 +58,7 @@ doc_pub/data
 doc_pub/data/log
 doc_pub/doc_pub.conf
 doc_pub/doc_pub.doc-pub-host.conf
+doc_pub/doc_pub.host-name.conf
 doc_pub/lib
 doc_pub/lib/auto
 doc_pub/lib/auto/DocPub
@@ -1166,3 +1168,18 @@ cnf/hosts/host-name/home/ysg/.tmux.conf
 doc/xls
 doc/xls/isg-pub-devops-guide.xls
 doc/xls/isg-pub-user-stories.xls
+src/bash/scripts
+src/bash/scripts/how-to-export-all-docs-into-bitbucket-mds-from-another-server.sh
+src/bash/scripts/how-to-export-all-docs-into-github-mds-from-another-server.sh
+src/bash/scripts/how-to-export-all-docs-into-pdfs-from-another-server.sh
+src/bash/scripts/how-to-export-all-docs-into-xls-files-from-another-server.sh
+src/bash/scripts/to-nix.sh
+src/bash/scripts/to-win.sh
+doc/txt/isg-pub/helps/create-mysql-user.help.txt
+doc/txt/isg-pub/specs/create-mysql-user.spec.txt
+doc/txt/isg-pub/tests/create-mysql-user.test.txt
+doc/txt/isg-pub/funcs/create-mysql-user.func.txt
+src/bash/isg-pub/helps/create-mysql-user.help.sh
+src/bash/isg-pub/specs/create-mysql-user.spec.sh
+src/bash/isg-pub/tests/create-mysql-user.test.sh
+src/bash/isg-pub/funcs/create-mysql-user.func.sh

@@ -1,0 +1,8 @@
+# doc/txt/isg-pub/create-mysql-user/create-mysql-user.func.txt
+
+ Purpose: 
+ to create the isg-pub app mysql user
+   
+
+
+# eof file: doc/txt/isg-pub/create-mysql-user/create-mysql-user.func.txt

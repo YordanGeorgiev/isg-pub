@@ -1,0 +1,12 @@
+# doc/txt/isg-pub/create-mysql-user/create-mysql-user.test.txt
+
+	doTestCreateMysqlUser
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to test the creation of the mysql user
+
+
+
+
+# eof file: doc/txt/isg-pub/create-mysql-user/create-mysql-user.test.txt
