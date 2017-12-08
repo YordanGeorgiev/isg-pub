@@ -74,7 +74,8 @@ package DocPub::Model::HtmlToPdfConverter ;
 		#/usr/bin/wkhtmltopdf --page-size A4 --orientation Portrait --zoom 0.75 --page-width 800 --margin-bottom 15 --margin-left 10 --margin-right 1 --margin-top 15 "$url" $out_file
 
 		#old $cmd		.= '/bin/sh /usr/bin/wkhtmltopdf' ; 	
-		$cmd		.= '/bin/sh /usr/bin/wkhtmltopdf.sh' ; 	
+		$cmd		.= '/bin/sh /usr/local/bin/wkhtmltopdf.sh' ; 	
+		# $cmd		.= '/usr/bin/wkhtmltopdf' ; 	
 		#$cmd 		.= ' -T 10mm --header-right [page]/[toPage] ' ; 
 		#$cmd		.= ' --header-font-size 9 ' ; 
 		#$cmd		.= ' --header-spacing 10 ' ; 
@@ -98,10 +99,11 @@ package DocPub::Model::HtmlToPdfConverter ;
 		#$cmd		.= '--load-error-handling ignore ' ; 
 		$cmd		.= " \"$url\" " ; 
 		$cmd		.= " $out_file " ; 
-		print '@ doc_pub/lib/DocPub/Model/HtmlToPdfConverter.pm cmd: ' . "$cmd" . "\n\n" ; 
+		# print '@ doc_pub/lib/DocPub/Model/HtmlToPdfConverter.pm cmd: ' . "$cmd" . "\n\n" ; 
 		# Action !!!
 		#
 		`$cmd` ; 
+      # debug print ( "cmd: $cmd" ) ; 
 		# The Excel file in now in $str. Remember to binmode() the output
 		# filehandle before printing it.
 		binmode STDOUT;
