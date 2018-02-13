@@ -71,7 +71,7 @@ doSetVars(){
 
 	# now set the current component version to the platform ini file
 
-	# conf/hosts/doc-pub-host/ini/isg-pub.doc-pub-host.ini
+	# conf/hosts/hostname/ini/isg-pub.hostname.ini
 	perl -pi -e "s|PlatformVersion=(.*)|PlatformVersion=$component_version|g;" $product_version_dir/conf/hosts/$host_name/ini/isg-pub.$host_name.ini
 
 	# and clear the screen
@@ -604,10 +604,12 @@ doPrintHelp(){
 		# set the project vars in the current shell
 		doParseIniEnvVars sfw/sh/isg-pub/isg-pub.$project.`hostname -s`.conf
 		# 
-		#
+		bash src/bash/isg-pub/isg-pub.sh -a to-app=<<project>>
+      bash /opt/csitea/<<project>>/<<project>>.0.0.0.dev.ysg/src/bash/<<project>>/<<project>>.sh -a to-ver=1.0.0
+      bash /opt/csitea/<<project>>/<<project>>.1.0.0.dev.ysg/src/bash/<<project>>/<<project>>.sh -a to-prd
 		#
 		# create a relative package for the isg-pub template app
-		doParseIniEnvVars sfw/sh/isg-pub/isg-pub.isg-pub.doc-pub-host.conf
+		doParseIniEnvVars sfw/sh/isg-pub/isg-pub.isg-pub.hostname.conf
 		bash sfw/bash/isg-pub/isg-pub.sh -a create-relative-package
 
 		bash $0 -j \$project -a check-perl-syntax
@@ -712,9 +714,10 @@ doPrintUsage(){
 
       doParseIniEnvVars /vagrant/csitea/cnf/projects/isg-pub/isg-pub.isg-pub.`hostname -s`.conf
 
-      bash sfw/bash/isg-pub/isg-pub.sh -a create-relative-package
-      doParseIniEnvVars sfw/sh/isg-pub/isg-pub.<<proj-name>>.`hostname -s`.conf
+      bash src/bash/isg-pub/isg-pub.sh -a create-relative-package
+      doParseIniEnvVars src/sh/isg-pub/isg-pub.<<proj-name>>.`hostname -s`.conf
 
+      bash $0 -j \$project -a check-perl-syntax
       bash $0 -j \$project -a check-perl-syntax
       bash $0 -j \$project -a run-project-mysql-scripts
       echo bash sfw/bash/scripts/to-win.sh \$proj_version_dir

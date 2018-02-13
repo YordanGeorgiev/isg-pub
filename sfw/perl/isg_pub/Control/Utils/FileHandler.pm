@@ -56,8 +56,8 @@
 					  or cluck("Couldn't open \$FileToRead $FileToRead : $!");
 					$string = <FILE>;
                $string =~ s/\x{FEFF}//g;
-					print "UTF8 STRING IS " . $string;
-               sleep 10 ; 
+					# debug print "UTF8 STRING IS " . $string;
+               # debug sleep 10 ; 
 			  }
 			  else {
 					open FILE, "$FileToRead "

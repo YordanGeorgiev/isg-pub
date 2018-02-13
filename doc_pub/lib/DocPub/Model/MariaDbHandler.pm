@@ -572,8 +572,8 @@ package DocPub::Model::MariaDbHandler ;
 		INNER JOIN ItemController 	ON ( ItemView.ItemControllerId = ItemController.ItemControllerId  ) 
 		INNER JOIN ItemModel 		ON ( ItemController.ItemControllerId = ItemModel.ItemControllerId ) 
 		WHERE 1=1
-		AND ItemView.doGenerateUi = 1
-		AND ItemController.IsBook = 1
+		AND ItemView.doGenerateUi = true
+		AND ItemController.IsBook = true
 		ORDER BY ItemView.SeqId ASC
 		' ;
 
@@ -599,7 +599,8 @@ package DocPub::Model::MariaDbHandler ;
       }
 
       $dbh->disconnect;
-		
+	   p $ref ; 
+      print "stop MariaDbHandler.pm:603 \n" ; 
 		$objController->stash ({ 'RefItemViews' , $ref });
       return ( $ret , $msg , $debug_msg , $ref ) ; 
                 
@@ -1859,11 +1860,12 @@ package DocPub::Model::MariaDbHandler ;
 		INNER JOIN ItemController 	ON ( ItemView.ItemControllerId = ItemController.ItemControllerId  ) 
 		INNER JOIN ItemModel 		ON ( ItemController.ItemControllerId = ItemModel.ItemControllerId ) 
 		WHERE 1=1
-		AND ItemView.doGenerateUi = 1
-		AND ItemController.IsBook = 1
+		AND ItemView.doGenerateUi = true
+		AND ItemController.IsBook = true
 		ORDER BY ItemView.SeqId ASC
 		' ;
 
+      # debug print "$sql" ; 
 
 		if ( $IsUnitTest == 1 or $module_trace == 1) {	
 			$msg 		= "running the following sql: " ; 
@@ -1879,6 +1881,9 @@ package DocPub::Model::MariaDbHandler ;
 		# the keys for the hash refs are the values in the SeqId field
       $ref = $sth->fetchall_hashref('ItemViewId') or $objLogger->LogFatalMsg ( "$DBI::errstr" ) ; 
       
+	   #debug print the left menu p $ref ; 
+      # debug print the left menu print "stop MariaDbHandler.pm:1884 \n" ; 
+
       $dbh->disconnect;
 		
       return $ref ; 

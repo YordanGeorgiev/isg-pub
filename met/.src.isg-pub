@@ -2,5 +2,7 @@
 
 # search for the silly sleep_interval
 :g/DocId/|:vimgrep /DocId/ `find . -type f -name '*.sql'`
+:g/Loader does no have configuration ini file/|:vimgrep /Loader does no have configuration ini file/ `find . -type f \| grep -v '.git'`
 
 :g/sleep_interval/|:vimgrep /sleep_interval/ `find . -type f \| grep -v '.git'`
+:g/Undefined working Project/|:vimgrep /Undefined working Project/ `find . -type f \| grep -v '.git'`

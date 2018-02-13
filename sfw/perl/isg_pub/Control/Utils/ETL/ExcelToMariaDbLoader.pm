@@ -672,6 +672,8 @@ package isg_pub::Control::Utils::ETL::ExcelToMariaDbLoader ;
 		my $table_name 	= shift ; 
 		my $refHeaders 	= shift ; 
 		my $refData 		= shift ; 
+      # use Data::Printer ; 
+      #p $refData ; 
 		my $rowCount		= shift ; 
 
 		my $data_str 		= '' ; 
@@ -1363,8 +1365,8 @@ package isg_pub::Control::Utils::ETL::ExcelToMariaDbLoader ;
 		my $class 				= shift ;    # Class name is in the first parameter
 		$ProjectDir 			= shift ; 
 
-		#print "ProjectDir is $ProjectDir " . "\n" ; 
-		#debug sleep 10 ; 
+		# debug print "ProjectDir is $ProjectDir " . "\n" ; 
+		# debug sleep 10 ; 
 
 		$ModuleFileConfig 	= shift @_ if ( @_ ) ; 
 		$confHolder 			= ${ shift @_ } if ( @_ ) ; 
@@ -1554,8 +1556,7 @@ package isg_pub::Control::Utils::ETL::ExcelToMariaDbLoader ;
 			$objLogger->LogDebugMsg ( $msg ) ; 
 		 	$msg = "$InputExcelFile" ; 
 			$objLogger->LogDebugMsg ( $msg ) ; 
-			#debug 
-			sleep 10 ; 
+			# debug  sleep 10 ; 
 		} 
 
 		$TokenDelimiterAsciiNumber = chr ( 44 ) ;

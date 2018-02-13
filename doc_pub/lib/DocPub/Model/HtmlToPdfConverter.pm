@@ -107,7 +107,7 @@ package DocPub::Model::HtmlToPdfConverter ;
 		# The Excel file in now in $str. Remember to binmode() the output
 		# filehandle before printing it.
 		binmode STDOUT;
-		sleep 2 ; 	
+		# sleep 2 ; 	
 		return $out_file ; 
 		#  Headers and footers can be added to the document by the --header-* and
 		#  --footer* arguments respectfully.  In header and footer text string supplied

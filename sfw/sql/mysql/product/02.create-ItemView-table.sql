@@ -11,7 +11,7 @@ CREATE TABLE `ItemView` (
  , `RightRank`					bigint			NOT NULL
  , `Name` 						varchar(200) 	NOT NULL			-- the human readable name of the item as presented 
  , `Description` 				varchar(4000) 	DEFAULT NULL	-- the description of this item
- , `Type`						varchar(50) 	DEFAULT NULL	-- the description of this item
+ , `Type`						varchar(100) 	DEFAULT NULL	-- the description of this item
  , `BranchId` 					bigint 			DEFAULT '1'		-- the description of this item
  , `doGenerateUi`				boolean NOT NULL					-- whether or not to generate html page for this item
  , `doGeneratePdf`			boolean NOT NULL					-- whether or not to generate the pdf files per page
@@ -19,6 +19,7 @@ CREATE TABLE `ItemView` (
  , `doExportToMd`				boolean NOT NULL					-- whether or not to export to mdf this entry
  , `doExportToXls`		   boolean NOT NULL					-- whether or not to export to mdf this entry
  , `doGenerateLeftMenu`		boolean NOT NULL					-- whether or not to generate the pdf files per page
+ , `FileType`				   varchar(10) 	DEFAULT NULL	-- the description of this item
  , `ItemControllerId` 		bigint 			NOT NULL 
  			REFERENCES ItemController(ItemControllerId)
  ,  PRIMARY KEY (ItemViewId)

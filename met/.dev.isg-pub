@@ -1,6 +1,5 @@
 # perl_ignore_file_pattern=.*\.swp$|.*\.log|$.*\.swo$
 1
-src/bash/isg-pub/install-prerequisites-on-ubuntu.sh
 conf
 sfw/sh/isg-pub/isg-pub.host_name.conf
 conf/hosts
@@ -49,8 +48,6 @@ conf/hosts/doc-pub-host/var/csitea
 conf/hosts/doc-pub-host/var/csitea/isg-pub
 conf/hosts/doc-pub-host/var/csitea/isg-pub/.gitignore
 data
-data/log
-data/log/bash
 data/zip
 data/zip/1
 doc_pub
@@ -779,6 +776,7 @@ sfw/perl/isg_pub/Control/Utils/Logger.pm
 sfw/perl/isg_pub/Control/Utils/Timer.pm
 sfw/perl/isg_pub/db2_to_nz_converter.pl
 sfw/perl/isg_pub/isg_pub_preq_checker.pl
+src/bash/isg-pub/install-prerequisites-on-ubuntu.sh
 sfw/perl/isg_pub/load.pl
 sfw/perl/lib
 sfw/perl/lib/auto
@@ -1066,8 +1064,6 @@ src/bash/isg-pub/funcs/remove-action-files.func.sh
 src/bash/isg-pub/helps/remove-action-files.help.sh
 src/bash/isg-pub/tests/remove-action-files.test.sh
 #---
-src/bash/isg-pub/funcs/sys/tmux/tmux-common.sh
-#---
 doc/txt/isg-pub/funcs/print-help.func.txt
 doc/txt/isg-pub/helps/man/print-help.help.txt
 doc/txt/isg-pub/specs/man/print-help.spec.txt
@@ -1129,7 +1125,6 @@ lib/readme.txt
 lib/bash/funcs/
 lib/bash/funcs/parse-cnf-env-vars.sh
 bin/readme.txt
-dat/readme.txt
 cnf/readme.txt
 src/readme.txt
 #---
